@@ -16,6 +16,15 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
     Optional<ListeningEvent> findFirstByUserIdAndProviderAndCanonicalArtistIdIsNotNullAndResolutionStatusOrderByPlayedAtUtcDesc(
             long userId, Provider provider, ResolutionStatus resolutionStatus);
 
+    // `from`/`to` are always concrete Instants (never null) at the call site -- ALL_TIME's
+    // unbounded start is passed as Instant.EPOCH -- so every comparison below is a plain
+    // bind-parameter comparison. A `(:from is null or ...)` form was tried first but Postgres'
+    // JDBC driver cannot infer a bind parameter's type when the only usage is inside such an
+    // "is null or" branch, and fails the query outright with "could not determine data type of
+    // parameter $1". One consequence: a listening_event with no playedAtUtc at all (Apple
+    // Music's recent-tracks endpoint never reports one, spec 4.3.8) never counts toward any
+    // chart period, ALL_TIME included, since NULL >= any bound is NULL/false in SQL -- an
+    // accepted extension of that provider's already-documented timestamp limitation.
     @Query("""
             select le.canonicalArtist.id as artistId, count(le) as listenCount, count(distinct le.user.id) as uniqueListeners,
                    max(le.playedAtUtc) as mostRecentPlayAt
@@ -24,8 +33,8 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
               and le.canonicalArtist is not null
               and le.canonicalArtist.status = com.eurovision.analytics.eurovision.ArtistStatus.VERIFIED
               and le.canonicalArtist.active = true
-              and (:from is null or le.playedAtUtc >= :from)
-              and (:to is null or le.playedAtUtc < :to)
+              and le.playedAtUtc >= :from
+              and le.playedAtUtc < :to
               and le.user.chartParticipationEnabled = true
             group by le.canonicalArtist.id
             """)
@@ -36,8 +45,8 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
             from ListeningEvent le
             where le.canonicalArtist.id = :artistId
               and le.resolutionStatus = com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED
-              and (:from is null or le.playedAtUtc >= :from)
-              and (:to is null or le.playedAtUtc < :to)
+              and le.playedAtUtc >= :from
+              and le.playedAtUtc < :to
               and le.user.chartParticipationEnabled = true
             """)
     long countForArtistInWindow(@Param("artistId") long artistId, @Param("from") Instant from, @Param("to") Instant to);
@@ -46,8 +55,8 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
             select le.user.id as userId, count(le) as listenCount
             from ListeningEvent le
             where le.resolutionStatus = com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED
-              and (:from is null or le.playedAtUtc >= :from)
-              and (:to is null or le.playedAtUtc < :to)
+              and le.playedAtUtc >= :from
+              and le.playedAtUtc < :to
               and le.user.active = true
               and le.user.chartParticipationEnabled = true
             group by le.user.id

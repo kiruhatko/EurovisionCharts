@@ -8,7 +8,7 @@ CREATE TABLE artwork_cache (
     width           INTEGER,
     height          INTEGER,
     byte_size       INTEGER NOT NULL,
-    sha256          CHAR(64) NOT NULL,
+    sha256          VARCHAR(64) NOT NULL,
     cached_at       TIMESTAMPTZ NOT NULL DEFAULT now(),
     CONSTRAINT uq_artwork_cache_lookup_key UNIQUE (lookup_key),
     CONSTRAINT chk_artwork_cache_source CHECK (source IN ('COVER_ART_ARCHIVE', 'PROVIDER_NATIVE'))

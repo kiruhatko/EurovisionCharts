@@ -31,7 +31,10 @@ public class UserStatsService {
 
     public Optional<UserChartStanding> standingFor(long userId, ChartPeriod period) {
         Instant now = Instant.now();
-        Instant from = period.windowStart(now);
+        Instant windowStart = period.windowStart(now);
+        // ALL_TIME's unbounded start must still be a concrete Instant bind value, never null
+        // (see the comment on ListeningEventRepository's aggregate queries for why).
+        Instant from = windowStart == null ? Instant.EPOCH : windowStart;
 
         List<ListeningEventRepository.UserListenCountRow> rows = listeningEventRepository
                 .aggregateUserListenCounts(from, now);

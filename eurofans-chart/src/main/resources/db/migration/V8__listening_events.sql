@@ -14,7 +14,7 @@ CREATE TABLE listening_events (
     resolution_method            VARCHAR(64),
     resolution_status            VARCHAR(32) NOT NULL DEFAULT 'UNKNOWN',
     resolution_confidence        VARCHAR(32),
-    fingerprint                  CHAR(64) NOT NULL,
+    fingerprint                  VARCHAR(64) NOT NULL,
     created_at                   TIMESTAMPTZ NOT NULL DEFAULT now(),
     CONSTRAINT uq_listening_events_fingerprint UNIQUE (fingerprint),
     CONSTRAINT chk_listening_events_provider CHECK (provider IN ('SPOTIFY', 'APPLE_MUSIC', 'SOUNDCLOUD', 'LASTFM')),

@@ -39,8 +39,8 @@ public class ChartService {
 
     public List<ChartEntry> computeChart(ChartPeriod period) {
         Instant now = Instant.now();
-        Instant from = period.windowStart(now);
-        Instant previousFrom = period.previousWindowStart(now);
+        Instant from = orEpoch(period.windowStart(now));
+        Instant previousFrom = orEpoch(period.previousWindowStart(now));
 
         List<ListeningEventRepository.ChartAggregationRow> rows = listeningEventRepository.aggregateForPeriod(from, now);
         if (rows.isEmpty()) {
@@ -84,6 +84,11 @@ public class ChartService {
                     return new ChartEntry(i + 1, u.artist(), u.listenCount(), u.uniqueListeners(), u.growthPercent());
                 })
                 .toList();
+    }
+
+    /** ALL_TIME's unbounded window start, expressed as a concrete Instant for the JPQL bind parameter. */
+    private static Instant orEpoch(Instant instant) {
+        return instant == null ? Instant.EPOCH : instant;
     }
 
     /** Explicit, documented division-by-zero handling: never Infinity/NaN (spec 10). */
