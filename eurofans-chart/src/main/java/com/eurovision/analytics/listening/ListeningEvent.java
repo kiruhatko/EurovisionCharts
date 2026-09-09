@@ -70,7 +70,8 @@ public class ListeningEvent {
     @Column(name = "is_estimated_timestamp", nullable = false)
     private boolean estimatedTimestamp = false;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    // EAGER: LastCommand reads .getCanonicalArtist().getCanonicalName() outside a transaction.
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "canonical_artist_id")
     private EurovisionArtist canonicalArtist;
 

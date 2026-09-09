@@ -35,7 +35,8 @@ public class ListeningEventAttribution {
     @JoinColumn(name = "listening_event_id", nullable = false)
     private ListeningEvent listeningEvent;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    // EAGER for consistency with the other Artist relations (see ListeningEvent.canonicalArtist).
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "eurovision_artist_id", nullable = false)
     private EurovisionArtist eurovisionArtist;
 

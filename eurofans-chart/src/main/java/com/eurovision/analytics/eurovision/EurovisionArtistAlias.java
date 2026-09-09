@@ -24,7 +24,8 @@ public class EurovisionArtistAlias {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    // EAGER: EurovisionIdentityResolver reads .getArtist() outside a transaction.
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "artist_id", nullable = false)
     private EurovisionArtist artist;
 

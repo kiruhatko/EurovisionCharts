@@ -7,6 +7,7 @@ import com.eurovision.analytics.eurovision.EurovisionArtistExternalId;
 import com.eurovision.analytics.eurovision.EurovisionArtistExternalIdRepository;
 import com.eurovision.analytics.eurovision.EurovisionArtistRepository;
 import com.eurovision.analytics.eurovision.EurovisionCountryRepository;
+import com.eurovision.analytics.eurovision.EurovisionEditionRepository;
 import com.eurovision.analytics.eurovision.ExternalIdProvider;
 import com.eurovision.analytics.util.NameNormalizer;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class BulkArtistImportService {
     private final EurovisionArtistRepository artistRepository;
     private final EurovisionArtistExternalIdRepository externalIdRepository;
     private final EurovisionCountryRepository countryRepository;
+    private final EurovisionEditionRepository editionRepository;
     private final AdminAuditService adminAuditService;
     private final JsonMapper jsonMapper = JsonMapper.builder().build();
 
@@ -48,12 +50,14 @@ public class BulkArtistImportService {
                                     EurovisionArtistRepository artistRepository,
                                     EurovisionArtistExternalIdRepository externalIdRepository,
                                     EurovisionCountryRepository countryRepository,
+                                    EurovisionEditionRepository editionRepository,
                                     AdminAuditService adminAuditService) {
         this.canonicalizer = canonicalizer;
         this.resolvers = resolvers.stream().collect(Collectors.toMap(ProviderArtistResolver::provider, Function.identity()));
         this.artistRepository = artistRepository;
         this.externalIdRepository = externalIdRepository;
         this.countryRepository = countryRepository;
+        this.editionRepository = editionRepository;
         this.adminAuditService = adminAuditService;
     }
 
@@ -83,6 +87,9 @@ public class BulkArtistImportService {
                 artist.setActive(true);
                 if (entry.countryIso() != null) {
                     countryRepository.findByIsoCode(entry.countryIso()).ifPresent(artist::setCountry);
+                }
+                if (entry.editionYear() != null) {
+                    editionRepository.findByYear(entry.editionYear()).ifPresent(artist::setEdition);
                 }
                 artist = artistRepository.save(artist);
 

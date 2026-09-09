@@ -64,7 +64,7 @@ public class DeploymentBindingVerifier {
             log.warn("# no group-lock enforcement. Do not use this mode for a    #");
             log.warn("# shared/production deployment.                            #");
             log.warn("############################################################");
-            this.verified = new VerifiedDeploymentBinding(true, null, null, properties.environment());
+            this.verified = new VerifiedDeploymentBinding(true, null, "casual-mode", properties.environment());
             persistAuditRecord(this.verified, "casual");
             return;
         }

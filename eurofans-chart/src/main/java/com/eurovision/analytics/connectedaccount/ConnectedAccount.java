@@ -29,7 +29,9 @@ public class ConnectedAccount {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    // EAGER: syncOne()/AbstractProviderSyncScheduler read user.isTrackingEnabled() outside
+    // any open transaction, which would otherwise throw LazyInitializationException.
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
