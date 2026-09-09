@@ -12,6 +12,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.nio.charset.StandardCharsets;
+import java.time.Instant;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class SpotifyOAuthService {
@@ -22,6 +24,10 @@ public class SpotifyOAuthService {
     private final OAuthStateStore stateStore;
     private final WebClient spotifyAccountsWebClient;
     private final SecurityEventService securityEventService;
+    private final AtomicReference<AppToken> cachedAppToken = new AtomicReference<>();
+
+    private record AppToken(String accessToken, Instant expiresAt) {
+    }
 
     public SpotifyOAuthService(ProviderProperties properties,
                                 OAuthStateStore stateStore,
@@ -76,5 +82,27 @@ public class SpotifyOAuthService {
                 .retrieve()
                 .bodyToMono(SpotifyDtos.TokenResponse.class)
                 .block();
+    }
+
+    /**
+     * App-only Client Credentials token for catalog lookups (e.g. admin
+     * {@code /addartist} imports) that must not require any end user to have
+     * connected their own Spotify account.
+     */
+    public synchronized String getAppAccessToken() {
+        AppToken current = cachedAppToken.get();
+        if (current != null && Instant.now().isBefore(current.expiresAt())) {
+            return current.accessToken();
+        }
+        SpotifyDtos.TokenResponse response = spotifyAccountsWebClient.post()
+                .uri("/api/token")
+                .headers(h -> h.setBasicAuth(config.clientId(), config.clientSecret()))
+                .body(BodyInserters.fromFormData("grant_type", "client_credentials"))
+                .retrieve()
+                .bodyToMono(SpotifyDtos.TokenResponse.class)
+                .block();
+        AppToken token = new AppToken(response.accessToken(), Instant.now().plusSeconds(response.expiresInSeconds() - 30));
+        cachedAppToken.set(token);
+        return token.accessToken();
     }
 }

@@ -53,4 +53,23 @@ public final class AppleMusicDtos {
             @JsonProperty("data") List<Object> data
     ) {
     }
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public record ArtistAttributes(
+            @JsonProperty("name") String name
+    ) {
+    }
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public record ArtistResource(
+            @JsonProperty("id") String id,
+            @JsonProperty("attributes") ArtistAttributes attributes
+    ) {
+    }
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public record ArtistsResponse(
+            @JsonProperty("data") List<ArtistResource> data
+    ) {
+    }
 }

@@ -124,7 +124,8 @@ public class SpotifyApiClient implements NowPlayingProviderClient, RecentPlayPro
                 track.name(),
                 track.album() == null ? null : track.album().name(),
                 track.id(),
-                primaryArtist == null ? null : primaryArtist.id());
+                primaryArtist == null ? null : primaryArtist.id(),
+                largestImage(track).map(SpotifyDtos.Image::url).orElse(null));
     }
 
     private RecentPlay toRecentPlay(SpotifyDtos.Track track, Instant playedAt) {
@@ -136,7 +137,8 @@ public class SpotifyApiClient implements NowPlayingProviderClient, RecentPlayPro
                 track.id(),
                 primaryArtist == null ? null : primaryArtist.id(),
                 playedAt,
-                false);
+                false,
+                largestImage(track).map(SpotifyDtos.Image::url).orElse(null));
     }
 
     /** Largest available image, i.e. the highest {@code width} Spotify returned for this track's album art. */

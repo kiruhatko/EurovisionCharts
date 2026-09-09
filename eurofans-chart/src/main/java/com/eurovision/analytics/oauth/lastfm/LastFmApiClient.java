@@ -35,6 +35,26 @@ public class LastFmApiClient implements NowPlayingProviderClient, RecentPlayProv
         return Provider.LASTFM;
     }
 
+    /** Used only for admin {@code /addartist} import from a last.fm/music/{artist} URL. */
+    public Optional<LastFmDtos.ArtistInfo> fetchArtistInfo(String artistName) {
+        try {
+            LastFmDtos.ArtistInfoResponse response = lastfmApiWebClient.get()
+                    .uri(uriBuilder -> uriBuilder.path("/2.0/")
+                            .queryParam("method", "artist.getinfo")
+                            .queryParam("artist", artistName)
+                            .queryParam("api_key", config.apiKey())
+                            .queryParam("format", "json")
+                            .build())
+                    .retrieve()
+                    .bodyToMono(LastFmDtos.ArtistInfoResponse.class)
+                    .block();
+            return response == null ? Optional.empty() : Optional.ofNullable(response.artist());
+        } catch (Exception e) {
+            log.warn("Last.fm artist.getinfo failed for artist={}: {}", artistName, e.getMessage());
+            return Optional.empty();
+        }
+    }
+
     private List<LastFmDtos.TrackEntry> fetchRecentTracks(String username, int limit) {
         try {
             LastFmDtos.RecentTracksResponse response = lastfmApiWebClient.get()
@@ -70,7 +90,8 @@ public class LastFmApiClient implements NowPlayingProviderClient, RecentPlayProv
                 track.name(),
                 track.album() == null ? null : track.album().text(),
                 null,
-                track.artist() == null ? null : track.artist().mbid()));
+                track.artist() == null ? null : track.artist().mbid(),
+                track.largestImageUrl()));
     }
 
     @Override
@@ -96,7 +117,8 @@ public class LastFmApiClient implements NowPlayingProviderClient, RecentPlayProv
                     null,
                     track.artist() == null ? null : track.artist().mbid(),
                     playedAt,
-                    false));
+                    false,
+                    track.largestImageUrl()));
         }
         return plays;
     }

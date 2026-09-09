@@ -10,6 +10,7 @@ public record RecentPlay(
         String providerTrackId,
         String providerArtistId,
         Instant playedAtUtc,
-        boolean estimatedTimestamp
+        boolean estimatedTimestamp,
+        String nativeArtworkUrl
 ) {
 }

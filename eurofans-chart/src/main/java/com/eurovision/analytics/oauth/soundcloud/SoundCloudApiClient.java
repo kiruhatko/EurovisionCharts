@@ -1,5 +1,6 @@
 package com.eurovision.analytics.oauth.soundcloud;
 
+import com.eurovision.analytics.config.ProviderProperties;
 import com.eurovision.analytics.connectedaccount.ConnectedAccount;
 import com.eurovision.analytics.connectedaccount.Provider;
 import com.eurovision.analytics.listening.RecentPlay;
@@ -33,10 +34,37 @@ public class SoundCloudApiClient implements NowPlayingProviderClient, RecentPlay
 
     private final WebClient soundcloudApiWebClient;
     private final TokenEncryptionService tokenEncryptionService;
+    private final ProviderProperties.SoundCloud config;
 
-    public SoundCloudApiClient(WebClient soundcloudApiWebClient, TokenEncryptionService tokenEncryptionService) {
+    public SoundCloudApiClient(WebClient soundcloudApiWebClient, TokenEncryptionService tokenEncryptionService,
+                                ProviderProperties properties) {
         this.soundcloudApiWebClient = soundcloudApiWebClient;
         this.tokenEncryptionService = tokenEncryptionService;
+        this.config = properties.soundcloud();
+    }
+
+    /**
+     * Resolves a public SoundCloud profile permalink URL to its numeric
+     * uploader id -- the identity anchor used everywhere else in this
+     * application (spec 6.2). Uses the app's own {@code client_id} rather
+     * than any user's token, since admin artist import must not depend on an
+     * admin having connected their own SoundCloud account.
+     */
+    public Optional<SoundCloudDtos.UserProfile> resolveByUrl(String permalinkUrl) {
+        try {
+            SoundCloudDtos.UserProfile profile = soundcloudApiWebClient.get()
+                    .uri(uriBuilder -> uriBuilder.path("/resolve")
+                            .queryParam("url", permalinkUrl)
+                            .queryParam("client_id", config.clientId())
+                            .build())
+                    .retrieve()
+                    .bodyToMono(SoundCloudDtos.UserProfile.class)
+                    .block();
+            return Optional.ofNullable(profile);
+        } catch (Exception e) {
+            log.warn("SoundCloud /resolve failed for url={}: {}", permalinkUrl, e.getMessage());
+            return Optional.empty();
+        }
     }
 
     @Override
@@ -117,7 +145,8 @@ public class SoundCloudApiClient implements NowPlayingProviderClient, RecentPlay
                     Long.toString(entry.track().id()),
                     entry.track().user() == null ? null : Long.toString(entry.track().user().id()),
                     playedAt,
-                    false));
+                    false,
+                    originalArtworkUrl(entry.track())));
         }
         return plays;
     }
@@ -131,6 +160,15 @@ public class SoundCloudApiClient implements NowPlayingProviderClient, RecentPlay
                 track.title(),
                 null,
                 Long.toString(track.id()),
-                track.user() == null ? null : Long.toString(track.user().id()));
+                track.user() == null ? null : Long.toString(track.user().id()),
+                originalArtworkUrl(track));
+    }
+
+    /** Swap the "-large" suffix for "-original": the un-resized file the uploader actually uploaded (spec 9). */
+    private String originalArtworkUrl(SoundCloudDtos.Track track) {
+        if (track == null || track.artworkUrl() == null) {
+            return null;
+        }
+        return track.artworkUrl().replace("-large", "-original");
     }
 }

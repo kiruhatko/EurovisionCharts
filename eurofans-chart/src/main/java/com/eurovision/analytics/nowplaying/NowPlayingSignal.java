@@ -6,6 +6,7 @@ public record NowPlayingSignal(
         String rawTrackName,
         String rawAlbumName,
         String providerTrackId,
-        String providerArtistId
+        String providerArtistId,
+        String nativeArtworkUrl
 ) {
 }

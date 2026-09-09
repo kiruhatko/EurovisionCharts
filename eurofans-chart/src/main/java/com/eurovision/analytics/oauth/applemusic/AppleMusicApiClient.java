@@ -46,6 +46,30 @@ public class AppleMusicApiClient implements NowPlayingProviderClient, RecentPlay
         return Provider.APPLE_MUSIC;
     }
 
+    /**
+     * Catalog artist lookup by storefront + numeric id, used only for admin
+     * {@code /addartist} import. Requires only the developer token (no
+     * end-user Music-User-Token), so it never depends on an admin having
+     * connected their own Apple Music account.
+     */
+    public Optional<AppleMusicDtos.ArtistResource> lookupCatalogArtist(String storefront, String artistId) {
+        try {
+            AppleMusicDtos.ArtistsResponse response = appleMusicApiWebClient.get()
+                    .uri("/v1/catalog/{storefront}/artists/{id}", storefront, artistId)
+                    .headers(h -> h.setBearerAuth(developerTokenService.currentToken()))
+                    .retrieve()
+                    .bodyToMono(AppleMusicDtos.ArtistsResponse.class)
+                    .block();
+            if (response == null || response.data() == null || response.data().isEmpty()) {
+                return Optional.empty();
+            }
+            return Optional.of(response.data().get(0));
+        } catch (Exception e) {
+            log.warn("Apple Music catalog artist lookup failed for storefront={} id={}: {}", storefront, artistId, e.getMessage());
+            return Optional.empty();
+        }
+    }
+
     @Override
     public Optional<NowPlayingSignal> fetchNowPlaying(ConnectedAccount account) {
         // No third-party "now playing" endpoint exists for Apple Music; never guess.
@@ -80,7 +104,8 @@ public class AppleMusicApiClient implements NowPlayingProviderClient, RecentPlay
                         song.id(),
                         null,
                         null,
-                        true));
+                        true,
+                        song.attributes().artwork() == null ? null : song.attributes().artwork().resolvedUrl()));
             }
         } catch (Exception e) {
             log.warn("Apple Music recent-tracks fetch failed for connectedAccountId={}: {} "
