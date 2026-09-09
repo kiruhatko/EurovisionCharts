@@ -1,0 +1,13 @@
+package com.eurovision.analytics.security;
+
+public enum SecurityEventType {
+    UNAUTHORIZED_GROUP,
+    INVALID_BINDING,
+    SIGNATURE_FAILURE,
+    SSRF_BLOCKED,
+    OAUTH_STATE_INVALID,
+    OAUTH_TOKEN_EXCHANGE_FAILED,
+    OAUTH_CALLBACK_ABUSE,
+    ADMIN_ACTION_DENIED,
+    RATE_LIMIT_EXCEEDED
+}

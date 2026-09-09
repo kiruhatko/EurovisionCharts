@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Connect Apple Music</title>
+<meta name="apple-music-developer-token" content="">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 420px; margin: 64px auto; text-align: center; color: #1d1d1f; }
+  button { background: #fa233b; color: white; border: none; padding: 14px 28px; border-radius: 999px; font-size: 16px; cursor: pointer; }
+  button:disabled { background: #ccc; cursor: default; }
+  #status { margin-top: 24px; font-size: 14px; color: #555; }
+</style>
+</head>
+<body>
+  <h2>Eurofans UA Chart</h2>
+  <p>Connect your Apple Music account to track your Eurovision listening.</p>
+  <button id="connect-btn" disabled>Loading…</button>
+  <div id="status"></div>
+
+  <script src="https://js-cdn.music.apple.com/musickit/v3/musickit.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const state = params.get('state');
+      const statusEl = document.getElementById('status');
+      const button = document.getElementById('connect-btn');
+
+      if (!state) {
+        statusEl.textContent = 'Missing authorization state. Please restart with /applemusic in Telegram.';
+        return;
+      }
+
+      let musicKitReady = false;
+
+      function callback(name) {
+        return function (event) {
+          console.log(name, event);
+        };
+      }
+
+      document.addEventListener('musickitloaded', async function () {
+        try {
+          const tokenResponse = await fetch('/oauth/apple-music/developer-token?state=' + encodeURIComponent(state));
+          if (!tokenResponse.ok) {
+            statusEl.textContent = 'This connection link has expired. Please restart with /applemusic in Telegram.';
+            return;
+          }
+          const { developerToken } = await tokenResponse.json();
+
+          await MusicKit.configure({
+            developerToken: developerToken,
+            app: { name: 'Eurofans UA Chart', build: '1.0.0' }
+          });
+
+          musicKitReady = true;
+          button.disabled = false;
+          button.textContent = 'Connect Apple Music';
+        } catch (e) {
+          statusEl.textContent = 'Could not initialize Apple Music. Please try again later.';
+        }
+      });
+
+      button.addEventListener('click', async function () {
+        if (!musicKitReady) return;
+        button.disabled = true;
+        button.textContent = 'Connecting…';
+        try {
+          const music = MusicKit.getInstance();
+          const musicUserToken = await music.authorize();
+
+          const callbackResponse = await fetch('/oauth/apple-music/callback', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ state: state, musicUserToken: musicUserToken })
+          });
+
+          if (callbackResponse.ok) {
+            statusEl.textContent = 'Connected! You can close this window and return to Telegram.';
+            button.style.display = 'none';
+          } else {
+            statusEl.textContent = 'Connection failed. Please restart with /applemusic in Telegram.';
+            button.disabled = false;
+            button.textContent = 'Try again';
+          }
+        } catch (e) {
+          statusEl.textContent = 'Authorization was cancelled or failed.';
+          button.disabled = false;
+          button.textContent = 'Try again';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
