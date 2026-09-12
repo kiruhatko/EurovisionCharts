@@ -34,7 +34,9 @@ public class EurovisionArtist {
     @Column(name = "normalized_name", nullable = false)
     private String normalizedName;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    // EAGER: TrackCommand/LastCommand read .getCountry() outside any open transaction
+    // (same LazyInitializationException class of bug as the other *_artist relations).
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "country_id")
     private EurovisionCountry country;
 

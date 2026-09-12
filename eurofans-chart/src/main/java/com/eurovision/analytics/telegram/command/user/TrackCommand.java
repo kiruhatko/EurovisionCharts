@@ -7,6 +7,7 @@ import com.eurovision.analytics.nowplaying.NowPlayingResult;
 import com.eurovision.analytics.telegram.Command;
 import com.eurovision.analytics.telegram.CommandContext;
 import com.eurovision.analytics.telegram.MessageSender;
+import com.eurovision.analytics.util.FlagEmoji;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
@@ -45,7 +46,7 @@ public class TrackCommand implements Command {
                 String caption = "🎧 <b>ЗАРАЗ ГРАЄ</b> (джерело: " + displayName(track.provider()) + ")\n"
                         + escape(track.signal().rawArtistName()) + " / " + escape(track.signal().rawTrackName())
                         + (track.signal().rawAlbumName() != null ? " / " + escape(track.signal().rawAlbumName()) : "")
-                        + "\n🇪🇺 " + escape(track.artist().getCanonicalName())
+                        + "\n" + FlagEmoji.forCountry(track.artist().getCountry()) + " " + escape(track.artist().getCanonicalName())
                         + "\n#Eurovision #" + track.artist().getCanonicalName().replaceAll("\\s+", "");
 
                 Optional<ArtworkCache> artwork = artworkResolutionService.resolve(

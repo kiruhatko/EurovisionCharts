@@ -6,6 +6,7 @@ import com.eurovision.analytics.nowplaying.NowPlayingResolver;
 import com.eurovision.analytics.telegram.Command;
 import com.eurovision.analytics.telegram.CommandContext;
 import com.eurovision.analytics.telegram.MessageSender;
+import com.eurovision.analytics.util.FlagEmoji;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -35,7 +36,8 @@ public class LastCommand implements Command {
                 String when = event.getPlayedAtUtc() == null
                         ? "час невідомий"
                         : event.getPlayedAtUtc().toString();
-                messageSender.send(ctx.chatId(), "🇪🇺 <b>" + event.getCanonicalArtist().getCanonicalName() + "</b>\n"
+                messageSender.send(ctx.chatId(), FlagEmoji.forCountry(event.getCanonicalArtist().getCountry())
+                        + " <b>" + event.getCanonicalArtist().getCanonicalName() + "</b>\n"
                         + event.getRawTrackName() + "\n"
                         + "Джерело: " + event.getProvider() + " • " + when);
             }
