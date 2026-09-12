@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EUROFANS CHART — chart-studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#05030f;color:#fff;font-family:Manrope,'Segoe UI',Helvetica,Arial,sans-serif}
+  .toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 24px}
+  .toolbar-left{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .toolbar select{background:#150742;color:#fff;border:1px solid rgba(150,190,255,.4);border-radius:10px;padding:10px 14px;font-family:inherit;font-size:14px;font-weight:600}
+  .toolbar .status{color:#8b7fc0;font-size:13px;letter-spacing:.08em}
+  .btn-export{border:1px solid rgba(255,212,0,.5);background:linear-gradient(180deg,rgba(255,212,0,.22),rgba(255,212,0,.07));color:#ffe36b;font-family:inherit;font-size:15px;font-weight:800;letter-spacing:.06em;padding:12px 22px;border-radius:999px;cursor:pointer}
+  .btn-export:hover{background:linear-gradient(180deg,rgba(255,212,0,.34),rgba(255,212,0,.13))}
+  .btn-export:disabled{opacity:.6;cursor:progress}
+  .stage-wrap{width:1920px;max-width:100%;overflow:hidden;position:relative;margin:0 auto}
+  .stage{width:1920px;height:1080px;position:relative;overflow:hidden;background:#0a0424;font-weight:500;transform-origin:top left}
+  .layer{position:absolute;inset:0}
+  .content{position:relative;z-index:2;height:100%;box-sizing:border-box;padding:42px 52px 34px;display:flex;flex-direction:column}
+  .header-row{display:flex;align-items:flex-start;justify-content:space-between;gap:36px}
+  .title-wrap{display:flex;flex-direction:column;gap:14px}
+  .title-line{display:flex;align-items:center;gap:18px}
+  .title-line h1{margin:0;font-family:Unbounded,Manrope,sans-serif;font-weight:900;font-size:76px;line-height:.9;letter-spacing:-.02em;color:#fff;text-shadow:0 6px 28px rgba(120,160,255,.35)}
+  .title-line h1.accent{color:#ffd400;text-shadow:0 6px 28px rgba(255,212,0,.3)}
+  .flag-hero{flex:0 0 auto;width:74px;height:74px;background-size:contain;background-position:center;background-repeat:no-repeat;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
+  .badge-row{display:flex;align-items:center;gap:16px}
+  .badge-top{display:flex;align-items:center;justify-content:center;height:44px;box-sizing:border-box;white-space:nowrap;font-size:22px;font-weight:800;letter-spacing:.2em;text-indent:.2em;text-transform:uppercase;color:#fff;background:linear-gradient(120deg,#2b78ff,#5fc8ff);padding:0 20px;border-radius:999px;box-shadow:0 8px 26px rgba(43,120,255,.45)}
+  .period-label{white-space:nowrap;font-size:23px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.86)}
+  .stats-grid{flex:0 0 auto;display:grid;grid-template-columns:repeat(2,auto);gap:12px}
+  .stat-chip{display:inline-block;white-space:nowrap;text-align:center;font-size:18px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:10px 20px;border-radius:12px;box-shadow:0 10px 26px rgba(4,2,18,.45), inset 0 1px 0 rgba(255,255,255,.35)}
+  .main-grid{flex:1;min-height:0;display:grid;grid-template-columns:1.3fr 1fr;gap:24px;padding-top:26px}
+  .left-col{display:flex;flex-direction:column;gap:18px;min-height:0}
+  .hero-card{position:relative;flex:1.92;min-height:0;display:flex;align-items:center;justify-content:flex-start;gap:34px;padding:26px;border-radius:30px;overflow:hidden;border:1px solid rgba(150,190,255,.4);background:linear-gradient(145deg, rgba(255,255,255,.16) 0%, rgba(124,58,255,.2) 45%, rgba(43,120,255,.16) 100%);box-shadow:0 30px 70px rgba(4,2,18,.6), inset 0 1px 0 rgba(255,255,255,.42)}
+  .hero-sheen{position:absolute;top:0;left:0;right:0;height:42%;background:linear-gradient(168deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,0) 76%);pointer-events:none}
+  .hero-cover{position:relative;flex:0 0 372px;width:372px;min-width:372px;height:372px;box-sizing:border-box;border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.4);background:linear-gradient(140deg,#2b78ff 0%,#7c3aff 48%,#ffd400 120%);box-shadow:0 20px 46px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.12);background-size:cover;background-position:center}
+  .hero-info{position:relative;flex:1;min-width:0;height:372px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:16px}
+  .hero-num{display:flex;align-items:center;justify-content:center;height:56px;box-sizing:border-box;white-space:nowrap;font-family:Unbounded,Manrope,sans-serif;font-weight:900;font-size:28px;line-height:1;letter-spacing:.01em;color:#2b1400;background:linear-gradient(140deg,#ffe14d,#ffb800);padding:0 24px;border-radius:14px;box-shadow:0 10px 28px rgba(255,200,0,.4)}
+  .hero-move{display:flex;align-items:center;justify-content:center;height:56px;box-sizing:border-box;white-space:nowrap;font-size:20px;font-weight:800;line-height:1;letter-spacing:.18em;text-indent:.18em;text-transform:uppercase;padding:0 22px;border-radius:999px;background:rgba(10,4,30,.66)}
+  .hero-title{font-family:Unbounded,Manrope,sans-serif;font-weight:900;letter-spacing:-.02em;line-height:1.06;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.5);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;word-break:break-word}
+  .hero-artist-row{display:flex;align-items:center;gap:12px;width:100%;min-width:0}
+  .hero-artist{font-family:Commissioner,Manrope,sans-serif;font-weight:600;letter-spacing:.03em;color:#ffe36b;flex:1 1 auto;min-width:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;word-break:break-word}
+  .hero-meta{display:flex;align-items:center;gap:16px;padding-top:2px}
+  .bars{display:flex;align-items:flex-end;gap:4px;padding:0 4px}
+  .bars > div{flex:1;border-radius:3px}
+  .hero-bars{width:118px;height:46px}
+  .hero-weeks{white-space:nowrap;font-size:18px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:10px 20px;border-radius:999px}
+  .hero-plays{display:flex;align-items:center;gap:10px;white-space:nowrap;font-size:18px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#2b1400;background:linear-gradient(140deg,#ffe14d,#ffb800);padding:10px 20px;border-radius:999px}
+  .podium-grid{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{position:relative;overflow:hidden;display:flex;align-items:center;border-radius:24px;border:1px solid rgba(160,180,255,.22);background:linear-gradient(118deg, rgba(255,255,255,.14) 0%, rgba(124,58,255,.16) 52%, rgba(43,120,255,.12) 100%);box-shadow:0 14px 34px rgba(4,2,18,.4), inset 0 1px 0 rgba(255,255,255,.3)}
+  .card-edge{position:absolute;left:0;top:0;bottom:0;width:7px}
+  .podium-card{gap:16px;padding:0 20px 0 22px}
+  .podium-num{flex:0 0 86px;width:86px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;height:132px;font-family:Unbounded,Manrope,sans-serif;font-weight:900;font-size:48px;line-height:1;letter-spacing:-.04em;color:rgba(255,255,255,.5)}
+  .podium-cover{position:relative;flex:0 0 132px;width:132px;min-width:132px;height:132px;align-self:center;box-sizing:border-box;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.3);background:linear-gradient(140deg,#2b78ff,#3d1596);box-shadow:0 12px 26px rgba(0,0,0,.45);background-size:cover;background-position:center}
+  .podium-info{flex:1;min-width:0;height:132px;display:flex;flex-direction:column;justify-content:center;gap:5px}
+  .podium-title{font-weight:800;color:#fff;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;word-break:break-word}
+  .podium-artist-row{display:flex;align-items:center;gap:9px;min-width:0}
+  .flag-chip{flex:0 0 auto;background-size:contain;background-position:center;background-repeat:no-repeat}
+  .podium-artist{font-family:Commissioner,Manrope,sans-serif;font-weight:600;letter-spacing:.03em;color:rgba(220,226,255,.86);flex:1 1 auto;min-width:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;word-break:break-word}
+  .podium-sub{display:flex;align-items:center;gap:10px;padding-top:1px}
+  .move-label{flex:0 0 auto;white-space:nowrap;font-size:15px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+  .plays-label{flex:0 0 auto;white-space:nowrap;font-size:15px;font-weight:700;letter-spacing:.04em;color:#ffe36b}
+  .podium-bars{flex:0 0 56px;width:56px;height:20px}
+  .right-col{display:flex;flex-direction:column;gap:11px;min-height:0}
+  .row-card{gap:18px;padding:0 20px;flex:1;min-height:0}
+  .row-num{flex:0 0 72px;width:72px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;height:68px;font-family:Unbounded,Manrope,sans-serif;font-weight:900;font-size:38px;line-height:1;letter-spacing:-.04em;color:rgba(255,255,255,.55)}
+  .row-cover{position:relative;flex:0 0 68px;width:68px;min-width:68px;height:68px;align-self:center;box-sizing:border-box;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.28);background:linear-gradient(140deg,#2b78ff,#3d1596);background-size:cover;background-position:center}
+  .row-info{flex:1;min-width:0;min-height:68px;display:flex;flex-direction:column;justify-content:center;gap:4px;overflow:hidden}
+  .row-title{font-weight:800;color:#fff;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;word-break:break-word}
+  .row-artist-row{display:flex;align-items:center;gap:8px;min-width:0}
+  .row-artist{font-family:Commissioner,Manrope,sans-serif;font-weight:600;letter-spacing:.03em;color:rgba(220,226,255,.86);flex:1 1 auto;min-width:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;word-break:break-word}
+  .row-move-col{flex:0 0 116px;width:116px;height:68px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:4px}
+  .row-plays{white-space:nowrap;font-size:15px;font-weight:700;letter-spacing:.05em;color:rgba(255,227,107,.92)}
+  .row-bars{flex:0 0 auto;align-self:center;width:66px;height:26px}
+  .footer{display:flex;align-items:center;gap:26px;margin-top:18px;font-size:18px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.56)}
+  .footer .rule{flex:1;height:1px;background:currentColor;opacity:.22}
+  .footer .dot{width:9px;height:9px;border-radius:50%;background:#ffd400;box-shadow:0 0 14px #ffd400;display:inline-block;margin-right:12px}
+  .empty-state{flex:1;display:flex;align-items:center;justify-content:center;font-size:22px;color:rgba(255,255,255,.6)}
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="toolbar-left">
+    <select id="weekSelect"></select>
+    <span class="status" id="statusLabel">оновлення…</span>
+  </div>
+  <button type="button" class="btn-export" id="exportBtn">Завантажити PNG 3840×2160</button>
+</div>
+
+<div class="stage-wrap" id="fit">
+  <div class="stage" id="stage">
+    <div class="layer" style="z-index:0;background:radial-gradient(120% 100% at 12% 0%, #3d1596 0%, #24096b 34%, #150742 62%, #0a0424 100%)"></div>
+    <div class="layer" style="z-index:0;background:radial-gradient(85% 70% at 78% 6%, rgba(43,120,255,.5) 0%, rgba(43,120,255,0) 62%),radial-gradient(70% 60% at 96% 92%, rgba(124,58,255,.55) 0%, rgba(124,58,255,0) 60%),radial-gradient(60% 55% at 4% 88%, rgba(55,230,255,.22) 0%, rgba(55,230,255,0) 62%)"></div>
+    <div class="layer" style="z-index:0;left:50%;top:-360px;width:1500px;height:1500px;margin-left:-750px;position:absolute;inset:auto;background:conic-gradient(from 200deg at 50% 50%, rgba(255,255,255,.11) 0deg, rgba(255,255,255,0) 12deg, rgba(255,255,255,0) 26deg, rgba(255,255,255,.08) 38deg, rgba(255,255,255,0) 52deg, rgba(255,255,255,0) 74deg, rgba(255,255,255,.1) 86deg, rgba(255,255,255,0) 100deg, rgba(255,255,255,0) 360deg);filter:blur(2px);opacity:.7"></div>
+    <div class="layer" style="z-index:1;background-image:radial-gradient(rgba(255,255,255,.1) 1.2px, rgba(255,255,255,0) 1.3px);background-size:38px 38px;opacity:.4"></div>
+    <div class="layer" style="z-index:1;background:linear-gradient(180deg, rgba(10,4,36,.16) 0%, rgba(10,4,36,.5) 70%, rgba(6,2,20,.84) 100%)"></div>
+
+    <div class="content">
+      <div class="header-row">
+        <div class="title-wrap">
+          <div class="title-line">
+            <h1>EUROFANS</h1>
+            <div class="flag-hero" id="heroFlag"></div>
+            <h1 class="accent">CHART</h1>
+          </div>
+          <div class="badge-row">
+            <span class="badge-top">TOP 10</span>
+            <span class="period-label" id="periodLabel">—</span>
+          </div>
+        </div>
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+
+      <div class="main-grid" id="mainGrid">
+        <div class="left-col">
+          <div id="heroSlot"></div>
+          <div class="podium-grid" id="podiumSlot"></div>
+        </div>
+        <div class="right-col" id="restSlot"></div>
+      </div>
+
+      <div class="footer">
+        <span><span class="dot"></span>@eurofansua · chart-studio</span>
+        <span class="rule"></span>
+        <span id="footerRight">оновлюється автоматично</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const ACCENTS = [
+  ["#ffd400", "#ff9a2e"], ["#5fc8ff", "#2b78ff"], ["#ff5fb0", "#a12bff"],
+  ["#37e6ff", "#2b78ff"], ["#ff7a9c", "#ff3d6e"], ["#7ef0a8", "#2bd67b"],
+  ["#b08cff", "#7c3aff"], ["#ffd400", "#ffa62b"], ["#5fc8ff", "#7c3aff"],
+  ["#ff5fb0", "#ff3d6e"]
+];
+const DEFAULT_FLAG = "/flags/_default.png";
+const REFRESH_MS = 20000;
+
+let lastData = null;
+let refreshTimer = null;
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function moveInfo(m) {
+  if (m === "new") return { label: "NEW", color: "#ffd400" };
+  if (!m) return { label: "= без змін", color: "rgba(255,255,255,.62)" };
+  if (m > 0) return { label: "▲ " + m, color: "#7ef0a8" };
+  return { label: "▼ " + Math.abs(m), color: "#ff7a9c" };
+}
+
+function weekWord(n) {
+  const d = n % 10, dd = n % 100;
+  if (d === 1 && dd !== 11) return "тиждень";
+  if (d >= 2 && d <= 4 && (dd < 12 || dd > 14)) return "тижні";
+  return "тижнів";
+}
+
+function playsLabel(n) {
+  if (n >= 1e6) return (n / 1e6).toFixed(1).replace(".", ",").replace(",0", "") + " млн";
+  if (n >= 1e3) return Math.round(n / 1e3) + " тис.";
+  return String(n);
+}
+
+function titleSize(text, tier) {
+  const n = (text || "").length;
+  const steps = {
+    hero: [[14, 66], [22, 58], [32, 50], [44, 40], [Infinity, 32]],
+    podium: [[16, 25], [26, 22], [38, 19], [Infinity, 17]],
+    row: [[18, 23], [28, 21], [40, 19], [Infinity, 17]]
+  }[tier];
+  for (const [limit, size] of steps) if (n <= limit) return size;
+  return steps[steps.length - 1][1];
+}
+
+function artistSize(text, tier) {
+  const n = (text || "").length;
+  const steps = {
+    hero: [[22, 32], [36, 26], [56, 22], [Infinity, 19]],
+    podium: [[20, 20], [34, 18], [Infinity, 15]],
+    row: [[24, 19], [40, 17], [Infinity, 16]]
+  }[tier];
+  return steps.find(([l]) => n <= l)[1];
+}
+
+function barsHtml(trend, radius) {
+  const max = Math.max(1, ...trend);
+  return trend.map(v => {
+    const h = v === 0 ? 6 : Math.max(14, Math.round((v / max) * 100));
+    return '<div style="height:' + h + '%;border-radius:' + radius + 'px;background:linear-gradient(180deg,#fff,#7c3aff);opacity:.85"></div>';
+  }).join("");
+}
+
+function coverStyle(url) {
+  return url ? ('background-image:url("' + url + '")') : "";
+}
+
+function flagStyle(url, size) {
+  return 'width:' + size + 'px;height:' + size + 'px;background-image:url("' + esc(url || DEFAULT_FLAG) + '")';
+}
+
+function renderHero(e) {
+  const mv = moveInfo(e.move);
+  document.getElementById("heroSlot").innerHTML = `
+    <div class="hero-card">
+      <div class="hero-sheen"></div>
+      <div class="hero-cover" style="${coverStyle(e.coverUrl)}"></div>
+      <div class="hero-info">
+        <div class="badge-row">
+          <span class="hero-num">№1</span>
+          <span class="hero-move" style="color:${mv.color};border:1px solid ${mv.color}66">${mv.label}</span>
+        </div>
+        <div class="hero-title" style="font-size:${titleSize(e.artistName, "hero")}px">${esc(e.artistName)}</div>
+        <div class="hero-artist-row">
+          <span class="flag-chip" style="${flagStyle(e.flagUrl, 30)}"></span>
+          <div class="hero-artist" style="font-size:${artistSize(e.countryName || "", "hero")}px">${esc(e.countryName || "")}</div>
+        </div>
+        <div class="hero-meta">
+          <span class="bars hero-bars">${barsHtml(e.dailyTrend, 3)}</span>
+          <span class="hero-weeks">${e.weeksInChart} ${weekWord(e.weeksInChart)} у чарті</span>
+          <span class="hero-plays">${esc(playsLabel(e.plays))}</span>
+        </div>
+      </div>
+    </div>`;
+  document.getElementById("heroFlag").style.backgroundImage = 'url("' + esc(e.flagUrl || DEFAULT_FLAG) + '")';
+}
+
+function podiumCard(e, i) {
+  const mv = moveInfo(e.move);
+  const [c1, c2] = ACCENTS[i % ACCENTS.length];
+  return `
+    <div class="card podium-card">
+      <div class="card-edge" style="background:linear-gradient(180deg,${c1},${c2});box-shadow:0 0 20px ${c1}"></div>
+      <div class="podium-num">${String(e.rank).padStart(2, "0")}</div>
+      <div class="podium-cover" style="${coverStyle(e.coverUrl)}"></div>
+      <div class="podium-info">
+        <div class="podium-title" style="font-size:${titleSize(e.artistName, "podium")}px">${esc(e.artistName)}</div>
+        <div class="podium-artist-row">
+          <span class="flag-chip" style="${flagStyle(e.flagUrl, 20)}"></span>
+          <div class="podium-artist" style="font-size:${artistSize(e.countryName || "", "podium")}px">${esc(e.countryName || "")}</div>
+        </div>
+        <div class="podium-sub">
+          <span class="move-label" style="color:${mv.color}">${mv.label}</span>
+          <span class="plays-label">${esc(playsLabel(e.plays))}</span>
+          <span class="bars podium-bars">${barsHtml(e.dailyTrend, 2)}</span>
+        </div>
+      </div>
+    </div>`;
+}
+
+function rowCard(e, i) {
+  const mv = moveInfo(e.move);
+  const [c1, c2] = ACCENTS[i % ACCENTS.length];
+  return `
+    <div class="card row-card">
+      <div class="card-edge" style="background:linear-gradient(180deg,${c1},${c2});box-shadow:0 0 20px ${c1}"></div>
+      <div class="row-num">${String(e.rank).padStart(2, "0")}</div>
+      <div class="row-cover" style="${coverStyle(e.coverUrl)}"></div>
+      <div class="row-info">
+        <div class="row-title" style="font-size:${titleSize(e.artistName, "row")}px">${esc(e.artistName)}</div>
+        <div class="row-artist-row">
+          <span class="flag-chip" style="${flagStyle(e.flagUrl, 18)}"></span>
+          <div class="row-artist" style="font-size:${artistSize(e.countryName || "", "row")}px">${esc(e.countryName || "")}</div>
+        </div>
+      </div>
+      <div class="row-move-col">
+        <div class="move-label" style="color:${mv.color}">${mv.label}</div>
+        <div class="row-plays">${esc(playsLabel(e.plays))}</div>
+      </div>
+      <span class="bars row-bars">${barsHtml(e.dailyTrend, 2)}</span>
+    </div>`;
+}
+
+function render(data) {
+  lastData = data;
+  document.getElementById("periodLabel").textContent = data.periodLabel;
+  const entries = data.entries || [];
+  const stats = [
+    entries.filter(e => e.move === "new").length + " нових",
+    entries.filter(e => typeof e.move === "number" && e.move > 0).length + " піднялись",
+    entries.filter(e => typeof e.move === "number" && e.move < 0).length + " спустились",
+    entries.filter(e => e.move === 0).length + " без змін"
+  ];
+  const statColors = [["#ffe14d", "#ffb800", "#2b1400"], ["#7ef0a8", "#23b7b0", "#04241c"], ["#ff7ab0", "#e0306e", "#2b0713"], ["#b08cff", "#5c34c8", "#ffffff"]];
+  document.getElementById("statsGrid").innerHTML = stats.map((label, i) =>
+    `<div class="stat-chip" style="background:linear-gradient(130deg,${statColors[i][0]},${statColors[i][1]});color:${statColors[i][2]}">${label}</div>`
+  ).join("");
+
+  if (entries.length === 0) {
+    document.getElementById("heroSlot").innerHTML = "";
+    document.getElementById("podiumSlot").innerHTML = "";
+    document.getElementById("restSlot").innerHTML = '<div class="empty-state">Даних за цей тиждень ще немає</div>';
+    return;
+  }
+
+  renderHero(entries[0]);
+  document.getElementById("podiumSlot").innerHTML = entries.slice(1, 3).map((e, i) => podiumCard(e, i + 1)).join("");
+  document.getElementById("restSlot").innerHTML = entries.slice(3).map((e, i) => rowCard(e, i + 3)).join("");
+}
+
+async function loadChart(weekOffset) {
+  document.getElementById("statusLabel").textContent = "оновлення…";
+  try {
+    const res = await fetch("/api/chart-studio/chart?weekOffset=" + weekOffset, { credentials: "include" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    render(data);
+    populateWeekSelect(data);
+    document.getElementById("statusLabel").textContent = "оновлено " + new Date().toLocaleTimeString("uk-UA");
+  } catch (e) {
+    document.getElementById("statusLabel").textContent = "помилка оновлення";
+    console.error(e);
+  }
+}
+
+function populateWeekSelect(data) {
+  const select = document.getElementById("weekSelect");
+  if (select.dataset.filled === "1") {
+    select.value = String(data.weekOffset);
+    return;
+  }
+  select.innerHTML = (data.availableWeeks || []).map(w =>
+    `<option value="${w.weekOffset}">${esc(w.label)}${w.weekOffset === 0 ? " (поточний)" : ""}</option>`
+  ).join("");
+  select.value = String(data.weekOffset);
+  select.dataset.filled = "1";
+}
+
+document.getElementById("weekSelect").addEventListener("change", (ev) => {
+  clearInterval(refreshTimer);
+  const offset = Number(ev.target.value);
+  loadChart(offset);
+  if (offset === 0) refreshTimer = setInterval(() => loadChart(0), REFRESH_MS);
+});
+
+function refit() {
+  const fit = document.getElementById("fit"), stage = document.getElementById("stage");
+  const w = fit.clientWidth;
+  if (!w) return;
+  const s = Math.min(1, w / 1920);
+  stage.style.transform = "scale(" + s + ")";
+  fit.style.height = (1080 * s) + "px";
+}
+window.addEventListener("resize", refit);
+
+// --- PNG export: covers are cross-origin CDN URLs, so they're inlined as data: URIs
+// first (same technique as embedding webfonts below) to avoid a tainted canvas. ---
+
+let fontCssPromise = null;
+async function embeddedFontCss() {
+  if (fontCssPromise) return fontCssPromise;
+  fontCssPromise = (async () => {
+    const href = "https://fonts.googleapis.com/css2?family=Commissioner:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@700;800;900&display=swap";
+    try {
+      let css = await (await fetch(href)).text();
+      const urls = Array.from(new Set((css.match(/https:\/\/fonts\.gstatic\.com\/[^)]+/g) || [])));
+      const pairs = await Promise.all(urls.map(async (u) => {
+        try {
+          const blob = await (await fetch(u)).blob();
+          const dataUrl = await new Promise((res) => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(blob); });
+          return [u, dataUrl];
+        } catch (e) { return null; }
+      }));
+      pairs.filter(Boolean).forEach(([u, d]) => { css = css.split(u).join(d); });
+      return css;
+    } catch (e) {
+      console.warn("font embed unavailable", e);
+      return "";
+    }
+  })();
+  return fontCssPromise;
+}
+
+async function toDataUrl(url) {
+  if (!url) return null;
+  try {
+    const blob = await (await fetch(url, { mode: "cors" })).blob();
+    return await new Promise((res) => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(blob); });
+  } catch (e) {
+    console.warn("cover embed failed (CORS?)", url, e);
+    return null;
+  }
+}
+
+async function exportPng() {
+  const btn = document.getElementById("exportBtn");
+  if (!lastData || btn.disabled) return;
+  btn.disabled = true;
+  btn.textContent = "Генерую…";
+  const original = lastData;
+  try {
+    const entries = original.entries || [];
+    const covers = await Promise.all(entries.map(e => toDataUrl(e.coverUrl)));
+    const flags = await Promise.all(entries.map(e => toDataUrl(e.flagUrl || DEFAULT_FLAG)));
+    const patched = entries.map((e, i) => Object.assign({}, e, {
+      coverUrl: covers[i] || e.coverUrl,
+      flagUrl: flags[i] || e.flagUrl
+    }));
+
+    // Swap the live DOM to the inlined (data:) images, clone the now-taint-free
+    // stage, then immediately restore the live view to the normal network URLs.
+    render(Object.assign({}, original, { entries: patched }));
+    const clone = document.getElementById("stage").cloneNode(true);
+    clone.setAttribute("xmlns", "http://www.w3.org/1999/xhtml");
+    clone.style.transform = "none";
+    clone.style.width = "1920px";
+    clone.style.height = "1080px";
+    render(original);
+
+    const W = 1920, H = 1080, scale = 2;
+    const fontStyle = '<defs><style type="text/css"><![CDATA[' + await embeddedFontCss() + ']]></style></defs>';
+    const inner = new XMLSerializer().serializeToString(clone);
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '">' +
+      fontStyle + '<foreignObject x="0" y="0" width="' + W + '" height="' + H + '">' + inner + '</foreignObject></svg>';
+
+    if (document.fonts && document.fonts.ready) await document.fonts.ready;
+    const img = new Image();
+    await new Promise((res, rej) => {
+      img.onload = res; img.onerror = rej;
+      img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+    });
+    const canvas = document.createElement("canvas");
+    canvas.width = W * scale;
+    canvas.height = H * scale;
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#0a0424";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    const blob = await new Promise(r => canvas.toBlob(r, "image/png"));
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "eurofans-chart-" + lastData.periodLabel.replace(/[^\d.]/g, "") + "-" + canvas.width + "x" + canvas.height + ".png";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  } catch (e) {
+    console.error("export failed", e);
+    alert("Не вдалося експортувати PNG: " + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Завантажити PNG 3840×2160";
+  }
+}
+document.getElementById("exportBtn").addEventListener("click", exportPng);
+
+refit();
+loadChart(0);
+refreshTimer = setInterval(() => loadChart(0), REFRESH_MS);
+</script>
+</body>
+</html>

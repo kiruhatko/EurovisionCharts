@@ -64,6 +64,8 @@ services:
       SOUNDCLOUD_CLIENT_SECRET: ${SOUNDCLOUD_CLIENT_SECRET:-}
       SOUNDCLOUD_REDIRECT_URI: ${SOUNDCLOUD_REDIRECT_URI:-}
       LASTFM_API_KEY: ${LASTFM_API_KEY:-}
+      CHART_STUDIO_USERNAME: ${CHART_STUDIO_USERNAME:?set CHART_STUDIO_USERNAME}
+      CHART_STUDIO_PASSWORD: ${CHART_STUDIO_PASSWORD:?set CHART_STUDIO_PASSWORD}
     volumes:
       - ./deployment-binding.json:/run/secrets/deployment-binding.json:ro
     networks:

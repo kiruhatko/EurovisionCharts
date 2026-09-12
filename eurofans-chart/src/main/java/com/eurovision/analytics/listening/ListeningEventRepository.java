@@ -16,6 +16,28 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
     Optional<ListeningEvent> findFirstByUserIdAndProviderAndCanonicalArtistIdIsNotNullAndResolutionStatusOrderByPlayedAtUtcDesc(
             long userId, Provider provider, ResolutionStatus resolutionStatus);
 
+    // Chart-studio cover art: the most recent confirmed play carries the raw
+    // provider/artist/track that ArtworkResolutionService's cache is keyed by.
+    Optional<ListeningEvent> findFirstByCanonicalArtist_IdAndResolutionStatusOrderByPlayedAtUtcDesc(
+            long artistId, ResolutionStatus resolutionStatus);
+
+    // Chart-studio 7-day trend bars: one bar per calendar day in the selected window.
+    @Query(value = """
+            select cast(date_trunc('day', played_at_utc) as date) as day, count(*) as cnt
+            from listening_events
+            where canonical_artist_id = :artistId
+              and resolution_status = 'CONFIRMED'
+              and played_at_utc >= :from
+              and played_at_utc < :to
+            group by 1
+            """, nativeQuery = true)
+    List<DailyCountRow> dailyCounts(@Param("artistId") long artistId, @Param("from") Instant from, @Param("to") Instant to);
+
+    interface DailyCountRow {
+        java.time.LocalDate getDay();
+        Long getCnt();
+    }
+
     // `from`/`to` are always concrete Instants (never null) at the call site -- ALL_TIME's
     // unbounded start is passed as Instant.EPOCH -- so every comparison below is a plain
     // bind-parameter comparison. A `(:from is null or ...)` form was tried first but Postgres'

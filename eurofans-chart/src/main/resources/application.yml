@@ -73,6 +73,10 @@ security:
 app:
   public-base-url: ${PUBLIC_BASE_URL:}
 
+chart-studio:
+  username: ${CHART_STUDIO_USERNAME:}
+  password: ${CHART_STUDIO_PASSWORD:}
+
 providers:
   spotify:
     client-id: ${SPOTIFY_CLIENT_ID:}

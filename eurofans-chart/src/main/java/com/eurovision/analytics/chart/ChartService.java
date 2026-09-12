@@ -41,8 +41,19 @@ public class ChartService {
         Instant now = Instant.now();
         Instant from = orEpoch(period.windowStart(now));
         Instant previousFrom = orEpoch(period.previousWindowStart(now));
+        boolean hasPreviousWindow = period.previousWindowStart(now) != null;
+        return computeChartForWindow(from, now, previousFrom, from, hasPreviousWindow, period);
+    }
 
-        List<ListeningEventRepository.ChartAggregationRow> rows = listeningEventRepository.aggregateForPeriod(from, now);
+    /**
+     * Same ranking logic as {@link #computeChart(ChartPeriod)} but for an arbitrary,
+     * explicit window rather than one relative to "now" -- used by chart-studio to
+     * render a specific past calendar week (spec: week switcher).
+     */
+    public List<ChartEntry> computeChartForWindow(Instant from, Instant to,
+                                                   Instant previousFrom, Instant previousTo,
+                                                   boolean hasPreviousWindow, ChartPeriod period) {
+        List<ListeningEventRepository.ChartAggregationRow> rows = listeningEventRepository.aggregateForPeriod(from, to);
         if (rows.isEmpty()) {
             return List.of();
         }
@@ -62,9 +73,9 @@ public class ChartService {
                     if (artist == null) {
                         return null;
                     }
-                    long previousCount = period.previousWindowStart(now) == null
-                            ? 0L
-                            : listeningEventRepository.countForArtistInWindow(artist.getId(), previousFrom, from);
+                    long previousCount = hasPreviousWindow
+                            ? listeningEventRepository.countForArtistInWindow(artist.getId(), previousFrom, previousTo)
+                            : 0L;
                     BigDecimal growth = computeGrowthPercent(row.getListenCount(), previousCount, period);
                     return new Unranked(artist, row.getListenCount(), row.getUniqueListeners(),
                             row.getMostRecentPlayAt(), growth);
