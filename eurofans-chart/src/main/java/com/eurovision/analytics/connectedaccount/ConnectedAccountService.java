@@ -84,10 +84,16 @@ public class ConnectedAccountService {
         return true;
     }
 
+    private static final int LAST_SYNC_STATUS_MAX_LENGTH = 32;
+
     @Transactional
     public void markSyncResult(ConnectedAccount account, boolean success, String statusDetail) {
         account.setLastSyncAt(Instant.now());
-        account.setLastSyncStatus(statusDetail);
+        // last_sync_status is VARCHAR(32) -- a raw exception message easily overruns that
+        // and would otherwise fail this very update (spec: never let a status write fail).
+        account.setLastSyncStatus(statusDetail == null || statusDetail.length() <= LAST_SYNC_STATUS_MAX_LENGTH
+                ? statusDetail
+                : statusDetail.substring(0, LAST_SYNC_STATUS_MAX_LENGTH));
         if (success) {
             account.setConsecutiveFailures(0);
         } else {
