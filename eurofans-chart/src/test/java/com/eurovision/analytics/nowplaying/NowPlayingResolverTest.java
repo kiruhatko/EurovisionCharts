@@ -69,14 +69,14 @@ class NowPlayingResolverTest {
     @Test
     void spotifyActiveTakesPriorityAndNeverConsultsOthers() {
         connected(Provider.SPOTIFY, Provider.APPLE_MUSIC, Provider.SOUNDCLOUD, Provider.LASTFM);
-        NowPlayingSignal signal = new NowPlayingSignal("Jamala", "1944", "1944", "trackid", "artistid", null);
+        NowPlayingSignal signal = new NowPlayingSignal("Jamala", "1944", "1944", "trackid", "artistid", null, List.of());
         when(spotifyClient.fetchNowPlaying(any())).thenReturn(Optional.of(signal));
 
         EurovisionArtist artist = new EurovisionArtist();
         artist.setCanonicalName("Jamala");
         artist.setStatus(ArtistStatus.VERIFIED);
         artist.setActive(true);
-        when(identityResolver.resolve(Provider.SPOTIFY, "artistid", "Jamala"))
+        when(identityResolver.resolveAny(Provider.SPOTIFY, "artistid", "Jamala", List.of()))
                 .thenReturn(new IdentityResolution(artist, "EXACT_PROVIDER_ID", ResolutionStatus.CONFIRMED, "HIGH"));
 
         NowPlayingResult result = resolver().resolveNowPlaying(USER_ID);
@@ -95,9 +95,9 @@ class NowPlayingResolverTest {
     @Test
     void spotifyPlayingNonEurovisionStopsChainWithoutCheckingSoundCloud() {
         connected(Provider.SPOTIFY, Provider.SOUNDCLOUD);
-        NowPlayingSignal signal = new NowPlayingSignal("Some Random Band", "Some Song", null, "t1", "a1", null);
+        NowPlayingSignal signal = new NowPlayingSignal("Some Random Band", "Some Song", null, "t1", "a1", null, List.of());
         when(spotifyClient.fetchNowPlaying(any())).thenReturn(Optional.of(signal));
-        when(identityResolver.resolve(Provider.SPOTIFY, "a1", "Some Random Band"))
+        when(identityResolver.resolveAny(Provider.SPOTIFY, "a1", "Some Random Band", List.of()))
                 .thenReturn(IdentityResolution.unknown());
 
         NowPlayingResult result = resolver().resolveNowPlaying(USER_ID);
@@ -110,12 +110,12 @@ class NowPlayingResolverTest {
     void fallsThroughToAppleMusicWhenSpotifySilent() {
         connected(Provider.SPOTIFY, Provider.APPLE_MUSIC);
         when(spotifyClient.fetchNowPlaying(any())).thenReturn(Optional.empty());
-        NowPlayingSignal signal = new NowPlayingSignal("Kalush Orchestra", "Stefania", null, "t2", "a2", null);
+        NowPlayingSignal signal = new NowPlayingSignal("Kalush Orchestra", "Stefania", null, "t2", "a2", null, List.of());
         when(appleMusicClient.fetchNowPlaying(any())).thenReturn(Optional.of(signal));
 
         EurovisionArtist artist = new EurovisionArtist();
         artist.setCanonicalName("Kalush Orchestra");
-        when(identityResolver.resolve(Provider.APPLE_MUSIC, "a2", "Kalush Orchestra"))
+        when(identityResolver.resolveAny(Provider.APPLE_MUSIC, "a2", "Kalush Orchestra", List.of()))
                 .thenReturn(new IdentityResolution(artist, "EXACT_PROVIDER_ID", ResolutionStatus.CONFIRMED, "HIGH"));
 
         NowPlayingResult result = resolver().resolveNowPlaying(USER_ID);
