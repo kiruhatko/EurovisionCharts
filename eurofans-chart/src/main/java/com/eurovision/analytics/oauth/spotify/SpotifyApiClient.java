@@ -2,6 +2,7 @@ package com.eurovision.analytics.oauth.spotify;
 
 import com.eurovision.analytics.connectedaccount.ConnectedAccount;
 import com.eurovision.analytics.connectedaccount.Provider;
+import com.eurovision.analytics.eurovision.identity.ArtistCredit;
 import com.eurovision.analytics.listening.RecentPlay;
 import com.eurovision.analytics.listening.RecentPlayProviderClient;
 import com.eurovision.analytics.nowplaying.NowPlayingProviderClient;
@@ -125,7 +126,8 @@ public class SpotifyApiClient implements NowPlayingProviderClient, RecentPlayPro
                 track.album() == null ? null : track.album().name(),
                 track.id(),
                 primaryArtist == null ? null : primaryArtist.id(),
-                largestImage(track).map(SpotifyDtos.Image::url).orElse(null));
+                largestImage(track).map(SpotifyDtos.Image::url).orElse(null),
+                additionalArtists(track));
     }
 
     private RecentPlay toRecentPlay(SpotifyDtos.Track track, Instant playedAt) {
@@ -138,7 +140,19 @@ public class SpotifyApiClient implements NowPlayingProviderClient, RecentPlayPro
                 primaryArtist == null ? null : primaryArtist.id(),
                 playedAt,
                 false,
-                largestImage(track).map(SpotifyDtos.Image::url).orElse(null));
+                largestImage(track).map(SpotifyDtos.Image::url).orElse(null),
+                additionalArtists(track));
+    }
+
+    /** Every artist beyond the primary (index 0) -- so a feat./collab track still resolves. */
+    private List<ArtistCredit> additionalArtists(SpotifyDtos.Track track) {
+        if (track.artists() == null || track.artists().size() <= 1) {
+            return List.of();
+        }
+        return track.artists().stream()
+                .skip(1)
+                .map(a -> new ArtistCredit(a.id(), a.name()))
+                .toList();
     }
 
     /** Largest available image, i.e. the highest {@code width} Spotify returned for this track's album art. */

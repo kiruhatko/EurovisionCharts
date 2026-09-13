@@ -105,7 +105,8 @@ public class AppleMusicApiClient implements NowPlayingProviderClient, RecentPlay
                         null,
                         null,
                         true,
-                        song.attributes().artwork() == null ? null : song.attributes().artwork().resolvedUrl()));
+                        song.attributes().artwork() == null ? null : song.attributes().artwork().resolvedUrl(),
+                        List.of()));
             }
         } catch (Exception e) {
             log.warn("Apple Music recent-tracks fetch failed for connectedAccountId={}: {} "

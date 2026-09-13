@@ -91,7 +91,8 @@ public class LastFmApiClient implements NowPlayingProviderClient, RecentPlayProv
                 track.album() == null ? null : track.album().text(),
                 null,
                 track.artist() == null ? null : track.artist().mbid(),
-                track.largestImageUrl()));
+                track.largestImageUrl(),
+                List.of()));
     }
 
     @Override
@@ -118,7 +119,8 @@ public class LastFmApiClient implements NowPlayingProviderClient, RecentPlayProv
                     track.artist() == null ? null : track.artist().mbid(),
                     playedAt,
                     false,
-                    track.largestImageUrl()));
+                    track.largestImageUrl(),
+                    List.of()));
         }
         return plays;
     }

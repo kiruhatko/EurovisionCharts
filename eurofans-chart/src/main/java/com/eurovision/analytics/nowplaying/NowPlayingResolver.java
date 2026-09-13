@@ -70,8 +70,8 @@ public class NowPlayingResolver {
 
             // A signal was found: this IS the final answer, whether or not it turns out
             // to be Eurovision-relevant. We never look further down the chain from here.
-            IdentityResolution resolution = identityResolver.resolve(
-                    provider, signal.get().providerArtistId(), signal.get().rawArtistName());
+            IdentityResolution resolution = identityResolver.resolveAny(
+                    provider, signal.get().providerArtistId(), signal.get().rawArtistName(), signal.get().additionalArtists());
             if (resolution.status() == ResolutionStatus.CONFIRMED) {
                 return new NowPlayingResult.EurovisionTrack(provider, signal.get(), resolution.canonicalArtist());
             }

@@ -146,7 +146,8 @@ public class SoundCloudApiClient implements NowPlayingProviderClient, RecentPlay
                     entry.track().user() == null ? null : Long.toString(entry.track().user().id()),
                     playedAt,
                     false,
-                    originalArtworkUrl(entry.track())));
+                    originalArtworkUrl(entry.track()),
+                    List.of()));
         }
         return plays;
     }
@@ -161,7 +162,8 @@ public class SoundCloudApiClient implements NowPlayingProviderClient, RecentPlay
                 null,
                 Long.toString(track.id()),
                 track.user() == null ? null : Long.toString(track.user().id()),
-                originalArtworkUrl(track));
+                originalArtworkUrl(track),
+                List.of());
     }
 
     /** Swap the "-large" suffix for "-original": the un-resized file the uploader actually uploaded (spec 9). */

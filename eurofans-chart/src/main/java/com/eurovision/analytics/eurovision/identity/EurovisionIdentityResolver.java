@@ -39,6 +39,30 @@ public class EurovisionIdentityResolver {
         this.unresolvedArtistQueueService = unresolvedArtistQueueService;
     }
 
+    /**
+     * Same as {@link #resolve} but also checks every other artist credited on the
+     * track (feat./collab) for an exact provider-ID match before falling back to
+     * the primary artist's name-based matching -- so a collab track resolves as
+     * long as ANY credited artist is registered, never by guessing which one.
+     */
+    public IdentityResolution resolveAny(Provider provider, String primaryProviderArtistId, String primaryRawArtistName,
+                                          List<ArtistCredit> additionalArtists) {
+        ExternalIdProvider externalIdProvider = toExternalIdProvider(provider);
+        for (ArtistCredit credit : additionalArtists) {
+            if (credit.providerArtistId() == null || credit.providerArtistId().isBlank()) {
+                continue;
+            }
+            Optional<EurovisionArtist> exact = externalIdRepository
+                    .findByProviderAndExternalId(externalIdProvider, credit.providerArtistId())
+                    .map(EurovisionArtistExternalId::getArtist)
+                    .filter(this::isChartEligible);
+            if (exact.isPresent()) {
+                return new IdentityResolution(exact.get(), "EXACT_PROVIDER_ID_FEATURED", ResolutionStatus.CONFIRMED, "HIGH");
+            }
+        }
+        return resolve(provider, primaryProviderArtistId, primaryRawArtistName);
+    }
+
     public IdentityResolution resolve(Provider provider, String providerArtistId, String rawArtistName) {
         ExternalIdProvider externalIdProvider = toExternalIdProvider(provider);
 
