@@ -72,6 +72,13 @@ services:
       - internal
     ports:
       - "8080:8080"
+    # Explicit public DNS: a Windows-side antivirus/parental-control DNS filter can
+    # resolve api.telegram.org to a sinkhole (127.0.0.2), which the container would
+    # otherwise inherit from the host. This has recurred across sessions, so it's
+    # pinned here rather than relying on host DNS being clean each time.
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
 
 networks:
   internal:
