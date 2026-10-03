@@ -80,9 +80,28 @@ services:
       - 1.1.1.1
       - 8.8.8.8
 
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      - app
+    environment:
+      PUBLIC_DOMAIN: ${PUBLIC_DOMAIN:?set PUBLIC_DOMAIN}
+    networks:
+      - internal
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
 networks:
   internal:
     driver: bridge
 
 volumes:
   postgres_data:
+  caddy_data:
+  caddy_config:
