@@ -50,7 +50,12 @@ public class ReloadArtistsCommand implements Command {
             StringBuilder sb = new StringBuilder("Імпорт завершено.\n")
                     .append("Створено артистів: ").append(summary.artistsCreated()).append('\n')
                     .append("Оновлено артистів: ").append(summary.artistsUpdated()).append('\n')
-                    .append("Прив'язано URL: ").append(summary.urlsLinked()).append('\n');
+                    .append("Прив'язано URL: ").append(summary.urlsLinked()).append('\n')
+                    .append("Знайдено й прив'язано Spotify автоматично: ").append(summary.spotifyAutoLinked()).append('\n');
+            if (summary.spotifyAmbiguous() > 0) {
+                sb.append("Spotify неоднозначні (декілька однакових імен, пропущено): ")
+                        .append(summary.spotifyAmbiguous()).append('\n');
+            }
             if (!summary.errors().isEmpty()) {
                 sb.append("Помилки (").append(summary.errors().size()).append("):\n");
                 summary.errors().stream().limit(10).forEach(e -> sb.append("• ").append(e).append('\n'));

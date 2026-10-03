@@ -1,1 +1,7986 @@
-[]
+[
+  {
+    "canonicalName": "Alis",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Alis"
+    ]
+  },
+  {
+    "canonicalName": "Simon",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Simon"
+    ]
+  },
+  {
+    "canonicalName": "Delta Goodrem",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Delta+Goodrem"
+    ]
+  },
+  {
+    "canonicalName": "COSMÓ",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/COSM%C3%93"
+    ]
+  },
+  {
+    "canonicalName": "Jiva",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Jiva"
+    ]
+  },
+  {
+    "canonicalName": "Essyla",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Essyla"
+    ]
+  },
+  {
+    "canonicalName": "Dara",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Dara"
+    ]
+  },
+  {
+    "canonicalName": "LELEK",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/LELEK"
+    ]
+  },
+  {
+    "canonicalName": "Antigoni",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Antigoni"
+    ]
+  },
+  {
+    "canonicalName": "Daniel Žižka",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Daniel+%C5%BDi%C5%BEka"
+    ]
+  },
+  {
+    "canonicalName": "Søren Torpegaard Lund",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/S%C3%B8ren+Torpegaard+Lund"
+    ]
+  },
+  {
+    "canonicalName": "Vanilla Ninja",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Vanilla+Ninja"
+    ]
+  },
+  {
+    "canonicalName": "Linda Lampenius & Pete Parkkonen",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Linda+Lampenius+&+Pete+Parkkonen"
+    ]
+  },
+  {
+    "canonicalName": "Linda Lampenius",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Linda+Lampenius"
+    ]
+  },
+  {
+    "canonicalName": "Pete Parkkonen",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Pete+Parkkonen"
+    ]
+  },
+  {
+    "canonicalName": "Monroe",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Monroe"
+    ]
+  },
+  {
+    "canonicalName": "Bzikebi",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Bzikebi"
+    ]
+  },
+  {
+    "canonicalName": "Sarah Engels",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Sarah+Engels"
+    ]
+  },
+  {
+    "canonicalName": "Akylas",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Akylas"
+    ]
+  },
+  {
+    "canonicalName": "Noam Bettan",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Noam+Bettan"
+    ]
+  },
+  {
+    "canonicalName": "Sal Da Vinci",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Sal+Da+Vinci"
+    ]
+  },
+  {
+    "canonicalName": "Atvara",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Atvara"
+    ]
+  },
+  {
+    "canonicalName": "Lion Ceccah",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Lion+Ceccah"
+    ]
+  },
+  {
+    "canonicalName": "Eva Marija",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Eva+Marija"
+    ]
+  },
+  {
+    "canonicalName": "Aidan",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Aidan"
+    ]
+  },
+  {
+    "canonicalName": "Satoshi",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Satoshi"
+    ]
+  },
+  {
+    "canonicalName": "Tamara Živković",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Tamara+%C5%BDivkovi%C4%87"
+    ]
+  },
+  {
+    "canonicalName": "JONAS LOVV",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/JONAS+LOVV"
+    ]
+  },
+  {
+    "canonicalName": "ALICJA",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/ALICJA"
+    ]
+  },
+  {
+    "canonicalName": "Bandidos do Cante",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Bandidos+do+Cante"
+    ]
+  },
+  {
+    "canonicalName": "Alexandra Căpitănescu",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Alexandra+C%C4%83pit%C4%83nescu"
+    ]
+  },
+  {
+    "canonicalName": "Senhit",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Senhit"
+    ]
+  },
+  {
+    "canonicalName": "Lavina",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Lavina"
+    ]
+  },
+  {
+    "canonicalName": "Felicia",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Felicia"
+    ]
+  },
+  {
+    "canonicalName": "Veronica Fusaro",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Veronica+Fusaro"
+    ]
+  },
+  {
+    "canonicalName": "Leléka",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/Lel%C3%A9ka"
+    ]
+  },
+  {
+    "canonicalName": "LOOK MUM NO COMPUTER",
+    "countryIso": null,
+    "editionYear": 2026,
+    "urls": [
+      "https://www.last.fm/music/LOOK+MUM+NO+COMPUTER"
+    ]
+  },
+  {
+    "canonicalName": "Shkodra Elektronike",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Shkodra+Elektronike"
+    ]
+  },
+  {
+    "canonicalName": "Parg",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Parg"
+    ]
+  },
+  {
+    "canonicalName": "Go-Jo",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Go-Jo"
+    ]
+  },
+  {
+    "canonicalName": "JJ",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/JJ/_/Wasted+Love"
+    ]
+  },
+  {
+    "canonicalName": "Mamagama",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Mamagama"
+    ]
+  },
+  {
+    "canonicalName": "Red Sebastian",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Red+Sebastian"
+    ]
+  },
+  {
+    "canonicalName": "Marko Bošnjak",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Marko+Bo%C5%A1njak"
+    ]
+  },
+  {
+    "canonicalName": "Theo Evan",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Theo+Evan"
+    ]
+  },
+  {
+    "canonicalName": "ADONXS",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/ADONXS"
+    ]
+  },
+  {
+    "canonicalName": "Sissal",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Sissal"
+    ]
+  },
+  {
+    "canonicalName": "Tommy Cash",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Tommy+Cash"
+    ]
+  },
+  {
+    "canonicalName": "Erika Vikman",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Erika+Vikman"
+    ]
+  },
+  {
+    "canonicalName": "Louane",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Louane"
+    ]
+  },
+  {
+    "canonicalName": "Mariam Shengelia",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Mariam+Shengelia"
+    ]
+  },
+  {
+    "canonicalName": "Abor & Tynna",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Abor+&+Tynna"
+    ]
+  },
+  {
+    "canonicalName": "Klavdia",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Klavdia"
+    ]
+  },
+  {
+    "canonicalName": "VÆB",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/V%C3%86B"
+    ]
+  },
+  {
+    "canonicalName": "Emmy",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Emmy"
+    ]
+  },
+  {
+    "canonicalName": "Yuval Raphael",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Yuval+Raphael"
+    ]
+  },
+  {
+    "canonicalName": "Lucio Corsi",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Lucio+Corsi"
+    ]
+  },
+  {
+    "canonicalName": "Tautumeitas",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Tautumeitas"
+    ]
+  },
+  {
+    "canonicalName": "Katarsis",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Katarsis"
+    ]
+  },
+  {
+    "canonicalName": "Laura Thorn",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Laura+Thorn"
+    ]
+  },
+  {
+    "canonicalName": "Miriana Conte",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Miriana+Conte"
+    ]
+  },
+  {
+    "canonicalName": "Nina Zizic",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Nina+Zizic"
+    ]
+  },
+  {
+    "canonicalName": "Claude",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Claude"
+    ]
+  },
+  {
+    "canonicalName": "Kyle Alessandro",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Kyle+Alessandro"
+    ]
+  },
+  {
+    "canonicalName": "Justyna Steczkowska",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Justyna+Steczkowska"
+    ]
+  },
+  {
+    "canonicalName": "NAPA",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/NAPA"
+    ]
+  },
+  {
+    "canonicalName": "Gabry Ponte",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Gabry+Ponte"
+    ]
+  },
+  {
+    "canonicalName": "Princ",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Princ/Mila"
+    ]
+  },
+  {
+    "canonicalName": "Klemen",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Klemen"
+    ]
+  },
+  {
+    "canonicalName": "Melody",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Melody"
+    ]
+  },
+  {
+    "canonicalName": "KAJ",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/KAJ"
+    ]
+  },
+  {
+    "canonicalName": "Zoë Më",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Zo%C3%AB+M%C3%AB"
+    ]
+  },
+  {
+    "canonicalName": "Ziferblat",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Ziferblat"
+    ]
+  },
+  {
+    "canonicalName": "Remember Monday",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Remember+Monday"
+    ]
+  },
+  {
+    "canonicalName": "Besa",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Besa"
+    ]
+  },
+  {
+    "canonicalName": "Ladaniva",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Ladaniva"
+    ]
+  },
+  {
+    "canonicalName": "Electric Fields",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Electric+Fields"
+    ]
+  },
+  {
+    "canonicalName": "Kaleen",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Kaleen"
+    ]
+  },
+  {
+    "canonicalName": "Fahree",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Fahree"
+    ]
+  },
+  {
+    "canonicalName": "FAHREE feat. Ilkin Dovlatov",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/FAHREE+feat.+Ilkin+Dovlatov"
+    ]
+  },
+  {
+    "canonicalName": "Mustii",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Mustii"
+    ]
+  },
+  {
+    "canonicalName": "Baby Lasagna",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Baby+Lasagna"
+    ]
+  },
+  {
+    "canonicalName": "Silia Kapsis",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Silia+Kapsis"
+    ]
+  },
+  {
+    "canonicalName": "aiko",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/aiko"
+    ]
+  },
+  {
+    "canonicalName": "Saba",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Saba/SAND ( на ласті саба це інша людина але ця пісня є)"
+    ]
+  },
+  {
+    "canonicalName": "5MIINUST",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/5MIINUST"
+    ]
+  },
+  {
+    "canonicalName": "Puuluup",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Puuluup"
+    ]
+  },
+  {
+    "canonicalName": "5MIINUST x Puuluup",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/5MIINUST+x+Puuluup"
+    ]
+  },
+  {
+    "canonicalName": "Windows95Man",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Windows95Man"
+    ]
+  },
+  {
+    "canonicalName": "Slimane",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Slimane"
+    ]
+  },
+  {
+    "canonicalName": "Nutsa Buzaladze",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Nutsa+Buzaladze"
+    ]
+  },
+  {
+    "canonicalName": "Isaak",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Isaak"
+    ]
+  },
+  {
+    "canonicalName": "Marina Satti",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Marina+Satti"
+    ]
+  },
+  {
+    "canonicalName": "Hera Björk",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Hera+Björk"
+    ]
+  },
+  {
+    "canonicalName": "Bambie Thug",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Bambie+Thug"
+    ]
+  },
+  {
+    "canonicalName": "Eden Golan",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Eden+Golan"
+    ]
+  },
+  {
+    "canonicalName": "Angelina Mango",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Angelina+Mango"
+    ]
+  },
+  {
+    "canonicalName": "Dons",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Dons"
+    ]
+  },
+  {
+    "canonicalName": "Silvester Belt",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Silvester+Belt"
+    ]
+  },
+  {
+    "canonicalName": "Tali",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Tali"
+    ]
+  },
+  {
+    "canonicalName": "Sarah Bonnici",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Sarah+Bonnici"
+    ]
+  },
+  {
+    "canonicalName": "Natalia Barbu",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Natalia+Barbu"
+    ]
+  },
+  {
+    "canonicalName": "Joost",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Joost"
+    ]
+  },
+  {
+    "canonicalName": "Gåte",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Gåte"
+    ]
+  },
+  {
+    "canonicalName": "Luna",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Luna"
+    ]
+  },
+  {
+    "canonicalName": "Iolanda",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Iolanda"
+    ]
+  },
+  {
+    "canonicalName": "Megara",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Megara"
+    ]
+  },
+  {
+    "canonicalName": "Teya Dora",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Teya+Dora"
+    ]
+  },
+  {
+    "canonicalName": "Raiven",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Raiven"
+    ]
+  },
+  {
+    "canonicalName": "Nebulossa",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Nebulossa"
+    ]
+  },
+  {
+    "canonicalName": "Marcus & Martinus",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Marcus+&+Martinus"
+    ]
+  },
+  {
+    "canonicalName": "Nemo",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Nemo"
+    ]
+  },
+  {
+    "canonicalName": "alyona alyona",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/alyona+alyona"
+    ]
+  },
+  {
+    "canonicalName": "Jerry Heil",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Jerry+Heil"
+    ]
+  },
+  {
+    "canonicalName": "Olly Alexander",
+    "countryIso": null,
+    "editionYear": 2024,
+    "urls": [
+      "https://www.last.fm/music/Olly+Alexander"
+    ]
+  },
+  {
+    "canonicalName": "Albina dhe familja Kelmendi",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Albina+dhe+familja+Kelmendi"
+    ]
+  },
+  {
+    "canonicalName": "Brunette",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Brunette"
+    ]
+  },
+  {
+    "canonicalName": "Voyager",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Voyager"
+    ]
+  },
+  {
+    "canonicalName": "SALENA & TEYA",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Teya    https://www.last.fm/music/SALENA+&+TEYA"
+    ]
+  },
+  {
+    "canonicalName": "TuralTuranX",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/TuralTuranX"
+    ]
+  },
+  {
+    "canonicalName": "Gustaph",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Gustaph"
+    ]
+  },
+  {
+    "canonicalName": "Let 3",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Let+3"
+    ]
+  },
+  {
+    "canonicalName": "Andrew Lambrou",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Andrew+Lambrou"
+    ]
+  },
+  {
+    "canonicalName": "Vesna",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Vesna"
+    ]
+  },
+  {
+    "canonicalName": "Reiley",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Reiley"
+    ]
+  },
+  {
+    "canonicalName": "Alika",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Alika"
+    ]
+  },
+  {
+    "canonicalName": "Käärijä",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Käärijä"
+    ]
+  },
+  {
+    "canonicalName": "La Zarra",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/La+Zarra"
+    ]
+  },
+  {
+    "canonicalName": "Iru Khechanovi",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Iru+Khechanovi"
+    ]
+  },
+  {
+    "canonicalName": "Lord of the Lost",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Lord+of+the+Lost"
+    ]
+  },
+  {
+    "canonicalName": "Victor Vernicos",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Victor+Vernicos"
+    ]
+  },
+  {
+    "canonicalName": "Diljá",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Diljá"
+    ]
+  },
+  {
+    "canonicalName": "Wild Youth",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Wild+Youth"
+    ]
+  },
+  {
+    "canonicalName": "Noa Kirel",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Noa+Kirel"
+    ]
+  },
+  {
+    "canonicalName": "Marco Mengoni",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Marco+Mengoni"
+    ]
+  },
+  {
+    "canonicalName": "Sudden Lights",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Sudden+Lights"
+    ]
+  },
+  {
+    "canonicalName": "Monika Linkytė",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Monika+Linkytė"
+    ]
+  },
+  {
+    "canonicalName": "The Busker",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/The+Busker"
+    ]
+  },
+  {
+    "canonicalName": "Pasha Parfeny",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Pasha+Parfeny"
+    ]
+  },
+  {
+    "canonicalName": "Mia Nicolai",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Mia+Nicolai"
+    ]
+  },
+  {
+    "canonicalName": "Dion Cooper",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Dion+Cooper"
+    ]
+  },
+  {
+    "canonicalName": "Alessandra",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Alessandra"
+    ]
+  },
+  {
+    "canonicalName": "Blanka",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Blanka"
+    ]
+  },
+  {
+    "canonicalName": "Mimicat",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Mimicat"
+    ]
+  },
+  {
+    "canonicalName": "Theodor Andrei",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Theodor+Andrei"
+    ]
+  },
+  {
+    "canonicalName": "Piqued Jacks",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Piqued+Jacks"
+    ]
+  },
+  {
+    "canonicalName": "Luke Black",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Luke+Black"
+    ]
+  },
+  {
+    "canonicalName": "Joker Out",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Joker+Out"
+    ]
+  },
+  {
+    "canonicalName": "Blanca Paloma",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Blanca+Paloma"
+    ]
+  },
+  {
+    "canonicalName": "Loreen",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Loreen"
+    ]
+  },
+  {
+    "canonicalName": "Remo Forrer",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Remo+Forrer"
+    ]
+  },
+  {
+    "canonicalName": "TVORCHI",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/TVORCHI"
+    ]
+  },
+  {
+    "canonicalName": "Mae Muller",
+    "countryIso": null,
+    "editionYear": 2023,
+    "urls": [
+      "https://www.last.fm/music/Mae+Muller"
+    ]
+  },
+  {
+    "canonicalName": "Ronela Hajati",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Ronela+Hajati"
+    ]
+  },
+  {
+    "canonicalName": "Rosa Linn",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Rosa+Linn"
+    ]
+  },
+  {
+    "canonicalName": "Sheldon Riley",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Sheldon+Riley"
+    ]
+  },
+  {
+    "canonicalName": "LUM!X",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/LUM!X"
+    ]
+  },
+  {
+    "canonicalName": "Pia Maria",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Pia+Maria"
+    ]
+  },
+  {
+    "canonicalName": "Nadir Rustamli",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Nadir+Rustamli"
+    ]
+  },
+  {
+    "canonicalName": "Jérémie Makiese",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Jérémie+Makiese"
+    ]
+  },
+  {
+    "canonicalName": "Intelligent Music Project",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Intelligent+Music+Project"
+    ]
+  },
+  {
+    "canonicalName": "Mia Dimšić",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Mia+Dimšić"
+    ]
+  },
+  {
+    "canonicalName": "Andromache",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Andromache"
+    ]
+  },
+  {
+    "canonicalName": "We Are Domi",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/We+Are+Domi"
+    ]
+  },
+  {
+    "canonicalName": "Reddi",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Reddi"
+    ]
+  },
+  {
+    "canonicalName": "Stefan",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Stefan"
+    ]
+  },
+  {
+    "canonicalName": "The Rasmus",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/The+Rasmus"
+    ]
+  },
+  {
+    "canonicalName": "Alvan",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Alvan"
+    ]
+  },
+  {
+    "canonicalName": "Alvan & Ahez",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Alvan+&+Ahez"
+    ]
+  },
+  {
+    "canonicalName": "Malik Harris",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Malik+Harris"
+    ]
+  },
+  {
+    "canonicalName": "Circus Mircus",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Circus+Mircus"
+    ]
+  },
+  {
+    "canonicalName": "Amanda Tenfjord",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Amanda+Tenfjord"
+    ]
+  },
+  {
+    "canonicalName": "Systur - Sigga, Beta & Elín",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Systur+-+Sigga,+Beta+&+Elín"
+    ]
+  },
+  {
+    "canonicalName": "Brooke",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Brooke"
+    ]
+  },
+  {
+    "canonicalName": "Michael Ben David",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Michael+Ben+David"
+    ]
+  },
+  {
+    "canonicalName": "Mahmood",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Mahmood"
+    ]
+  },
+  {
+    "canonicalName": "Blanco",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Blanco"
+    ]
+  },
+  {
+    "canonicalName": "Citi Zēni",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Citi+Zēni"
+    ]
+  },
+  {
+    "canonicalName": "Monika Liu",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Monika+Liu"
+    ]
+  },
+  {
+    "canonicalName": "Emma Muscat",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Emma+Muscat"
+    ]
+  },
+  {
+    "canonicalName": "Zdob și Zdub & Fratii Advahov",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Zdob+și+Zdub+&+Fratii+Advahov"
+    ]
+  },
+  {
+    "canonicalName": "Zdob și Zdub",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Zdob+și+Zdub"
+    ]
+  },
+  {
+    "canonicalName": "Vladana",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Vladana"
+    ]
+  },
+  {
+    "canonicalName": "S10",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/S10"
+    ]
+  },
+  {
+    "canonicalName": "Andrea",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Andrea/Circles"
+    ]
+  },
+  {
+    "canonicalName": "Subwoolfer",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Subwoolfer"
+    ]
+  },
+  {
+    "canonicalName": "Ochman",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Ochman"
+    ]
+  },
+  {
+    "canonicalName": "Maro",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Maro"
+    ]
+  },
+  {
+    "canonicalName": "wrs",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/wrs"
+    ]
+  },
+  {
+    "canonicalName": "Achille Lauro",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Achille+Lauro"
+    ]
+  },
+  {
+    "canonicalName": "Konstrakta",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Konstrakta"
+    ]
+  },
+  {
+    "canonicalName": "LPS",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/LPS"
+    ]
+  },
+  {
+    "canonicalName": "Chanel",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Chanel"
+    ]
+  },
+  {
+    "canonicalName": "Cornelia Jakobs",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Cornelia+Jakobs"
+    ]
+  },
+  {
+    "canonicalName": "Marius Bear",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Marius+Bear"
+    ]
+  },
+  {
+    "canonicalName": "Kalush Orchestra",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Kalush+Orchestra"
+    ]
+  },
+  {
+    "canonicalName": "KALUSH",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/KALUSH"
+    ]
+  },
+  {
+    "canonicalName": "Sam Ryder",
+    "countryIso": null,
+    "editionYear": 2022,
+    "urls": [
+      "https://www.last.fm/music/Sam+Ryder"
+    ]
+  },
+  {
+    "canonicalName": "Anxhela Peristeri",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Anxhela+Peristeri"
+    ]
+  },
+  {
+    "canonicalName": "Montaigne",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Montaigne"
+    ]
+  },
+  {
+    "canonicalName": "Vincent Bueno",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Vincent+Bueno"
+    ]
+  },
+  {
+    "canonicalName": "Efendi",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Efendi"
+    ]
+  },
+  {
+    "canonicalName": "Hooverphonic",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Hooverphonic"
+    ]
+  },
+  {
+    "canonicalName": "Victoria",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Victoria"
+    ]
+  },
+  {
+    "canonicalName": "Albina",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Albina/Tick-Tock"
+    ]
+  },
+  {
+    "canonicalName": "Elena Tsagrinou",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Elena+Tsagrinou"
+    ]
+  },
+  {
+    "canonicalName": "Benny Cristo",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Benny+Cristo"
+    ]
+  },
+  {
+    "canonicalName": "Fyr og Flamme",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Fyr+og+Flamme"
+    ]
+  },
+  {
+    "canonicalName": "Uku Suviste",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Uku+Suviste"
+    ]
+  },
+  {
+    "canonicalName": "Blind Channel",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Blind+Channel"
+    ]
+  },
+  {
+    "canonicalName": "Barbara Pravi",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Barbara+Pravi"
+    ]
+  },
+  {
+    "canonicalName": "Tornike Kipiani",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Tornike+Kipiani"
+    ]
+  },
+  {
+    "canonicalName": "Jendrik",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Jendrik"
+    ]
+  },
+  {
+    "canonicalName": "Stefania",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Stefania"
+    ]
+  },
+  {
+    "canonicalName": "Daði og Gagnamagnið",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Daði+og+Gagnamagnið"
+    ]
+  },
+  {
+    "canonicalName": "Daði Freyr",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Daði+Freyr"
+    ]
+  },
+  {
+    "canonicalName": "Lesley Roy",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Lesley+Roy"
+    ]
+  },
+  {
+    "canonicalName": "Eden Alene",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Eden+Alene"
+    ]
+  },
+  {
+    "canonicalName": "Måneskin",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Måneskin"
+    ]
+  },
+  {
+    "canonicalName": "Samanta Tīna",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Samanta+Tīna"
+    ]
+  },
+  {
+    "canonicalName": "THE ROOP",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/THE+ROOP"
+    ]
+  },
+  {
+    "canonicalName": "Destiny",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Destiny"
+    ]
+  },
+  {
+    "canonicalName": "Natalia Gordienko",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Natalia+Gordienko"
+    ]
+  },
+  {
+    "canonicalName": "Jeangu Macrooy",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Jeangu+Macrooy"
+    ]
+  },
+  {
+    "canonicalName": "VASIL",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/VASIL"
+    ]
+  },
+  {
+    "canonicalName": "TIX",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/TIX"
+    ]
+  },
+  {
+    "canonicalName": "Rafał",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Rafał"
+    ]
+  },
+  {
+    "canonicalName": "The Black Mamba",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/The+Black+Mamba"
+    ]
+  },
+  {
+    "canonicalName": "Roxen",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Roxen"
+    ]
+  },
+  {
+    "canonicalName": "Flo Rida",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Flo+Rida"
+    ]
+  },
+  {
+    "canonicalName": "Hurricane",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Hurricane"
+    ]
+  },
+  {
+    "canonicalName": "Ana Soklič",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Ana+Soklič"
+    ]
+  },
+  {
+    "canonicalName": "Blas Cantó",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Blas+Cantó"
+    ]
+  },
+  {
+    "canonicalName": "Tusse",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Tusse"
+    ]
+  },
+  {
+    "canonicalName": "Gjon's Tears",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Gjon's Tears"
+    ]
+  },
+  {
+    "canonicalName": "Go_A",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/Go_A"
+    ]
+  },
+  {
+    "canonicalName": "James Newman",
+    "countryIso": null,
+    "editionYear": 2021,
+    "urls": [
+      "https://www.last.fm/music/James+Newman"
+    ]
+  },
+  {
+    "canonicalName": "Arilena Ara",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Arilena+Ara"
+    ]
+  },
+  {
+    "canonicalName": "Athena Manoukian",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Athena+Manoukian"
+    ]
+  },
+  {
+    "canonicalName": "Damir Kedzo",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Damir+Kedzo"
+    ]
+  },
+  {
+    "canonicalName": "Sandro Nicolas",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Sandro+Nicolas"
+    ]
+  },
+  {
+    "canonicalName": "BEN & TAN",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/BEN+&+TAN"
+    ]
+  },
+  {
+    "canonicalName": "Vasil Garvanliev",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Vasil+Garvanliev"
+    ]
+  },
+  {
+    "canonicalName": "Aksel",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Aksel"
+    ]
+  },
+  {
+    "canonicalName": "Tom Leeb",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Tom+Leeb"
+    ]
+  },
+  {
+    "canonicalName": "Ben Dolic",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Ben+Dolic"
+    ]
+  },
+  {
+    "canonicalName": "Diodato",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Diodato"
+    ]
+  },
+  {
+    "canonicalName": "Ulrikke",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Ulrikke"
+    ]
+  },
+  {
+    "canonicalName": "Alicja",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Alicja"
+    ]
+  },
+  {
+    "canonicalName": "Elisa",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/Elisa/Medo+de+sentir"
+    ]
+  },
+  {
+    "canonicalName": "The Mamas",
+    "countryIso": null,
+    "editionYear": 2020,
+    "urls": [
+      "https://www.last.fm/music/The+Mamas/Move"
+    ]
+  },
+  {
+    "canonicalName": "Jonida Maliqi",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Jonida+Maliqi"
+    ]
+  },
+  {
+    "canonicalName": "Srbuk",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Srbuk"
+    ]
+  },
+  {
+    "canonicalName": "Kate Miller-Heidke",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Kate+Miller-Heidke"
+    ]
+  },
+  {
+    "canonicalName": "Paenda",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Paenda"
+    ]
+  },
+  {
+    "canonicalName": "Chingiz",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Chingiz"
+    ]
+  },
+  {
+    "canonicalName": "Eliot",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Eliot"
+    ]
+  },
+  {
+    "canonicalName": "Roko",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Roko/The+Dream"
+    ]
+  },
+  {
+    "canonicalName": "Tamta",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Tamta"
+    ]
+  },
+  {
+    "canonicalName": "Lake Malawi",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Lake+Malawi"
+    ]
+  },
+  {
+    "canonicalName": "Leonora",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Leonora"
+    ]
+  },
+  {
+    "canonicalName": "Victor Crone",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Victor+Crone"
+    ]
+  },
+  {
+    "canonicalName": "Darude",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Darude"
+    ]
+  },
+  {
+    "canonicalName": "Darude feat. Sebastian Rejman",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Darude+feat.+Sebastian+Rejman"
+    ]
+  },
+  {
+    "canonicalName": "Bilal Hassani",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Bilal+Hassani"
+    ]
+  },
+  {
+    "canonicalName": "Oto Nemsadze",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Oto+Nemsadze"
+    ]
+  },
+  {
+    "canonicalName": "S!sters",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/S!sters"
+    ]
+  },
+  {
+    "canonicalName": "Katerine Duska",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Katerine+Duska"
+    ]
+  },
+  {
+    "canonicalName": "Pápai Joci",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Pápai+Joci"
+    ]
+  },
+  {
+    "canonicalName": "Hatari",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Hatari"
+    ]
+  },
+  {
+    "canonicalName": "Sarah McTernan",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Sarah+McTernan"
+    ]
+  },
+  {
+    "canonicalName": "Kobi Marimi",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Kobi+Marimi"
+    ]
+  },
+  {
+    "canonicalName": "Carousel",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Carousel"
+    ]
+  },
+  {
+    "canonicalName": "Jurij Veklenko",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Jurij+Veklenko"
+    ]
+  },
+  {
+    "canonicalName": "Michela Pace",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Michela+Pace"
+    ]
+  },
+  {
+    "canonicalName": "Anna Odobescu",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Anna+Odobescu"
+    ]
+  },
+  {
+    "canonicalName": "D-Mol",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/D-Mol"
+    ]
+  },
+  {
+    "canonicalName": "Duncan Laurence",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Duncan+Laurence"
+    ]
+  },
+  {
+    "canonicalName": "Tamara Todevska",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Tamara+Todevska"
+    ]
+  },
+  {
+    "canonicalName": "KEiiNO",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/KEiiNO"
+    ]
+  },
+  {
+    "canonicalName": "Tulia",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Tulia"
+    ]
+  },
+  {
+    "canonicalName": "Conan Osíris",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Conan+Osíris"
+    ]
+  },
+  {
+    "canonicalName": "Ester Peony",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Ester+Peony"
+    ]
+  },
+  {
+    "canonicalName": "Serhat",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Serhat"
+    ]
+  },
+  {
+    "canonicalName": "Nevena Božović",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Nevena+Božović"
+    ]
+  },
+  {
+    "canonicalName": "Zala Kralj & Gašper Šantl",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Zala+Kralj+&+Gašper+Šantl"
+    ]
+  },
+  {
+    "canonicalName": "Miki Núñez",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Miki+Núñez"
+    ]
+  },
+  {
+    "canonicalName": "John Lundvik",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/John+Lundvik"
+    ]
+  },
+  {
+    "canonicalName": "Luca Hänni",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Luca+Hänni"
+    ]
+  },
+  {
+    "canonicalName": "Michael Rice",
+    "countryIso": null,
+    "editionYear": 2019,
+    "urls": [
+      "https://www.last.fm/music/Michael+Rice"
+    ]
+  },
+  {
+    "canonicalName": "Eugent Bushpepa",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Eugent+Bushpepa"
+    ]
+  },
+  {
+    "canonicalName": "Sevak Khanagyan",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Sevak+Khanagyan"
+    ]
+  },
+  {
+    "canonicalName": "Jessica Mauboy",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Jessica+Mauboy"
+    ]
+  },
+  {
+    "canonicalName": "Cesár Sampson",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Cesár+Sampson"
+    ]
+  },
+  {
+    "canonicalName": "Aisel",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Aisel"
+    ]
+  },
+  {
+    "canonicalName": "Sennek",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Sennek"
+    ]
+  },
+  {
+    "canonicalName": "Equinox",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Equinox/_/Bones"
+    ]
+  },
+  {
+    "canonicalName": "Franka Batelić",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Franka+Batelić"
+    ]
+  },
+  {
+    "canonicalName": "Eleni Foureira",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Eleni+Foureira"
+    ]
+  },
+  {
+    "canonicalName": "Mikolas Josef",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Mikolas+Josef"
+    ]
+  },
+  {
+    "canonicalName": "Rasmussen",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Rasmussen"
+    ]
+  },
+  {
+    "canonicalName": "Elina Nechayeva",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Elina+Nechayeva"
+    ]
+  },
+  {
+    "canonicalName": "Saara Aalto",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Saara+Aalto"
+    ]
+  },
+  {
+    "canonicalName": "Madame Monsieur",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Madame+Monsieur"
+    ]
+  },
+  {
+    "canonicalName": "Ethno - Jazz Band Iriao",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Ethno+-+Jazz+Band+Iriao"
+    ]
+  },
+  {
+    "canonicalName": "Michael Schulte",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Michael+Schulte"
+    ]
+  },
+  {
+    "canonicalName": "Gianna Terzi",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Gianna+Terzi"
+    ]
+  },
+  {
+    "canonicalName": "AWS",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/AWS"
+    ]
+  },
+  {
+    "canonicalName": "Ari Ólafsson",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Ari+Ólafsson"
+    ]
+  },
+  {
+    "canonicalName": "Ryan O’Shaughnessy",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Ryan+O’Shaughnessy"
+    ]
+  },
+  {
+    "canonicalName": "Netta",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Netta"
+    ]
+  },
+  {
+    "canonicalName": "Ermal Meta",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Ermal+Meta"
+    ]
+  },
+  {
+    "canonicalName": "Fabrizio Moro",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Fabrizio+Moro"
+    ]
+  },
+  {
+    "canonicalName": "Laura Rizzotto",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Laura+Rizzotto"
+    ]
+  },
+  {
+    "canonicalName": "Ieva Zasimauskaite",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Ieva+Zasimauskaite"
+    ]
+  },
+  {
+    "canonicalName": "Eye Cue",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Eye+Cue"
+    ]
+  },
+  {
+    "canonicalName": "Christabelle",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Christabelle"
+    ]
+  },
+  {
+    "canonicalName": "DoReDoS",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/DoReDoS"
+    ]
+  },
+  {
+    "canonicalName": "Vanja Radovanovic",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Vanja+Radovanovic"
+    ]
+  },
+  {
+    "canonicalName": "Waylon",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Waylon"
+    ]
+  },
+  {
+    "canonicalName": "Alexander Rybak",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Alexander+Rybak"
+    ]
+  },
+  {
+    "canonicalName": "Gromee",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Gromee"
+    ]
+  },
+  {
+    "canonicalName": "Gromee feat. Lukas Meijer",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Gromee+feat.+Lukas+Meijer"
+    ]
+  },
+  {
+    "canonicalName": "Cláudia Pascoal",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Cláudia+Pascoal"
+    ]
+  },
+  {
+    "canonicalName": "The Humans",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/The+Humans/_/Goodbye"
+    ]
+  },
+  {
+    "canonicalName": "Jessika",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Jessika"
+    ]
+  },
+  {
+    "canonicalName": "Jessika feat. Jenifer Brening",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Jessika+feat.+Jenifer+Brening"
+    ]
+  },
+  {
+    "canonicalName": "Sanja Ilić & Balkanika",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Sanja+Ilić+&+Balkanika"
+    ]
+  },
+  {
+    "canonicalName": "Lea Sirk",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Lea+Sirk"
+    ]
+  },
+  {
+    "canonicalName": "Amaia Romero & Alfred Garcia",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Amaia+Romero+&+Alfred+Garcia"
+    ]
+  },
+  {
+    "canonicalName": "Benjamin Ingrosso",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/Benjamin+Ingrosso"
+    ]
+  },
+  {
+    "canonicalName": "ZiBBZ",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/ZiBBZ"
+    ]
+  },
+  {
+    "canonicalName": "MÉLOVIN",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/MÉLOVIN"
+    ]
+  },
+  {
+    "canonicalName": "SuRie",
+    "countryIso": null,
+    "editionYear": 2018,
+    "urls": [
+      "https://www.last.fm/music/SuRie"
+    ]
+  },
+  {
+    "canonicalName": "Lindita Halimi",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Lindita+Halimi"
+    ]
+  },
+  {
+    "canonicalName": "Artsvik",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Artsvik"
+    ]
+  },
+  {
+    "canonicalName": "Isaiah Firebrace",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Isaiah+Firebrace"
+    ]
+  },
+  {
+    "canonicalName": "Nathan Trent",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Nathan+Trent"
+    ]
+  },
+  {
+    "canonicalName": "Diana Hajiyeva",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Diana+Hajiyeva"
+    ]
+  },
+  {
+    "canonicalName": "Blanche",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Blanche"
+    ]
+  },
+  {
+    "canonicalName": "Kristian Kostov",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Kristian+Kostov"
+    ]
+  },
+  {
+    "canonicalName": "Jacques Houdek",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Jacques+Houdek"
+    ]
+  },
+  {
+    "canonicalName": "Hovig",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Hovig"
+    ]
+  },
+  {
+    "canonicalName": "Martina Bárta",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Martina+Bárta"
+    ]
+  },
+  {
+    "canonicalName": "Anja Nissen",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Anja+Nissen"
+    ]
+  },
+  {
+    "canonicalName": "Koit Toome & Laura",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Koit+Toome+&+Laura"
+    ]
+  },
+  {
+    "canonicalName": "Norma John",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Norma+John"
+    ]
+  },
+  {
+    "canonicalName": "Alma",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Alma/_/Requiem"
+    ]
+  },
+  {
+    "canonicalName": "Levina",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Levina"
+    ]
+  },
+  {
+    "canonicalName": "Tako Gachechiladze",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Tako+Gachechiladze"
+    ]
+  },
+  {
+    "canonicalName": "Demy",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Demy"
+    ]
+  },
+  {
+    "canonicalName": "Svala Björgvinsdóttir",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Svala+Björgvinsdóttir"
+    ]
+  },
+  {
+    "canonicalName": "Brendan Murray",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Brendan+Murray"
+    ]
+  },
+  {
+    "canonicalName": "https:",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/search?q=Imri+Ziv"
+    ]
+  },
+  {
+    "canonicalName": "Francesco Gabbani",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Francesco+Gabbani"
+    ]
+  },
+  {
+    "canonicalName": "Triana Park",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Triana+Park"
+    ]
+  },
+  {
+    "canonicalName": "Fusedmarc",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Fusedmarc"
+    ]
+  },
+  {
+    "canonicalName": "Jana Burčeska",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Jana+Burčeska"
+    ]
+  },
+  {
+    "canonicalName": "Claudia Faniello",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Claudia+Faniello"
+    ]
+  },
+  {
+    "canonicalName": "Sunstroke Project",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Sunstroke+Project"
+    ]
+  },
+  {
+    "canonicalName": "Slavko Kalezić",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Slavko+Kalezić"
+    ]
+  },
+  {
+    "canonicalName": "O’G3NE",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/O’G3NE"
+    ]
+  },
+  {
+    "canonicalName": "Jowst",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Jowst"
+    ]
+  },
+  {
+    "canonicalName": "Kasia Moś",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Kasia+Moś"
+    ]
+  },
+  {
+    "canonicalName": "Salvador Sobral",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Salvador+Sobral"
+    ]
+  },
+  {
+    "canonicalName": "Ilinca",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Ilinca"
+    ]
+  },
+  {
+    "canonicalName": "Alex Florea",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Alex+Florea"
+    ]
+  },
+  {
+    "canonicalName": "Valentina Monetta",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Valentina+Monetta"
+    ]
+  },
+  {
+    "canonicalName": "Jimmie Wilson",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Jimmie+Wilson"
+    ]
+  },
+  {
+    "canonicalName": "Tijana Bogićević",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Tijana+Bogićević"
+    ]
+  },
+  {
+    "canonicalName": "Omar Naber",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Omar+Naber"
+    ]
+  },
+  {
+    "canonicalName": "Manel Navarro",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Manel+Navarro"
+    ]
+  },
+  {
+    "canonicalName": "Robin Bengtsson",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Robin+Bengtsson"
+    ]
+  },
+  {
+    "canonicalName": "Timebelle",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Timebelle"
+    ]
+  },
+  {
+    "canonicalName": "O.Torvald",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/O.Torvald"
+    ]
+  },
+  {
+    "canonicalName": "Lucie Jones",
+    "countryIso": null,
+    "editionYear": 2017,
+    "urls": [
+      "https://www.last.fm/music/Lucie+Jones"
+    ]
+  },
+  {
+    "canonicalName": "Eneda Tarifa",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Eneda+Tarifa"
+    ]
+  },
+  {
+    "canonicalName": "Iveta Mukuchyan",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Iveta+Mukuchyan"
+    ]
+  },
+  {
+    "canonicalName": "Dami Im",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Dami+Im"
+    ]
+  },
+  {
+    "canonicalName": "Zoë",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Zoë"
+    ]
+  },
+  {
+    "canonicalName": "Samra",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Samra/Miracle"
+    ]
+  },
+  {
+    "canonicalName": "Laura Tesoro",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Laura+Tesoro"
+    ]
+  },
+  {
+    "canonicalName": "Dalal & Deen",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Dalal+&+Deen"
+    ]
+  },
+  {
+    "canonicalName": "Dalal Midhat i Deen ft.Ana Rucner i Jala",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Dalal+Midhat+i+Deen+ft.Ana+Rucner+i+Jala"
+    ]
+  },
+  {
+    "canonicalName": "Poli Genova",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Poli+Genova"
+    ]
+  },
+  {
+    "canonicalName": "Minus One",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Minus+One"
+    ]
+  },
+  {
+    "canonicalName": "Gabriela Gunčíková",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Gabriela+Gunčíková"
+    ]
+  },
+  {
+    "canonicalName": "Lighthouse X",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Lighthouse+X"
+    ]
+  },
+  {
+    "canonicalName": "Jüri Pootsmann",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Jüri+Pootsmann"
+    ]
+  },
+  {
+    "canonicalName": "Sandhja",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Sandhja"
+    ]
+  },
+  {
+    "canonicalName": "Amir",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Amir"
+    ]
+  },
+  {
+    "canonicalName": "Nika Kocharov and Young Georgian Lolitaz",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Nika+Kocharov+and+Young+Georgian+Lolitaz"
+    ]
+  },
+  {
+    "canonicalName": "Jamie-Lee Kriewitz",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Jamie-Lee+Kriewitz"
+    ]
+  },
+  {
+    "canonicalName": "Argo",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Argo"
+    ]
+  },
+  {
+    "canonicalName": "Freddie",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Freddie/_/Pioneer"
+    ]
+  },
+  {
+    "canonicalName": "Greta Salóme",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Greta+Salóme"
+    ]
+  },
+  {
+    "canonicalName": "Nicky Byrne",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Nicky+Byrne"
+    ]
+  },
+  {
+    "canonicalName": "Hovi Star",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Hovi+Star"
+    ]
+  },
+  {
+    "canonicalName": "Francesca Michielin",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Francesca+Michielin"
+    ]
+  },
+  {
+    "canonicalName": "Justs",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Justs"
+    ]
+  },
+  {
+    "canonicalName": "Donny Montell",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Donny+Montell"
+    ]
+  },
+  {
+    "canonicalName": "Kaliopi",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Kaliopi"
+    ]
+  },
+  {
+    "canonicalName": "Ira Losco",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Ira+Losco"
+    ]
+  },
+  {
+    "canonicalName": "Lidia Isac",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Lidia+Isac"
+    ]
+  },
+  {
+    "canonicalName": "Highway",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Highway"
+    ]
+  },
+  {
+    "canonicalName": "Douwe Bob",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Douwe+Bob"
+    ]
+  },
+  {
+    "canonicalName": "Agnete",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Agnete"
+    ]
+  },
+  {
+    "canonicalName": "Michał Szpak",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Michał+Szpak"
+    ]
+  },
+  {
+    "canonicalName": "Sanja Vucic",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Sanja+Vucic"
+    ]
+  },
+  {
+    "canonicalName": "Manuella",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Manuella"
+    ]
+  },
+  {
+    "canonicalName": "Barei",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Barei"
+    ]
+  },
+  {
+    "canonicalName": "Frans",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Frans"
+    ]
+  },
+  {
+    "canonicalName": "Rykka",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Rykka"
+    ]
+  },
+  {
+    "canonicalName": "Jamala",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Jamala"
+    ]
+  },
+  {
+    "canonicalName": "Joe & Jake",
+    "countryIso": null,
+    "editionYear": 2016,
+    "urls": [
+      "https://www.last.fm/music/Joe+&+Jake"
+    ]
+  },
+  {
+    "canonicalName": "Elhaida Dani",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Elhaida+Dani"
+    ]
+  },
+  {
+    "canonicalName": "Genealogy",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Genealogy"
+    ]
+  },
+  {
+    "canonicalName": "Guy Sebastian",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Guy+Sebastian"
+    ]
+  },
+  {
+    "canonicalName": "The Makemakes",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/The+Makemakes"
+    ]
+  },
+  {
+    "canonicalName": "Elnur Hüseynov",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Elnur+Hüseynov"
+    ]
+  },
+  {
+    "canonicalName": "Loïc Nottet",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Loïc+Nottet"
+    ]
+  },
+  {
+    "canonicalName": "John Karayiannis",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/John+Karayiannis"
+    ]
+  },
+  {
+    "canonicalName": "Marta Jandová",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Marta+Jandová"
+    ]
+  },
+  {
+    "canonicalName": "Václav Noid Bárta",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Václav+Noid+Bárta"
+    ]
+  },
+  {
+    "canonicalName": "Anti Social Media",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Anti+Social+Media"
+    ]
+  },
+  {
+    "canonicalName": "Elina Born",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Elina+Born"
+    ]
+  },
+  {
+    "canonicalName": "Stig Rästa",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Stig+Rästa"
+    ]
+  },
+  {
+    "canonicalName": "Pertti Kurikan Nimipäivät",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Pertti+Kurikan+Nimipäivät"
+    ]
+  },
+  {
+    "canonicalName": "Lisa Angell",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Lisa+Angell"
+    ]
+  },
+  {
+    "canonicalName": "Nina Sublatti",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Nina+Sublatti"
+    ]
+  },
+  {
+    "canonicalName": "Ann Sophie",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Ann+Sophie"
+    ]
+  },
+  {
+    "canonicalName": "Maria Elena Kyriakou",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Maria+Elena+Kyriakou"
+    ]
+  },
+  {
+    "canonicalName": "Boggie",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Boggie"
+    ]
+  },
+  {
+    "canonicalName": "Maria Olafs",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Maria+Olafs"
+    ]
+  },
+  {
+    "canonicalName": "Molly Sterling",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Molly+Sterling"
+    ]
+  },
+  {
+    "canonicalName": "Nadav Guedj",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Nadav+Guedj"
+    ]
+  },
+  {
+    "canonicalName": "Il Volo",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Il+Volo"
+    ]
+  },
+  {
+    "canonicalName": "Aminata",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Aminata"
+    ]
+  },
+  {
+    "canonicalName": "Vaidas Baumila",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Vaidas+Baumila"
+    ]
+  },
+  {
+    "canonicalName": "Daniel Kajmakoski",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Daniel+Kajmakoski"
+    ]
+  },
+  {
+    "canonicalName": "Amber",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Amber/Warrior"
+    ]
+  },
+  {
+    "canonicalName": "Eduard Romanyuta",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Eduard+Romanyuta"
+    ]
+  },
+  {
+    "canonicalName": "Knez",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Knez"
+    ]
+  },
+  {
+    "canonicalName": "Trijntje Oosterhuis",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Trijntje+Oosterhuis"
+    ]
+  },
+  {
+    "canonicalName": "Mørland",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Mørland"
+    ]
+  },
+  {
+    "canonicalName": "Debrah Scarlett",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Debrah+Scarlett"
+    ]
+  },
+  {
+    "canonicalName": "Monika Kuszyńska",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Monika+Kuszyńska"
+    ]
+  },
+  {
+    "canonicalName": "Leonor Andrade",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Leonor+Andrade"
+    ]
+  },
+  {
+    "canonicalName": "Voltaj",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Voltaj"
+    ]
+  },
+  {
+    "canonicalName": "Anita Simoncini",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Anita+Simoncini"
+    ]
+  },
+  {
+    "canonicalName": "Anita Simoncini & Michele Perniola",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Anita+Simoncini+&+Michele+Perniola"
+    ]
+  },
+  {
+    "canonicalName": "Bojana Stamenov",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Bojana+Stamenov"
+    ]
+  },
+  {
+    "canonicalName": "Maraaya",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Maraaya"
+    ]
+  },
+  {
+    "canonicalName": "Edurne",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Edurne"
+    ]
+  },
+  {
+    "canonicalName": "Måns Zelmerlöw",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Måns+Zelmerlöw"
+    ]
+  },
+  {
+    "canonicalName": "Mélanie René",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Mélanie+René"
+    ]
+  },
+  {
+    "canonicalName": "Electro Velvet",
+    "countryIso": null,
+    "editionYear": 2015,
+    "urls": [
+      "https://www.last.fm/music/Electro+Velvet"
+    ]
+  },
+  {
+    "canonicalName": "Hersi",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Hersi"
+    ]
+  },
+  {
+    "canonicalName": "Aram MP3",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Aram+MP3"
+    ]
+  },
+  {
+    "canonicalName": "Conchita Wurst",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Conchita+Wurst"
+    ]
+  },
+  {
+    "canonicalName": "Dilara Kazimova",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Dilara+Kazimova"
+    ]
+  },
+  {
+    "canonicalName": "Axel Hirsoux",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Axel+Hirsoux"
+    ]
+  },
+  {
+    "canonicalName": "Basim",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Basim"
+    ]
+  },
+  {
+    "canonicalName": "Tanja",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Tanja"
+    ]
+  },
+  {
+    "canonicalName": "Softengine",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Softengine"
+    ]
+  },
+  {
+    "canonicalName": "Twin Twin",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Twin+Twin"
+    ]
+  },
+  {
+    "canonicalName": "The Shin",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/The+Shin"
+    ]
+  },
+  {
+    "canonicalName": "Mariko",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Mariko"
+    ]
+  },
+  {
+    "canonicalName": "Elaiza",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Elaiza/Is+It+Right+%2F+Fight+Against+Myself"
+    ]
+  },
+  {
+    "canonicalName": "Freaky Fortune",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Freaky+Fortune"
+    ]
+  },
+  {
+    "canonicalName": "Riskykidd",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Riskykidd"
+    ]
+  },
+  {
+    "canonicalName": "András Kállay Saunders",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/András+Kállay+Saunders"
+    ]
+  },
+  {
+    "canonicalName": "Pollapönk",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Pollap%C3%B6nk"
+    ]
+  },
+  {
+    "canonicalName": "Can-linn",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Can-linn"
+    ]
+  },
+  {
+    "canonicalName": "Kasey Smith",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Kasey+Smith"
+    ]
+  },
+  {
+    "canonicalName": "Mei Finegold",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Mei+Finegold"
+    ]
+  },
+  {
+    "canonicalName": "Emma",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Emma"
+    ]
+  },
+  {
+    "canonicalName": "Aarzemnieki",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Aarzemnieki"
+    ]
+  },
+  {
+    "canonicalName": "Vilija",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Vilija"
+    ]
+  },
+  {
+    "canonicalName": "Tijana Dapčević",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Tijana+Dapčević"
+    ]
+  },
+  {
+    "canonicalName": "Firelight",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Firelight"
+    ]
+  },
+  {
+    "canonicalName": "Cristina Scarlat",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Cristina+Scarlat"
+    ]
+  },
+  {
+    "canonicalName": "Sergej Ćetković",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Sergej+Ćetković"
+    ]
+  },
+  {
+    "canonicalName": "The Common Linnets",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/The+Common+Linnets"
+    ]
+  },
+  {
+    "canonicalName": "Carl Espen",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Carl+Espen"
+    ]
+  },
+  {
+    "canonicalName": "Donatan",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Donatan"
+    ]
+  },
+  {
+    "canonicalName": "Donatan - Cleo",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Donatan+-+Cleo"
+    ]
+  },
+  {
+    "canonicalName": "Suzy",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Suzy/Quero+Ser+Tua"
+    ]
+  },
+  {
+    "canonicalName": "Paula Seling",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Paula+Seling"
+    ]
+  },
+  {
+    "canonicalName": "Tinkara Kovač",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Tinkara+Kovač"
+    ]
+  },
+  {
+    "canonicalName": "Ruth Lorenzo",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Ruth+Lorenzo"
+    ]
+  },
+  {
+    "canonicalName": "Sanna Nielsen",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Sanna+Nielsen"
+    ]
+  },
+  {
+    "canonicalName": "Sebalter",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Sebalter"
+    ]
+  },
+  {
+    "canonicalName": "Марія Яремчук",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Марія+Яремчук"
+    ]
+  },
+  {
+    "canonicalName": "Mariya Yaremchuk",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Mariya+Yaremchuk"
+    ]
+  },
+  {
+    "canonicalName": "Molly",
+    "countryIso": null,
+    "editionYear": 2014,
+    "urls": [
+      "https://www.last.fm/music/Molly/Children+of+the+Universe"
+    ]
+  },
+  {
+    "canonicalName": "Adrian Lulgjuraj",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Adrian+Lulgjuraj"
+    ]
+  },
+  {
+    "canonicalName": "Adrian Lulgjuraj & Bledar Sejko",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Adrian+Lulgjuraj+&+Bledar+Sejko"
+    ]
+  },
+  {
+    "canonicalName": "Dorians",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Dorians"
+    ]
+  },
+  {
+    "canonicalName": "Natália Kelly",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Natália+Kelly"
+    ]
+  },
+  {
+    "canonicalName": "Farid Mammadov",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Farid+Mammadov"
+    ]
+  },
+  {
+    "canonicalName": "Roberto Bellarosa",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Roberto+Bellarosa"
+    ]
+  },
+  {
+    "canonicalName": "Elitsa Todorova & Stoyan Yankoulov",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Elitsa+Todorova+&+Stoyan+Yankoulov"
+    ]
+  },
+  {
+    "canonicalName": "Klapa s mora",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Klapa+s+mora"
+    ]
+  },
+  {
+    "canonicalName": "Despina Olympiou",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Despina+Olympiou"
+    ]
+  },
+  {
+    "canonicalName": "Emmelie de Forest",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Emmelie+de+Forest"
+    ]
+  },
+  {
+    "canonicalName": "Birgit Õigemeel",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Birgit+Õigemeel"
+    ]
+  },
+  {
+    "canonicalName": "Krista Siegfrids",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Krista+Siegfrids"
+    ]
+  },
+  {
+    "canonicalName": "Amandine Bourgeois",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Amandine+Bourgeois"
+    ]
+  },
+  {
+    "canonicalName": "Nodi Tatishvili & Sophie Gelovani",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Nodi+Tatishvili+&+Sophie+Gelovani"
+    ]
+  },
+  {
+    "canonicalName": "Cascada",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Cascada"
+    ]
+  },
+  {
+    "canonicalName": "Koza Mostra",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Koza+Mostra"
+    ]
+  },
+  {
+    "canonicalName": "Koza Mostra & Agathon Iakovidis",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Koza+Mostra+&+Agathon+Iakovidis"
+    ]
+  },
+  {
+    "canonicalName": "ByeAlex",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/ByeAlex"
+    ]
+  },
+  {
+    "canonicalName": "Eythor Ingi",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Eythor+Ingi"
+    ]
+  },
+  {
+    "canonicalName": "Ryan Dolan",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Ryan+Dolan"
+    ]
+  },
+  {
+    "canonicalName": "Moran Mazor",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Moran+Mazor"
+    ]
+  },
+  {
+    "canonicalName": "PeR",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/PeR"
+    ]
+  },
+  {
+    "canonicalName": "Andrius Pojavis",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Andrius+Pojavis"
+    ]
+  },
+  {
+    "canonicalName": "Esma & Lozano",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Esma+&+Lozano"
+    ]
+  },
+  {
+    "canonicalName": "Gianluca",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Gianluca"
+    ]
+  },
+  {
+    "canonicalName": "Aliona Moon",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Aliona+Moon"
+    ]
+  },
+  {
+    "canonicalName": "Who See",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Who+See"
+    ]
+  },
+  {
+    "canonicalName": "Anouk",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Anouk"
+    ]
+  },
+  {
+    "canonicalName": "Margaret Berger",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Margaret+Berger"
+    ]
+  },
+  {
+    "canonicalName": "Cezar",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Cezar/_/It%27s+My+Life"
+    ]
+  },
+  {
+    "canonicalName": "Moje 3",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Moje+3"
+    ]
+  },
+  {
+    "canonicalName": "Hannah",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Hannah"
+    ]
+  },
+  {
+    "canonicalName": "ESDM",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/ESDM"
+    ]
+  },
+  {
+    "canonicalName": "Robin Stjernberg",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Robin+Stjernberg"
+    ]
+  },
+  {
+    "canonicalName": "Takasa",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Takasa"
+    ]
+  },
+  {
+    "canonicalName": "Zlata Ognevich",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Zlata+Ognevich"
+    ]
+  },
+  {
+    "canonicalName": "Bonnie Tyler",
+    "countryIso": null,
+    "editionYear": 2013,
+    "urls": [
+      "https://www.last.fm/music/Bonnie+Tyler"
+    ]
+  },
+  {
+    "canonicalName": "Rona Nishliu",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Rona+Nishliu"
+    ]
+  },
+  {
+    "canonicalName": "Trackshittaz",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Trackshittaz"
+    ]
+  },
+  {
+    "canonicalName": "Sabina Babayeva",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Sabina+Babayeva"
+    ]
+  },
+  {
+    "canonicalName": "Iris",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Iris"
+    ]
+  },
+  {
+    "canonicalName": "Maya Sar",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Maya+Sar"
+    ]
+  },
+  {
+    "canonicalName": "Sofi Marinova",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Sofi+Marinova"
+    ]
+  },
+  {
+    "canonicalName": "Nina Badrić",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Nina+Badrić"
+    ]
+  },
+  {
+    "canonicalName": "Ivi Adamou",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Ivi+Adamou"
+    ]
+  },
+  {
+    "canonicalName": "Soluna Samay",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Soluna+Samay"
+    ]
+  },
+  {
+    "canonicalName": "Ott Lepland",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Ott+Lepland"
+    ]
+  },
+  {
+    "canonicalName": "Pernilla",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Pernilla"
+    ]
+  },
+  {
+    "canonicalName": "Anggun",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Anggun"
+    ]
+  },
+  {
+    "canonicalName": "Anri Jokhadze",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Anri+Jokhadze"
+    ]
+  },
+  {
+    "canonicalName": "Roman Lob",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Roman+Lob"
+    ]
+  },
+  {
+    "canonicalName": "Eleftheria Eleftheriou",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Eleftheria+Eleftheriou"
+    ]
+  },
+  {
+    "canonicalName": "Compact Disco",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Compact+Disco"
+    ]
+  },
+  {
+    "canonicalName": "Greta Salóme and Jónsi",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Greta+Salóme+and+Jónsi"
+    ]
+  },
+  {
+    "canonicalName": "Jedward",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Jedward"
+    ]
+  },
+  {
+    "canonicalName": "Izabo",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Izabo"
+    ]
+  },
+  {
+    "canonicalName": "Nina Zilli",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Nina+Zilli"
+    ]
+  },
+  {
+    "canonicalName": "Anmary",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Anmary"
+    ]
+  },
+  {
+    "canonicalName": "Kurt Calleja",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Kurt+Calleja"
+    ]
+  },
+  {
+    "canonicalName": "Rambo Amadeus",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Rambo+Amadeus"
+    ]
+  },
+  {
+    "canonicalName": "Joan Franka",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Joan+Franka"
+    ]
+  },
+  {
+    "canonicalName": "Tooji",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Tooji"
+    ]
+  },
+  {
+    "canonicalName": "Filipa Sousa",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Filipa+Sousa"
+    ]
+  },
+  {
+    "canonicalName": "Mandinga",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Mandinga"
+    ]
+  },
+  {
+    "canonicalName": "Željko Joksimović",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Željko+Joksimović"
+    ]
+  },
+  {
+    "canonicalName": "Max Jason Mai",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Max+Jason+Mai"
+    ]
+  },
+  {
+    "canonicalName": "Eva Boto",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Eva+Boto"
+    ]
+  },
+  {
+    "canonicalName": "Pastora Soler",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Pastora+Soler"
+    ]
+  },
+  {
+    "canonicalName": "Sinplus",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Sinplus"
+    ]
+  },
+  {
+    "canonicalName": "Can Bonomo",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Can+Bonomo"
+    ]
+  },
+  {
+    "canonicalName": "Gaitana",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Gaitana"
+    ]
+  },
+  {
+    "canonicalName": "Engelbert Humperdinck",
+    "countryIso": null,
+    "editionYear": 2012,
+    "urls": [
+      "https://www.last.fm/music/Engelbert+Humperdinck"
+    ]
+  },
+  {
+    "canonicalName": "Aurela Gaçe",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Aurela+Gaçe"
+    ]
+  },
+  {
+    "canonicalName": "Emmy Bejanyan",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Emmy+Bejanyan"
+    ]
+  },
+  {
+    "canonicalName": "Nadine Beiler",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Nadine+Beiler"
+    ]
+  },
+  {
+    "canonicalName": "Ell & Nikki",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Ell+&+Nikki"
+    ]
+  },
+  {
+    "canonicalName": "Witloof Bay",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Witloof+Bay"
+    ]
+  },
+  {
+    "canonicalName": "Daria",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Daria"
+    ]
+  },
+  {
+    "canonicalName": "Christos Mylordos",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Christos+Mylordos"
+    ]
+  },
+  {
+    "canonicalName": "A Friend in London",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/A+Friend+in+London"
+    ]
+  },
+  {
+    "canonicalName": "Getter Jaani",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Getter+Jaani"
+    ]
+  },
+  {
+    "canonicalName": "Paradise Oskar",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Paradise+Oskar"
+    ]
+  },
+  {
+    "canonicalName": "Amaury Vassili",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Amaury+Vassili"
+    ]
+  },
+  {
+    "canonicalName": "Eldrine",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Eldrine"
+    ]
+  },
+  {
+    "canonicalName": "Lena",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Lena"
+    ]
+  },
+  {
+    "canonicalName": "Loucas Yiorkas feat. Stereo Mike",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Loucas+Yiorkas+feat.+Stereo+Mike"
+    ]
+  },
+  {
+    "canonicalName": "Kati Wolf",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Kati+Wolf"
+    ]
+  },
+  {
+    "canonicalName": "Sjonni's Friends",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Sjonni%27s+Friends"
+    ]
+  },
+  {
+    "canonicalName": "Dana International",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Dana+International"
+    ]
+  },
+  {
+    "canonicalName": "Raphael Gualazzi",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Raphael+Gualazzi"
+    ]
+  },
+  {
+    "canonicalName": "Musiqq",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Musiqq"
+    ]
+  },
+  {
+    "canonicalName": "Evelina Sašenko",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Evelina+Sašenko"
+    ]
+  },
+  {
+    "canonicalName": "Vlatko Ilievski",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Vlatko+Ilievski"
+    ]
+  },
+  {
+    "canonicalName": "Glen Vella",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Glen+Vella"
+    ]
+  },
+  {
+    "canonicalName": "3JS",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/3JS"
+    ]
+  },
+  {
+    "canonicalName": "Stella Mwangi",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Stella+Mwangi"
+    ]
+  },
+  {
+    "canonicalName": "Magdalena Tul",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Magdalena+Tul"
+    ]
+  },
+  {
+    "canonicalName": "Homens Da Luta",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Homens+Da+Luta"
+    ]
+  },
+  {
+    "canonicalName": "Hotel FM",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Hotel+FM"
+    ]
+  },
+  {
+    "canonicalName": "Nina",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Nina"
+    ]
+  },
+  {
+    "canonicalName": "TWiiNS",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/TWiiNS"
+    ]
+  },
+  {
+    "canonicalName": "Maja Keuc",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Maja+Keuc"
+    ]
+  },
+  {
+    "canonicalName": "Lucía Pérez",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Lucía+Pérez"
+    ]
+  },
+  {
+    "canonicalName": "Eric Saade",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Eric+Saade"
+    ]
+  },
+  {
+    "canonicalName": "Anna Rossinelli",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Anna+Rossinelli"
+    ]
+  },
+  {
+    "canonicalName": "Yüksek Sadakat",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Yüksek+Sadakat"
+    ]
+  },
+  {
+    "canonicalName": "Mika Newton",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Mika+Newton"
+    ]
+  },
+  {
+    "canonicalName": "Blue",
+    "countryIso": null,
+    "editionYear": 2011,
+    "urls": [
+      "https://www.last.fm/music/Blue"
+    ]
+  },
+  {
+    "canonicalName": "Juliana Pasha",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Juliana+Pasha"
+    ]
+  },
+  {
+    "canonicalName": "Eva Rivas",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Eva+Rivas"
+    ]
+  },
+  {
+    "canonicalName": "Safura",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Safura"
+    ]
+  },
+  {
+    "canonicalName": "Tom Dice",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Tom+Dice"
+    ]
+  },
+  {
+    "canonicalName": "Vukašin Brajić",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Vukašin+Brajić"
+    ]
+  },
+  {
+    "canonicalName": "Miro",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Miro"
+    ]
+  },
+  {
+    "canonicalName": "Feminnem",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Feminnem"
+    ]
+  },
+  {
+    "canonicalName": "Jon Lilygreen and The Islanders",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Jon+Lilygreen+and+The+Islanders"
+    ]
+  },
+  {
+    "canonicalName": "Chanée & N'evergreen",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Chanée & N'evergreen"
+    ]
+  },
+  {
+    "canonicalName": "Malcolm Lincoln",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Malcolm+Lincoln"
+    ]
+  },
+  {
+    "canonicalName": "Kuunkuiskaajat",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Kuunkuiskaajat"
+    ]
+  },
+  {
+    "canonicalName": "Jessy Matador",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Jessy+Matador"
+    ]
+  },
+  {
+    "canonicalName": "Sofia Nizharadze",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Sofia+Nizharadze"
+    ]
+  },
+  {
+    "canonicalName": "Giorgos Alkaios & Friends",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Giorgos+Alkaios+&+Friends"
+    ]
+  },
+  {
+    "canonicalName": "Niamh Kavanagh",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Niamh+Kavanagh"
+    ]
+  },
+  {
+    "canonicalName": "Harel Skaat",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Harel+Skaat"
+    ]
+  },
+  {
+    "canonicalName": "Aisha",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Aisha/What+For"
+    ]
+  },
+  {
+    "canonicalName": "InCulto",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/InCulto"
+    ]
+  },
+  {
+    "canonicalName": "Gjoko Taneski",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Gjoko+Taneski"
+    ]
+  },
+  {
+    "canonicalName": "Thea Garrett",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Thea+Garrett"
+    ]
+  },
+  {
+    "canonicalName": "Olia Tira",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Olia+Tira"
+    ]
+  },
+  {
+    "canonicalName": "Sieneke",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Sieneke"
+    ]
+  },
+  {
+    "canonicalName": "Didrik Solli-Tangen",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Didrik+Solli-Tangen"
+    ]
+  },
+  {
+    "canonicalName": "Marcin Mroziński",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Marcin+Mroziński"
+    ]
+  },
+  {
+    "canonicalName": "Filipa Azevedo",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Filipa+Azevedo"
+    ]
+  },
+  {
+    "canonicalName": "Paula Seling & Ovi",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Paula+Seling+&+Ovi"
+    ]
+  },
+  {
+    "canonicalName": "Milan Stanković",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Milan+Stanković"
+    ]
+  },
+  {
+    "canonicalName": "Kristína",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Kristína"
+    ]
+  },
+  {
+    "canonicalName": "Ansambel Žlindra and Kalamari",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Ansambel+Žlindra+and+Kalamari"
+    ]
+  },
+  {
+    "canonicalName": "Daniel Diges",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Daniel+Diges"
+    ]
+  },
+  {
+    "canonicalName": "Anna Bergendahl",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Anna+Bergendahl"
+    ]
+  },
+  {
+    "canonicalName": "Michael von der Heide",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Michael+von+der+Heide"
+    ]
+  },
+  {
+    "canonicalName": "Manga",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Manga"
+    ]
+  },
+  {
+    "canonicalName": "Alyosha",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Alyosha"
+    ]
+  },
+  {
+    "canonicalName": "Олена Тополя",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Олена+Тополя"
+    ]
+  },
+  {
+    "canonicalName": "Josh Dubovie",
+    "countryIso": null,
+    "editionYear": 2010,
+    "urls": [
+      "https://www.last.fm/music/Josh+Dubovie"
+    ]
+  },
+  {
+    "canonicalName": "Kejsi Tola",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Kejsi+Tola"
+    ]
+  },
+  {
+    "canonicalName": "Susanne Georgi",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Susanne+Georgi"
+    ]
+  },
+  {
+    "canonicalName": "Inga & Anush",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Inga+&+Anush"
+    ]
+  },
+  {
+    "canonicalName": "AySel & Arash",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/AySel+&+Arash"
+    ]
+  },
+  {
+    "canonicalName": "Arash",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Arash"
+    ]
+  },
+  {
+    "canonicalName": "Aysel",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Aysel"
+    ]
+  },
+  {
+    "canonicalName": "Copycat",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Copycat"
+    ]
+  },
+  {
+    "canonicalName": "Grupa Regina",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Grupa+Regina/Bistra+Voda"
+    ]
+  },
+  {
+    "canonicalName": "Krassimir Avramov",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Krassimir+Avramov"
+    ]
+  },
+  {
+    "canonicalName": "Igor Cukrov",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Igor+Cukrov"
+    ]
+  },
+  {
+    "canonicalName": "Christina Metaxa",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Christina+Metaxa"
+    ]
+  },
+  {
+    "canonicalName": "Gipsy.cz",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Gipsy.cz"
+    ]
+  },
+  {
+    "canonicalName": "Brinck",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Brinck"
+    ]
+  },
+  {
+    "canonicalName": "Urban Symphony",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Urban+Symphony"
+    ]
+  },
+  {
+    "canonicalName": "Waldo's People",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Waldo's+People"
+    ]
+  },
+  {
+    "canonicalName": "Patricia Kaas",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Patricia+Kaas"
+    ]
+  },
+  {
+    "canonicalName": "Alex Swings Oscar Sings!",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Alex+Swings+Oscar+Sings!"
+    ]
+  },
+  {
+    "canonicalName": "Sakis Rouvas",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Sakis+Rouvas"
+    ]
+  },
+  {
+    "canonicalName": "Zoli Ádok",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Zoli+Ádok"
+    ]
+  },
+  {
+    "canonicalName": "Yohanna",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Yohanna"
+    ]
+  },
+  {
+    "canonicalName": "Sinéad Mulvey",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Sinéad+Mulvey"
+    ]
+  },
+  {
+    "canonicalName": "NOA",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/NOA/There+Must+Be+Another+Way"
+    ]
+  },
+  {
+    "canonicalName": "Intars Busulis",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Intars+Busulis"
+    ]
+  },
+  {
+    "canonicalName": "Sasha Son",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Sasha+Son"
+    ]
+  },
+  {
+    "canonicalName": "Next Time",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Next+Time"
+    ]
+  },
+  {
+    "canonicalName": "Chiara",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Chiara"
+    ]
+  },
+  {
+    "canonicalName": "Nelly Ciobanu",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Nelly+Ciobanu"
+    ]
+  },
+  {
+    "canonicalName": "Andrea Demirović",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Andrea+Demirović"
+    ]
+  },
+  {
+    "canonicalName": "The Toppers",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/The+Toppers"
+    ]
+  },
+  {
+    "canonicalName": "Lidia Kopania",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Lidia+Kopania"
+    ]
+  },
+  {
+    "canonicalName": "Flor-de-Lis",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Flor-de-Lis"
+    ]
+  },
+  {
+    "canonicalName": "Elena Gheorghe",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Elena+Gheorghe/The+Balkan+Girls"
+    ]
+  },
+  {
+    "canonicalName": "Marko Kon & Milaan",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Marko+Kon+&+Milaan"
+    ]
+  },
+  {
+    "canonicalName": "Kamil Mikulčík and Nela Pocisková",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Kamil+Mikulčík+and+Nela+Pocisková"
+    ]
+  },
+  {
+    "canonicalName": "Quartissimo",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Quartissimo"
+    ]
+  },
+  {
+    "canonicalName": "Soraya Arnelas",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Soraya+Arnelas"
+    ]
+  },
+  {
+    "canonicalName": "Malena Ernman",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Malena+Ernman"
+    ]
+  },
+  {
+    "canonicalName": "Lovebugs",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Lovebugs"
+    ]
+  },
+  {
+    "canonicalName": "Hadise",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Hadise"
+    ]
+  },
+  {
+    "canonicalName": "Jade Ewen",
+    "countryIso": null,
+    "editionYear": 2009,
+    "urls": [
+      "https://www.last.fm/music/Jade+Ewen"
+    ]
+  },
+  {
+    "canonicalName": "Olta Boka",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Olta+Boka"
+    ]
+  },
+  {
+    "canonicalName": "Gisela",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Gisela"
+    ]
+  },
+  {
+    "canonicalName": "Sirusho",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Sirusho"
+    ]
+  },
+  {
+    "canonicalName": "Elnur & Samir",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Elnur+&+Samir"
+    ]
+  },
+  {
+    "canonicalName": "Ishtar",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Ishtar"
+    ]
+  },
+  {
+    "canonicalName": "Laka",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Laka/Pokušaj"
+    ]
+  },
+  {
+    "canonicalName": "Deep Zone & Balthazar",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Deep+Zone+&+Balthazar"
+    ]
+  },
+  {
+    "canonicalName": "Kraljevi Ulice & 75 Cents",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Kraljevi+Ulice+&+75+Cents"
+    ]
+  },
+  {
+    "canonicalName": "Evdokia Kadi",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Evdokia+Kadi"
+    ]
+  },
+  {
+    "canonicalName": "Tereza Kerndlová",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Tereza+Kerndlová"
+    ]
+  },
+  {
+    "canonicalName": "Simon Mathew",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Simon+Mathew"
+    ]
+  },
+  {
+    "canonicalName": "Kreisiraadio",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Kreisiraadio"
+    ]
+  },
+  {
+    "canonicalName": "Teräsbetoni",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Teräsbetoni"
+    ]
+  },
+  {
+    "canonicalName": "Sébastien Tellier",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Sébastien+Tellier"
+    ]
+  },
+  {
+    "canonicalName": "No Angels",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/No+Angels"
+    ]
+  },
+  {
+    "canonicalName": "Kalomira",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Kalomira"
+    ]
+  },
+  {
+    "canonicalName": "Csézy",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Csézy"
+    ]
+  },
+  {
+    "canonicalName": "Euroband",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Euroband"
+    ]
+  },
+  {
+    "canonicalName": "Dustin The Turkey",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Dustin+The+Turkey"
+    ]
+  },
+  {
+    "canonicalName": "Boaz",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Boaz"
+    ]
+  },
+  {
+    "canonicalName": "Pirates Of The Sea",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Pirates+Of+The+Sea"
+    ]
+  },
+  {
+    "canonicalName": "Jeronimas Milius",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Jeronimas+Milius"
+    ]
+  },
+  {
+    "canonicalName": "Tamara Vrčak and Adrijan",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Tamara+Vrčak+and+Adrijan"
+    ]
+  },
+  {
+    "canonicalName": "Morena",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Morena"
+    ]
+  },
+  {
+    "canonicalName": "Geta Burlacu",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Geta+Burlacu"
+    ]
+  },
+  {
+    "canonicalName": "Stefan Filipović",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Stefan+Filipović"
+    ]
+  },
+  {
+    "canonicalName": "Hind",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Hind"
+    ]
+  },
+  {
+    "canonicalName": "Maria",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Maria/Hold+On+Be+Strong"
+    ]
+  },
+  {
+    "canonicalName": "Isis Gee",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Isis+Gee"
+    ]
+  },
+  {
+    "canonicalName": "Vânia Fernandes",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Vânia+Fernandes"
+    ]
+  },
+  {
+    "canonicalName": "Nico & Vlad",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Nico+&+Vlad"
+    ]
+  },
+  {
+    "canonicalName": "Miodio",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Miodio"
+    ]
+  },
+  {
+    "canonicalName": "Jelena Tomašević",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Jelena+Tomašević"
+    ]
+  },
+  {
+    "canonicalName": "Bora Dugić",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Bora+Dugić"
+    ]
+  },
+  {
+    "canonicalName": "Rebeka Dremelj",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Rebeka+Dremelj"
+    ]
+  },
+  {
+    "canonicalName": "Rodolfo Chikilicuatre",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Rodolfo+Chikilicuatre"
+    ]
+  },
+  {
+    "canonicalName": "Charlotte Perrelli",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Charlotte+Perrelli"
+    ]
+  },
+  {
+    "canonicalName": "Paolo Meneguzzi",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Paolo+Meneguzzi"
+    ]
+  },
+  {
+    "canonicalName": "Mor ve Ötesi",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Mor+ve+Ötesi"
+    ]
+  },
+  {
+    "canonicalName": "Andy Abraham",
+    "countryIso": null,
+    "editionYear": 2008,
+    "urls": [
+      "https://www.last.fm/music/Andy+Abraham"
+    ]
+  },
+  {
+    "canonicalName": "Frederik Ndoci",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Frederik+Ndoci"
+    ]
+  },
+  {
+    "canonicalName": "Anonymous",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Anonymous/Salvem+el+món"
+    ]
+  },
+  {
+    "canonicalName": "Hayko",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Hayko"
+    ]
+  },
+  {
+    "canonicalName": "Eric Papilaya",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Eric+Papilaya"
+    ]
+  },
+  {
+    "canonicalName": "The KMG's",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/The KMG's"
+    ]
+  },
+  {
+    "canonicalName": "Marija Šestić",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Marija+Šestić"
+    ]
+  },
+  {
+    "canonicalName": "Elitsa Todorova and Stoyan Yankoukov",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Elitsa+Todorova+and+Stoyan+Yankoukov"
+    ]
+  },
+  {
+    "canonicalName": "Dragonfly feat. Dado Topić",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Dragonfly+feat.+Dado+Topić"
+    ]
+  },
+  {
+    "canonicalName": "Evridiki",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Evridiki"
+    ]
+  },
+  {
+    "canonicalName": "Kabát",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Kabát"
+    ]
+  },
+  {
+    "canonicalName": "DQ",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/DQ"
+    ]
+  },
+  {
+    "canonicalName": "Gerli Padar",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Gerli+Padar"
+    ]
+  },
+  {
+    "canonicalName": "Hanna Pakarinen",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Hanna+Pakarinen"
+    ]
+  },
+  {
+    "canonicalName": "Les Fatals Picards",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Les+Fatals+Picards"
+    ]
+  },
+  {
+    "canonicalName": "Sopho",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Sopho"
+    ]
+  },
+  {
+    "canonicalName": "Roger Cicero",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Roger+Cicero"
+    ]
+  },
+  {
+    "canonicalName": "Sarbel",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Sarbel"
+    ]
+  },
+  {
+    "canonicalName": "Magdi Rúzsa",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Magdi+Rúzsa"
+    ]
+  },
+  {
+    "canonicalName": "Eiríkur Hauksson",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Eiríkur+Hauksson"
+    ]
+  },
+  {
+    "canonicalName": "Dervish",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Dervish"
+    ]
+  },
+  {
+    "canonicalName": "Teapacks",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Teapacks"
+    ]
+  },
+  {
+    "canonicalName": "Bonaparti.lv",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Bonaparti.lv"
+    ]
+  },
+  {
+    "canonicalName": "4fun",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/4fun"
+    ]
+  },
+  {
+    "canonicalName": "Karolina",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Karolina"
+    ]
+  },
+  {
+    "canonicalName": "Olivia Lewis",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Olivia+Lewis"
+    ]
+  },
+  {
+    "canonicalName": "Stevan Faddy",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Stevan+Faddy"
+    ]
+  },
+  {
+    "canonicalName": "Edsilia Rombley",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Edsilia+Rombley"
+    ]
+  },
+  {
+    "canonicalName": "Guri Schanke",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Guri+Schanke"
+    ]
+  },
+  {
+    "canonicalName": "The Jet Set",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/The+Jet+Set"
+    ]
+  },
+  {
+    "canonicalName": "Sabrina",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Sabrina"
+    ]
+  },
+  {
+    "canonicalName": "Todomondo",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Todomondo"
+    ]
+  },
+  {
+    "canonicalName": "Marija Šerifović",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Marija+Šerifović"
+    ]
+  },
+  {
+    "canonicalName": "Alenka Gotar",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Alenka+Gotar"
+    ]
+  },
+  {
+    "canonicalName": "D'Nash",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/D'Nash"
+    ]
+  },
+  {
+    "canonicalName": "The Ark",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/The+Ark"
+    ]
+  },
+  {
+    "canonicalName": "DJ Bobo",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/DJ+Bobo"
+    ]
+  },
+  {
+    "canonicalName": "Kenan Doğulu",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Kenan+Doğulu"
+    ]
+  },
+  {
+    "canonicalName": "Верка Сердючка",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Верка+Сердючка"
+    ]
+  },
+  {
+    "canonicalName": "Scooch",
+    "countryIso": null,
+    "editionYear": 2007,
+    "urls": [
+      "https://www.last.fm/music/Scooch"
+    ]
+  },
+  {
+    "canonicalName": "Luiz Ejlli",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Luiz+Ejlli"
+    ]
+  },
+  {
+    "canonicalName": "Jenny",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Jenny"
+    ]
+  },
+  {
+    "canonicalName": "André",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/André"
+    ]
+  },
+  {
+    "canonicalName": "Kate Ryan",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Kate+Ryan"
+    ]
+  },
+  {
+    "canonicalName": "Hari Mata Hari",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Hari+Mata+Hari"
+    ]
+  },
+  {
+    "canonicalName": "Mariana Popova",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Mariana+Popova"
+    ]
+  },
+  {
+    "canonicalName": "Severina",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Severina"
+    ]
+  },
+  {
+    "canonicalName": "Annet Artani",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Annet+Artani"
+    ]
+  },
+  {
+    "canonicalName": "Sidsel Ben Semmane",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Sidsel+Ben+Semmane"
+    ]
+  },
+  {
+    "canonicalName": "Sandra Oxenryd",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Sandra+Oxenryd"
+    ]
+  },
+  {
+    "canonicalName": "Lordi",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Lordi"
+    ]
+  },
+  {
+    "canonicalName": "Virginie Pouchain",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Virginie+Pouchain"
+    ]
+  },
+  {
+    "canonicalName": "Texas Lightning",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Texas+Lightning"
+    ]
+  },
+  {
+    "canonicalName": "Άννα Βισση",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Άννα+Βισση"
+    ]
+  },
+  {
+    "canonicalName": "Silvía Night",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Silvía+Night"
+    ]
+  },
+  {
+    "canonicalName": "Brian Kennedy",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Brian+Kennedy"
+    ]
+  },
+  {
+    "canonicalName": "Eddie Butler",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Eddie+Butler"
+    ]
+  },
+  {
+    "canonicalName": "Vocal Group Cosmos",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Vocal+Group+Cosmos"
+    ]
+  },
+  {
+    "canonicalName": "LT United",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/LT+United"
+    ]
+  },
+  {
+    "canonicalName": "Elena Risteska",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Elena+Risteska"
+    ]
+  },
+  {
+    "canonicalName": "Fabrizio Faniello",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Fabrizio+Faniello"
+    ]
+  },
+  {
+    "canonicalName": "Séverine Ferrer",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Séverine+Ferrer"
+    ]
+  },
+  {
+    "canonicalName": "Arsenium",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Arsenium"
+    ]
+  },
+  {
+    "canonicalName": "Connect-R",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Connect-R"
+    ]
+  },
+  {
+    "canonicalName": "Treble",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Treble"
+    ]
+  },
+  {
+    "canonicalName": "Christine Guldbrandsen",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Christine+Guldbrandsen"
+    ]
+  },
+  {
+    "canonicalName": "Ich Troje",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Ich+Troje"
+    ]
+  },
+  {
+    "canonicalName": "Nonstop",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Nonstop/Coisas+De+Nada"
+    ]
+  },
+  {
+    "canonicalName": "Mihai Trăistariu",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Mihai+Trăistariu"
+    ]
+  },
+  {
+    "canonicalName": "Anžej Dežan",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Anžej+Dežan"
+    ]
+  },
+  {
+    "canonicalName": "Las Ketchup",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Las+Ketchup"
+    ]
+  },
+  {
+    "canonicalName": "Carola",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Carola"
+    ]
+  },
+  {
+    "canonicalName": "Six4one",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Six4one"
+    ]
+  },
+  {
+    "canonicalName": "Sibel Tüzün",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Sibel+Tüzün"
+    ]
+  },
+  {
+    "canonicalName": "Tina Karol",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Tina+Karol"
+    ]
+  },
+  {
+    "canonicalName": "Тіна Кароль",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Тіна+Кароль"
+    ]
+  },
+  {
+    "canonicalName": "Daz Sampson",
+    "countryIso": null,
+    "editionYear": 2006,
+    "urls": [
+      "https://www.last.fm/music/Daz+Sampson"
+    ]
+  },
+  {
+    "canonicalName": "Ledina Çelo",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Ledina+Çelo"
+    ]
+  },
+  {
+    "canonicalName": "Marian van de Wal",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Marian+van+de+Wal"
+    ]
+  },
+  {
+    "canonicalName": "Global.Kryner",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Global.Kryner"
+    ]
+  },
+  {
+    "canonicalName": "Nuno Resende",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Nuno+Resende"
+    ]
+  },
+  {
+    "canonicalName": "Kaffe",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Kaffe"
+    ]
+  },
+  {
+    "canonicalName": "Boris Novković",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Boris+Novković"
+    ]
+  },
+  {
+    "canonicalName": "Constantinos Christoforou",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Constantinos+Christoforou"
+    ]
+  },
+  {
+    "canonicalName": "Jakob Sveistrup",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Jakob+Sveistrup"
+    ]
+  },
+  {
+    "canonicalName": "Suntribe",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Suntribe"
+    ]
+  },
+  {
+    "canonicalName": "Geir Rönning",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Geir+Rönning"
+    ]
+  },
+  {
+    "canonicalName": "Ortal",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Ortal"
+    ]
+  },
+  {
+    "canonicalName": "Gracia",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Gracia"
+    ]
+  },
+  {
+    "canonicalName": "Helena Paparizou",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Helena+Paparizou"
+    ]
+  },
+  {
+    "canonicalName": "Nox",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Nox"
+    ]
+  },
+  {
+    "canonicalName": "Selma",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Selma"
+    ]
+  },
+  {
+    "canonicalName": "Donna & Joe",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Donna+&+Joe"
+    ]
+  },
+  {
+    "canonicalName": "Shiri Maimon",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Shiri+Maimon"
+    ]
+  },
+  {
+    "canonicalName": "Walters & Kazha",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Walters+&+Kazha"
+    ]
+  },
+  {
+    "canonicalName": "Laura & The Lovers",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Laura+&+The+Lovers"
+    ]
+  },
+  {
+    "canonicalName": "Martin Vučić",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Martin+Vučić"
+    ]
+  },
+  {
+    "canonicalName": "Lise Darly",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Lise+Darly"
+    ]
+  },
+  {
+    "canonicalName": "Glennis Grace",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Glennis+Grace"
+    ]
+  },
+  {
+    "canonicalName": "Wig Wam",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Wig+Wam"
+    ]
+  },
+  {
+    "canonicalName": "Ivan & Delfin",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Ivan+&+Delfin"
+    ]
+  },
+  {
+    "canonicalName": "2B",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/2B"
+    ]
+  },
+  {
+    "canonicalName": "Luminița Anghel and Sistem",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Luminița+Anghel+and+Sistem"
+    ]
+  },
+  {
+    "canonicalName": "No Name",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/No+Name/Zauvijek+Moja"
+    ]
+  },
+  {
+    "canonicalName": "Son de Sol",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Son+de+Sol"
+    ]
+  },
+  {
+    "canonicalName": "Martin Stenmarck",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Martin+Stenmarck"
+    ]
+  },
+  {
+    "canonicalName": "Gülseren",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Gülseren"
+    ]
+  },
+  {
+    "canonicalName": "GreenJolly",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/GreenJolly"
+    ]
+  },
+  {
+    "canonicalName": "Javine",
+    "countryIso": null,
+    "editionYear": 2005,
+    "urls": [
+      "https://www.last.fm/music/Javine"
+    ]
+  },
+  {
+    "canonicalName": "Anjeza Shahini",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Anjeza+Shahini"
+    ]
+  },
+  {
+    "canonicalName": "Marta Roure",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Marta+Roure"
+    ]
+  },
+  {
+    "canonicalName": "Tie Break",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Tie+Break"
+    ]
+  },
+  {
+    "canonicalName": "Xandee",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Xandee"
+    ]
+  },
+  {
+    "canonicalName": "DEEN",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/DEEN"
+    ]
+  },
+  {
+    "canonicalName": "Ivan Mikulić",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Ivan+Mikulić"
+    ]
+  },
+  {
+    "canonicalName": "Lisa Andreas",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Lisa+Andreas"
+    ]
+  },
+  {
+    "canonicalName": "Tomas Thordarson",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Tomas+Thordarson"
+    ]
+  },
+  {
+    "canonicalName": "Neiokõsõ",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Neiokõsõ"
+    ]
+  },
+  {
+    "canonicalName": "Jari Sillanpää",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Jari+Sillanpää"
+    ]
+  },
+  {
+    "canonicalName": "Jonatan Cerrada",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Jonatan+Cerrada"
+    ]
+  },
+  {
+    "canonicalName": "Max Mutzke",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Max+Mutzke/Can%27T+Wait+Until+Tonight"
+    ]
+  },
+  {
+    "canonicalName": "Jónsi",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Jónsi"
+    ]
+  },
+  {
+    "canonicalName": "Chris Doran",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Chris+Doran"
+    ]
+  },
+  {
+    "canonicalName": "David D'Or",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/David+D'Or"
+    ]
+  },
+  {
+    "canonicalName": "Fomins & Kleins",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Fomins+&+Kleins"
+    ]
+  },
+  {
+    "canonicalName": "Linas & Simona",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Linas+&+Simona"
+    ]
+  },
+  {
+    "canonicalName": "Toše Proeski",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Toše+Proeski"
+    ]
+  },
+  {
+    "canonicalName": "Julie & Ludwig",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Julie+&+Ludwig"
+    ]
+  },
+  {
+    "canonicalName": "Maryon",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Maryon"
+    ]
+  },
+  {
+    "canonicalName": "Re-Union",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Re-Union"
+    ]
+  },
+  {
+    "canonicalName": "Knut Anders Sørum",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Knut+Anders+Sørum"
+    ]
+  },
+  {
+    "canonicalName": "Blue Café",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Blue+Café"
+    ]
+  },
+  {
+    "canonicalName": "Sofia Vitória",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Sofia+Vitória"
+    ]
+  },
+  {
+    "canonicalName": "Sanda",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Sanda"
+    ]
+  },
+  {
+    "canonicalName": "Platin",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Platin"
+    ]
+  },
+  {
+    "canonicalName": "Ramón",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Ramón"
+    ]
+  },
+  {
+    "canonicalName": "Lena Philipsson",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Lena+Philipsson"
+    ]
+  },
+  {
+    "canonicalName": "Piero & The Music Stars",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Piero+&+The+Music+Stars"
+    ]
+  },
+  {
+    "canonicalName": "Athena",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Athena"
+    ]
+  },
+  {
+    "canonicalName": "Ruslana",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/Ruslana"
+    ]
+  },
+  {
+    "canonicalName": "James Fox",
+    "countryIso": null,
+    "editionYear": 2004,
+    "urls": [
+      "https://www.last.fm/music/James+Fox"
+    ]
+  },
+  {
+    "canonicalName": "Alf Poier",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Alf+Poier"
+    ]
+  },
+  {
+    "canonicalName": "Urban Trad",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Urban+Trad"
+    ]
+  },
+  {
+    "canonicalName": "Mija Martina",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Mija+Martina"
+    ]
+  },
+  {
+    "canonicalName": "Claudia Beni",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Claudia+Beni"
+    ]
+  },
+  {
+    "canonicalName": "Stelios Konstantas",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Stelios+Konstantas"
+    ]
+  },
+  {
+    "canonicalName": "Ruffus",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Ruffus"
+    ]
+  },
+  {
+    "canonicalName": "Louisa Baïleche",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Louisa+Baïleche"
+    ]
+  },
+  {
+    "canonicalName": "Lou",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Lou"
+    ]
+  },
+  {
+    "canonicalName": "Mando",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Mando"
+    ]
+  },
+  {
+    "canonicalName": "Birgitta Haukdal",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Birgitta+Haukdal"
+    ]
+  },
+  {
+    "canonicalName": "Mickey Harte",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Mickey+Harte"
+    ]
+  },
+  {
+    "canonicalName": "Lior Narkis",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Lior+Narkis"
+    ]
+  },
+  {
+    "canonicalName": "F.l.y.",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/F.l.y."
+    ]
+  },
+  {
+    "canonicalName": "Lynn Chircop",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Lynn+Chircop"
+    ]
+  },
+  {
+    "canonicalName": "Esther Hart",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Esther+Hart"
+    ]
+  },
+  {
+    "canonicalName": "Jostein Hasselgård",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Jostein+Hasselgård"
+    ]
+  },
+  {
+    "canonicalName": "Rita Guerra",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Rita+Guerra"
+    ]
+  },
+  {
+    "canonicalName": "Nicola",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Nicola"
+    ]
+  },
+  {
+    "canonicalName": "Karmen Stavec",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Karmen+Stavec"
+    ]
+  },
+  {
+    "canonicalName": "Beth",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Beth"
+    ]
+  },
+  {
+    "canonicalName": "Fame",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Fame"
+    ]
+  },
+  {
+    "canonicalName": "Sertab Erener",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Sertab+Erener"
+    ]
+  },
+  {
+    "canonicalName": "Олександр Пономарьов",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Олександр+Пономарьов"
+    ]
+  },
+  {
+    "canonicalName": "Jemini",
+    "countryIso": null,
+    "editionYear": 2003,
+    "urls": [
+      "https://www.last.fm/music/Jemini"
+    ]
+  },
+  {
+    "canonicalName": "Manuel Ortega",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Manuel+Ortega"
+    ]
+  },
+  {
+    "canonicalName": "Sergio & The Ladies",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Sergio+&+The+Ladies"
+    ]
+  },
+  {
+    "canonicalName": "Maja Tatić",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Maja+Tatić"
+    ]
+  },
+  {
+    "canonicalName": "Vesna Pisarović",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Vesna+Pisarović"
+    ]
+  },
+  {
+    "canonicalName": "Malene Mortensen",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Malene+Mortensen"
+    ]
+  },
+  {
+    "canonicalName": "Sahlene",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Sahlene"
+    ]
+  },
+  {
+    "canonicalName": "Laura Voutilainen",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Laura+Voutilainen"
+    ]
+  },
+  {
+    "canonicalName": "Sandrine François",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Sandrine+François"
+    ]
+  },
+  {
+    "canonicalName": "Corinna May",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Corinna+May"
+    ]
+  },
+  {
+    "canonicalName": "Michalis Rakintzis",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Michalis+Rakintzis"
+    ]
+  },
+  {
+    "canonicalName": "Sarit Hadad",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Sarit+Hadad"
+    ]
+  },
+  {
+    "canonicalName": "Marie N",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Marie+N"
+    ]
+  },
+  {
+    "canonicalName": "Aivaras",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Aivaras"
+    ]
+  },
+  {
+    "canonicalName": "Karolina Gočeva",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Karolina+Gočeva"
+    ]
+  },
+  {
+    "canonicalName": "Monica Anghel",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Monica+Anghel"
+    ]
+  },
+  {
+    "canonicalName": "Sestre",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Sestre"
+    ]
+  },
+  {
+    "canonicalName": "Rosa López",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Rosa+López"
+    ]
+  },
+  {
+    "canonicalName": "Afro-Dite",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Afro-Dite"
+    ]
+  },
+  {
+    "canonicalName": "Francine Jordi",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Francine+Jordi"
+    ]
+  },
+  {
+    "canonicalName": "Buket Bengisu & Group Safir",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Buket+Bengisu+&+Group+Safir"
+    ]
+  },
+  {
+    "canonicalName": "Jessica Garlick",
+    "countryIso": null,
+    "editionYear": 2002,
+    "urls": [
+      "https://www.last.fm/music/Jessica+Garlick"
+    ]
+  },
+  {
+    "canonicalName": "Nino",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Nino"
+    ]
+  },
+  {
+    "canonicalName": "Vanna",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Vanna/Strings+of+My+Heart"
+    ]
+  },
+  {
+    "canonicalName": "Rollo & King",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Rollo+&+King"
+    ]
+  },
+  {
+    "canonicalName": "Tanel Padar",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Tanel+Padar"
+    ]
+  },
+  {
+    "canonicalName": "Tanel Padar & Dave Benton",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Tanel+Padar+&+Dave+Benton"
+    ]
+  },
+  {
+    "canonicalName": "Natasha St-Pier",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Natasha+St-Pier"
+    ]
+  },
+  {
+    "canonicalName": "Michelle",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Michelle"
+    ]
+  },
+  {
+    "canonicalName": "Antique",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Antique"
+    ]
+  },
+  {
+    "canonicalName": "Two Tricky",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Two+Tricky"
+    ]
+  },
+  {
+    "canonicalName": "Gary O'Shaughnessy",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Gary+O'Shaughnessy"
+    ]
+  },
+  {
+    "canonicalName": "טל סונדק",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/טל סונדק"
+    ]
+  },
+  {
+    "canonicalName": "Arnis Mednis",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Arnis+Mednis"
+    ]
+  },
+  {
+    "canonicalName": "SKAMP",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/SKAMP"
+    ]
+  },
+  {
+    "canonicalName": "Michelle",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Michelle/Out+On+My+Own"
+    ]
+  },
+  {
+    "canonicalName": "Haldor Lægreid",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Haldor+Lægreid"
+    ]
+  },
+  {
+    "canonicalName": "Andrzej Piaseczny",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Andrzej+Piaseczny"
+    ]
+  },
+  {
+    "canonicalName": "MTM",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/MTM"
+    ]
+  },
+  {
+    "canonicalName": "Nuša Derenda",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Nuša+Derenda"
+    ]
+  },
+  {
+    "canonicalName": "David Civera",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/David+Civera"
+    ]
+  },
+  {
+    "canonicalName": "Friends",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Friends"
+    ]
+  },
+  {
+    "canonicalName": "Sedat Yüce",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Sedat+Yüce"
+    ]
+  },
+  {
+    "canonicalName": "Lindsay Dracass",
+    "countryIso": null,
+    "editionYear": 2001,
+    "urls": [
+      "https://www.last.fm/music/Lindsay+Dracass"
+    ]
+  },
+  {
+    "canonicalName": "The Rounder Girls",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/The+Rounder+Girls"
+    ]
+  },
+  {
+    "canonicalName": "Nathalie Sorce",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Nathalie+Sorce"
+    ]
+  },
+  {
+    "canonicalName": "Goran Karan",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Goran+Karan"
+    ]
+  },
+  {
+    "canonicalName": "Voice",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Voice"
+    ]
+  },
+  {
+    "canonicalName": "Olsen Brothers",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Olsen+Brothers"
+    ]
+  },
+  {
+    "canonicalName": "Ines",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Ines"
+    ]
+  },
+  {
+    "canonicalName": "Nina Åström",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Nina+Åström"
+    ]
+  },
+  {
+    "canonicalName": "Sofia Mestari",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Sofia+Mestari"
+    ]
+  },
+  {
+    "canonicalName": "Stefan Raab",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Stefan+Raab"
+    ]
+  },
+  {
+    "canonicalName": "August & Telma",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/August+&+Telma"
+    ]
+  },
+  {
+    "canonicalName": "Eamonn Toal",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Eamonn+Toal"
+    ]
+  },
+  {
+    "canonicalName": "PingPong",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/PingPong"
+    ]
+  },
+  {
+    "canonicalName": "Brainstorm",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Brainstorm"
+    ]
+  },
+  {
+    "canonicalName": "XXL",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/XXL"
+    ]
+  },
+  {
+    "canonicalName": "Claudette Pace",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Claudette+Pace"
+    ]
+  },
+  {
+    "canonicalName": "Linda Wagenmakers",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Linda+Wagenmakers"
+    ]
+  },
+  {
+    "canonicalName": "Charmed",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Charmed"
+    ]
+  },
+  {
+    "canonicalName": "Serafín Zubiri",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Serafín+Zubiri"
+    ]
+  },
+  {
+    "canonicalName": "Roger Pontare",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Roger+Pontare"
+    ]
+  },
+  {
+    "canonicalName": "Jane Bogaert",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Jane+Bogaert"
+    ]
+  },
+  {
+    "canonicalName": "Pinar Ayhan & the Sos",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Pinar+Ayhan+&+the+Sos"
+    ]
+  },
+  {
+    "canonicalName": "Nicki French",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Nicki+French"
+    ]
+  },
+  {
+    "canonicalName": "ПЕРЕМОЖЦІ 1956-1999",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "ПЕРЕМОЖЦІ 1956-1999"
+    ]
+  },
+  {
+    "canonicalName": "Lys Assia",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Lys+Assia"
+    ]
+  },
+  {
+    "canonicalName": "Corry Brokken",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Corry+Brokken"
+    ]
+  },
+  {
+    "canonicalName": "André Claveau",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/André+Claveau"
+    ]
+  },
+  {
+    "canonicalName": "Teddy Scholten",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Teddy+Scholten"
+    ]
+  },
+  {
+    "canonicalName": "Jacqueline Boyer",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Jacqueline+Boyer"
+    ]
+  },
+  {
+    "canonicalName": "Jean-Claude Pascal",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Jean-Claude+Pascal"
+    ]
+  },
+  {
+    "canonicalName": "Isabelle Aubret",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Isabelle+Aubret"
+    ]
+  },
+  {
+    "canonicalName": "Grethe & Jørgen Ingmann",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Grethe+&+Jørgen+Ingmann"
+    ]
+  },
+  {
+    "canonicalName": "Gigliola Cinquetti",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Gigliola+Cinquetti"
+    ]
+  },
+  {
+    "canonicalName": "France Gall",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/France+Gall"
+    ]
+  },
+  {
+    "canonicalName": "Udo Jürgens",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Udo+Jürgens"
+    ]
+  },
+  {
+    "canonicalName": "Sandie Shaw",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Sandie+Shaw"
+    ]
+  },
+  {
+    "canonicalName": "Massiel",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Massiel"
+    ]
+  },
+  {
+    "canonicalName": "Salomé",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Salomé"
+    ]
+  },
+  {
+    "canonicalName": "Lulu",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Lulu"
+    ]
+  },
+  {
+    "canonicalName": "Lenny Kuhr",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Lenny+Kuhr"
+    ]
+  },
+  {
+    "canonicalName": "Frida Boccara",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Frida+Boccara"
+    ]
+  },
+  {
+    "canonicalName": "Dana",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Dana"
+    ]
+  },
+  {
+    "canonicalName": "Séverine",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Séverine"
+    ]
+  },
+  {
+    "canonicalName": "Vicky Leandros",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Vicky+Leandros"
+    ]
+  },
+  {
+    "canonicalName": "Anne-Marie David",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Anne-Marie+David"
+    ]
+  },
+  {
+    "canonicalName": "ABBA",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/ABBA"
+    ]
+  },
+  {
+    "canonicalName": "Teach-In",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Teach-In"
+    ]
+  },
+  {
+    "canonicalName": "Brotherhood of Man",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Brotherhood+of+Man"
+    ]
+  },
+  {
+    "canonicalName": "Marie Myriam",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Marie+Myriam"
+    ]
+  },
+  {
+    "canonicalName": "Izhar Cohen & Alphabeta",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Izhar+Cohen+&+Alphabeta"
+    ]
+  },
+  {
+    "canonicalName": "Milk and Honey",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Milk+and+Honey"
+    ]
+  },
+  {
+    "canonicalName": "Johnny Logan",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Johnny+Logan"
+    ]
+  },
+  {
+    "canonicalName": "Bucks Fizz",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Bucks+Fizz"
+    ]
+  },
+  {
+    "canonicalName": "Nicole",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Nicole"
+    ]
+  },
+  {
+    "canonicalName": "Corinne Hermès",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Corinne+Hermès"
+    ]
+  },
+  {
+    "canonicalName": "Herreys",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Herreys"
+    ]
+  },
+  {
+    "canonicalName": "Bobbysocks",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Bobbysocks"
+    ]
+  },
+  {
+    "canonicalName": "Sandra Kim",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Sandra+Kim"
+    ]
+  },
+  {
+    "canonicalName": "Céline Dion",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Céline+Dion"
+    ]
+  },
+  {
+    "canonicalName": "Riva",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Riva"
+    ]
+  },
+  {
+    "canonicalName": "Toto Cutugno",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Toto+Cutugno"
+    ]
+  },
+  {
+    "canonicalName": "Linda Martin",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Linda+Martin"
+    ]
+  },
+  {
+    "canonicalName": "Paul Harrington & Charlie McGettigan",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Paul+Harrington+&+Charlie+McGettigan"
+    ]
+  },
+  {
+    "canonicalName": "Secret Garden",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Secret+Garden"
+    ]
+  },
+  {
+    "canonicalName": "Eimear Quinn",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Eimear+Quinn"
+    ]
+  },
+  {
+    "canonicalName": "Katrina and the Waves",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Katrina+and+the+Waves"
+    ]
+  },
+  {
+    "canonicalName": "Charlotte Nilsson",
+    "countryIso": null,
+    "editionYear": 2000,
+    "urls": [
+      "https://www.last.fm/music/Charlotte+Nilsson"
+    ]
+  },
+  {
+    "canonicalName": "JJ",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/JJ"
+    ]
+  },
+  {
+    "canonicalName": "יובל רפאל",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Yuval+Raphael \\ https://www.last.fm/music/יובל רפאל"
+    ]
+  },
+  {
+    "canonicalName": "Zoë Më",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Zoë+Më"
+    ]
+  },
+  {
+    "canonicalName": "Marko Bošnjak",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/Marko+Bošnjak"
+    ]
+  },
+  {
+    "canonicalName": "VÆB",
+    "countryIso": null,
+    "editionYear": 2025,
+    "urls": [
+      "https://www.last.fm/music/VÆB"
+    ]
+  }
+]

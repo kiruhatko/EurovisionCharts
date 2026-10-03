@@ -61,6 +61,29 @@ public class SpotifyApiClient implements NowPlayingProviderClient, RecentPlayPro
         }
     }
 
+    /** Raw Spotify artist-search candidates for a name query; callers decide what counts as a match. */
+    public List<SpotifyDtos.ArtistDetail> searchArtists(String accessToken, String name, int limit) {
+        try {
+            SpotifyDtos.ArtistSearchResponse response = spotifyApiWebClient.get()
+                    .uri(uriBuilder -> uriBuilder.path("/v1/search")
+                            .queryParam("q", name)
+                            .queryParam("type", "artist")
+                            .queryParam("limit", limit)
+                            .build())
+                    .headers(h -> h.setBearerAuth(accessToken))
+                    .retrieve()
+                    .bodyToMono(SpotifyDtos.ArtistSearchResponse.class)
+                    .block();
+            if (response == null || response.artists() == null || response.artists().items() == null) {
+                return List.of();
+            }
+            return response.artists().items();
+        } catch (WebClientResponseException e) {
+            log.warn("Spotify artist search failed for \"{}\": {}", name, e.getStatusCode());
+            return List.of();
+        }
+    }
+
     @Override
     public Optional<NowPlayingSignal> fetchNowPlaying(ConnectedAccount account) {
         String accessToken = tokenEncryptionService.decrypt(account.getAccessTokenEncrypted());

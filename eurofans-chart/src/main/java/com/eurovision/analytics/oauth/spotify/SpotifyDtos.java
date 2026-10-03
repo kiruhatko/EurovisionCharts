@@ -89,4 +89,16 @@ public final class SpotifyDtos {
             @JsonProperty("name") String name
     ) {
     }
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public record ArtistsPage(
+            @JsonProperty("items") List<ArtistDetail> items
+    ) {
+    }
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public record ArtistSearchResponse(
+            @JsonProperty("artists") ArtistsPage artists
+    ) {
+    }
 }

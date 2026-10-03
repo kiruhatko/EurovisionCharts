@@ -43,6 +43,7 @@ public class BulkArtistImportService {
     private final EurovisionCountryRepository countryRepository;
     private final EurovisionEditionRepository editionRepository;
     private final AdminAuditService adminAuditService;
+    private final SpotifyProviderArtistResolver spotifyProviderArtistResolver;
     private final JsonMapper jsonMapper = JsonMapper.builder().build();
 
     public BulkArtistImportService(ArtistUrlCanonicalizer canonicalizer,
@@ -51,7 +52,8 @@ public class BulkArtistImportService {
                                     EurovisionArtistExternalIdRepository externalIdRepository,
                                     EurovisionCountryRepository countryRepository,
                                     EurovisionEditionRepository editionRepository,
-                                    AdminAuditService adminAuditService) {
+                                    AdminAuditService adminAuditService,
+                                    SpotifyProviderArtistResolver spotifyProviderArtistResolver) {
         this.canonicalizer = canonicalizer;
         this.resolvers = resolvers.stream().collect(Collectors.toMap(ProviderArtistResolver::provider, Function.identity()));
         this.artistRepository = artistRepository;
@@ -59,9 +61,11 @@ public class BulkArtistImportService {
         this.countryRepository = countryRepository;
         this.editionRepository = editionRepository;
         this.adminAuditService = adminAuditService;
+        this.spotifyProviderArtistResolver = spotifyProviderArtistResolver;
     }
 
-    public record BulkImportSummary(int artistsCreated, int artistsUpdated, int urlsLinked, List<String> errors) {
+    public record BulkImportSummary(int artistsCreated, int artistsUpdated, int urlsLinked,
+                                     int spotifyAutoLinked, int spotifyAmbiguous, List<String> errors) {
     }
 
     @Transactional
@@ -72,6 +76,8 @@ public class BulkArtistImportService {
         int created = 0;
         int updated = 0;
         int urlsLinked = 0;
+        int spotifyAutoLinked = 0;
+        int spotifyAmbiguous = 0;
         List<String> errors = new java.util.ArrayList<>();
 
         for (BulkArtistEntry entry : entries) {
@@ -106,15 +112,56 @@ public class BulkArtistImportService {
                         errors.add(rawUrl + ": " + e.getMessage());
                     }
                 }
+
+                SpotifyAutoLinkOutcome outcome = autoLinkSpotifyByName(artist, entry.canonicalName());
+                if (outcome == SpotifyAutoLinkOutcome.LINKED) {
+                    spotifyAutoLinked++;
+                    urlsLinked++;
+                } else if (outcome == SpotifyAutoLinkOutcome.AMBIGUOUS) {
+                    spotifyAmbiguous++;
+                }
             } catch (Exception e) {
                 errors.add(entry.canonicalName() + ": " + e.getMessage());
             }
         }
 
         adminAuditService.log(adminTelegramId, "RELOADARTISTS", "bulk_import", null,
-                "created=" + created + " updated=" + updated + " urlsLinked=" + urlsLinked + " errors=" + errors.size());
+                "created=" + created + " updated=" + updated + " urlsLinked=" + urlsLinked
+                        + " spotifyAutoLinked=" + spotifyAutoLinked + " spotifyAmbiguous=" + spotifyAmbiguous
+                        + " errors=" + errors.size());
 
-        return new BulkImportSummary(created, updated, urlsLinked, errors);
+        return new BulkImportSummary(created, updated, urlsLinked, spotifyAutoLinked, spotifyAmbiguous, errors);
+    }
+
+    private enum SpotifyAutoLinkOutcome { LINKED, AMBIGUOUS, SKIPPED }
+
+    /**
+     * For an entry that didn't already carry (or resolve) a Spotify URL, try to find the SAME
+     * artist on Spotify by an exact normalized-name search match, using the app's own
+     * client-credentials token (spec: never fabricate an ID -- only link an unambiguous match).
+     */
+    private SpotifyAutoLinkOutcome autoLinkSpotifyByName(EurovisionArtist artist, String canonicalName) {
+        boolean alreadyLinked = externalIdRepository.findByArtistId(artist.getId()).stream()
+                .anyMatch(e -> e.getProvider() == ExternalIdProvider.SPOTIFY);
+        if (alreadyLinked) {
+            return SpotifyAutoLinkOutcome.SKIPPED;
+        }
+
+        List<ResolvedProviderArtist> candidates = spotifyProviderArtistResolver.searchByExactName(canonicalName);
+        if (candidates.isEmpty()) {
+            return SpotifyAutoLinkOutcome.SKIPPED;
+        }
+        if (candidates.size() > 1) {
+            return SpotifyAutoLinkOutcome.AMBIGUOUS;
+        }
+
+        ResolvedProviderArtist match = candidates.get(0);
+        if (externalIdRepository.findByProviderAndExternalId(match.provider(), match.externalId()).isPresent()) {
+            return SpotifyAutoLinkOutcome.SKIPPED;
+        }
+        externalIdRepository.save(new EurovisionArtistExternalId(
+                artist, match.provider(), match.externalId(), match.canonicalUrl(), true));
+        return SpotifyAutoLinkOutcome.LINKED;
     }
 
     private boolean linkUrl(EurovisionArtist artist, String rawUrl, long adminTelegramId) {
