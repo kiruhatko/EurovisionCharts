@@ -2,6 +2,10 @@ package com.eurovision.analytics.artwork;
 
 import com.eurovision.analytics.connectedaccount.Provider;
 import com.eurovision.analytics.musicbrainz.MusicBrainzClient;
+import com.eurovision.analytics.oauth.spotify.SpotifyApiClient;
+import com.eurovision.analytics.oauth.spotify.SpotifyDtos;
+import com.eurovision.analytics.oauth.spotify.SpotifyOAuthService;
+import com.eurovision.analytics.util.NameNormalizer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -14,6 +18,7 @@ import java.io.ByteArrayInputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HexFormat;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -41,15 +46,21 @@ public class ArtworkResolutionService {
     private final CoverArtArchiveClient coverArtArchiveClient;
     private final ArtworkCacheRepository artworkCacheRepository;
     private final WebClient unrestrictedWebClient;
+    private final SpotifyOAuthService spotifyOAuthService;
+    private final SpotifyApiClient spotifyApiClient;
 
     public ArtworkResolutionService(MusicBrainzClient musicBrainzClient,
                                      CoverArtArchiveClient coverArtArchiveClient,
                                      ArtworkCacheRepository artworkCacheRepository,
-                                     WebClient unrestrictedWebClient) {
+                                     WebClient unrestrictedWebClient,
+                                     SpotifyOAuthService spotifyOAuthService,
+                                     SpotifyApiClient spotifyApiClient) {
         this.musicBrainzClient = musicBrainzClient;
         this.coverArtArchiveClient = coverArtArchiveClient;
         this.artworkCacheRepository = artworkCacheRepository;
         this.unrestrictedWebClient = unrestrictedWebClient;
+        this.spotifyOAuthService = spotifyOAuthService;
+        this.spotifyApiClient = spotifyApiClient;
     }
 
     @Transactional
@@ -71,10 +82,54 @@ public class ArtworkResolutionService {
             }
         }
 
+        // Last.fm (and, to a lesser extent, SoundCloud) routinely returns a tiny or generic
+        // placeholder image for "image" -- Last.fm disabled new image uploads years ago, so most
+        // of its artwork today is a low-res leftover or a static grey note icon. Spotify's own
+        // catalog is a much higher-quality fallback and needs no user to have connected Spotify
+        // themselves -- it's the same app-level client-credentials token used for artist search.
+        // Skip this when the play is already FROM Spotify: nativeArtworkUrl is already its best image.
+        if (provider != Provider.SPOTIFY) {
+            Optional<String> spotifyUrl = trySpotifyArtwork(rawArtistName, rawTrackName);
+            if (spotifyUrl.isPresent()) {
+                Optional<ArtworkCache> saved = downloadAndCache(lookupKey, provider, ArtworkSource.PROVIDER_NATIVE, spotifyUrl.get());
+                if (saved.isPresent()) {
+                    return saved;
+                }
+            }
+        }
+
         if (nativeArtworkUrl == null || nativeArtworkUrl.isBlank()) {
             return Optional.empty();
         }
         return downloadAndCache(lookupKey, provider, ArtworkSource.PROVIDER_NATIVE, nativeArtworkUrl);
+    }
+
+    /**
+     * Best-effort, never-guessed Spotify cover lookup: only trusted when the top search result's
+     * own primary artist name is a normalized-exact match for the play's artist, so a same-named
+     * but different track/artist never silently supplies the wrong cover.
+     */
+    private Optional<String> trySpotifyArtwork(String rawArtistName, String rawTrackName) {
+        if (rawArtistName == null || rawArtistName.isBlank() || rawTrackName == null || rawTrackName.isBlank()) {
+            return Optional.empty();
+        }
+        try {
+            String appToken = spotifyOAuthService.getAppAccessToken();
+            List<SpotifyDtos.Track> candidates = spotifyApiClient.searchTracks(appToken, rawArtistName, rawTrackName, 5);
+            String normalizedArtist = NameNormalizer.normalize(rawArtistName);
+            for (SpotifyDtos.Track candidate : candidates) {
+                if (candidate.artists() == null || candidate.artists().isEmpty()) {
+                    continue;
+                }
+                String candidateArtist = NameNormalizer.normalize(candidate.artists().get(0).name());
+                if (candidateArtist.equals(normalizedArtist)) {
+                    return spotifyApiClient.largestImage(candidate).map(SpotifyDtos.Image::url);
+                }
+            }
+        } catch (Exception e) {
+            log.warn("Spotify artwork lookup failed for \"{}\" - \"{}\": {}", rawArtistName, rawTrackName, e.getMessage());
+        }
+        return Optional.empty();
     }
 
     private Optional<ArtworkCache> downloadAndCache(String lookupKey, Provider provider, ArtworkSource source, String url) {
