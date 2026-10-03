@@ -13,20 +13,25 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
 
     boolean existsByFingerprint(String fingerprint);
 
-    Optional<ListeningEvent> findFirstByUserIdAndProviderAndCanonicalArtistIdIsNotNullAndResolutionStatusOrderByPlayedAtUtcDesc(
-            long userId, Provider provider, ResolutionStatus resolutionStatus);
+    Optional<ListeningEvent> findFirstByUserIdAndProviderAndCanonicalArtistIdIsNotNullAndResolutionStatusInOrderByPlayedAtUtcDesc(
+            long userId, Provider provider, List<ResolutionStatus> resolutionStatuses);
 
-    // Chart-studio cover art: the most recent confirmed play carries the raw
+    // Chart-studio cover art: the most recent confirmed-or-probable play carries the raw
     // provider/artist/track that ArtworkResolutionService's cache is keyed by.
-    Optional<ListeningEvent> findFirstByCanonicalArtist_IdAndResolutionStatusOrderByPlayedAtUtcDesc(
-            long artistId, ResolutionStatus resolutionStatus);
+    Optional<ListeningEvent> findFirstByCanonicalArtist_IdAndResolutionStatusInOrderByPlayedAtUtcDesc(
+            long artistId, List<ResolutionStatus> resolutionStatuses);
 
     // Chart-studio 7-day trend bars: one bar per calendar day in the selected window.
+    // PROBABLE counts alongside CONFIRMED here (and in every aggregate query below) because
+    // Last.fm's recent-tracks API routinely omits the artist MBID, which means a Last.fm-sourced
+    // play can almost never reach CONFIRMED (exact provider-id match) even when the name-based
+    // match is unambiguous -- excluding PROBABLE would make Last.fm-only users' listens nearly
+    // invisible to the chart. CONFLICT and UNKNOWN are still never counted.
     @Query(value = """
             select cast(date_trunc('day', played_at_utc) as date) as day, count(*) as cnt
             from listening_events
             where canonical_artist_id = :artistId
-              and resolution_status = 'CONFIRMED'
+              and resolution_status in ('CONFIRMED', 'PROBABLE')
               and played_at_utc >= :from
               and played_at_utc < :to
             group by 1
@@ -51,7 +56,8 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
             select le.canonicalArtist.id as artistId, count(le) as listenCount, count(distinct le.user.id) as uniqueListeners,
                    max(le.playedAtUtc) as mostRecentPlayAt
             from ListeningEvent le
-            where le.resolutionStatus = com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED
+            where le.resolutionStatus in (com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED,
+                                           com.eurovision.analytics.listening.ResolutionStatus.PROBABLE)
               and le.canonicalArtist is not null
               and le.canonicalArtist.status = com.eurovision.analytics.eurovision.ArtistStatus.VERIFIED
               and le.canonicalArtist.active = true
@@ -66,7 +72,8 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
             select count(le)
             from ListeningEvent le
             where le.canonicalArtist.id = :artistId
-              and le.resolutionStatus = com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED
+              and le.resolutionStatus in (com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED,
+                                           com.eurovision.analytics.listening.ResolutionStatus.PROBABLE)
               and le.playedAtUtc >= :from
               and le.playedAtUtc < :to
               and le.user.chartParticipationEnabled = true
@@ -76,7 +83,8 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
     @Query("""
             select le.user.id as userId, count(le) as listenCount
             from ListeningEvent le
-            where le.resolutionStatus = com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED
+            where le.resolutionStatus in (com.eurovision.analytics.listening.ResolutionStatus.CONFIRMED,
+                                           com.eurovision.analytics.listening.ResolutionStatus.PROBABLE)
               and le.playedAtUtc >= :from
               and le.playedAtUtc < :to
               and le.user.active = true

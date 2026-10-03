@@ -72,7 +72,10 @@ public class NowPlayingResolver {
             // to be Eurovision-relevant. We never look further down the chain from here.
             IdentityResolution resolution = identityResolver.resolveAny(
                     provider, signal.get().providerArtistId(), signal.get().rawArtistName(), signal.get().additionalArtists());
-            if (resolution.status() == ResolutionStatus.CONFIRMED) {
+            // PROBABLE counts as a live Eurovision hit too: Last.fm's now-playing endpoint
+            // routinely omits the artist MBID, so an exact-id CONFIRMED match is rarely reachable
+            // there even for an unambiguous name match (see ListeningEventRepository).
+            if (resolution.status() == ResolutionStatus.CONFIRMED || resolution.status() == ResolutionStatus.PROBABLE) {
                 return new NowPlayingResult.EurovisionTrack(provider, signal.get(), resolution.canonicalArtist());
             }
             return new NowPlayingResult.NonEurovision(provider);
@@ -87,8 +90,8 @@ public class NowPlayingResolver {
                 continue;
             }
             var last = listeningEventRepository
-                    .findFirstByUserIdAndProviderAndCanonicalArtistIdIsNotNullAndResolutionStatusOrderByPlayedAtUtcDesc(
-                            userId, provider, ResolutionStatus.CONFIRMED);
+                    .findFirstByUserIdAndProviderAndCanonicalArtistIdIsNotNullAndResolutionStatusInOrderByPlayedAtUtcDesc(
+                            userId, provider, List.of(ResolutionStatus.CONFIRMED, ResolutionStatus.PROBABLE));
             if (last.isPresent()) {
                 return new LastTrackResult.Found(last.get());
             }

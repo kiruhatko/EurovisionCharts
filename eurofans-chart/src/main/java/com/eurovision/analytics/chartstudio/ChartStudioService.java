@@ -101,7 +101,8 @@ public class ChartStudioService {
 
     private String resolveCoverUrl(long artistId) {
         return listeningEventRepository
-                .findFirstByCanonicalArtist_IdAndResolutionStatusOrderByPlayedAtUtcDesc(artistId, ResolutionStatus.CONFIRMED)
+                .findFirstByCanonicalArtist_IdAndResolutionStatusInOrderByPlayedAtUtcDesc(
+                        artistId, java.util.List.of(ResolutionStatus.CONFIRMED, ResolutionStatus.PROBABLE))
                 .flatMap(this::coverFromListeningEvent)
                 .orElse(null);
     }
