@@ -76,7 +76,7 @@ class NowPlayingResolverTest {
         artist.setCanonicalName("Jamala");
         artist.setStatus(ArtistStatus.VERIFIED);
         artist.setActive(true);
-        when(identityResolver.resolveAny(Provider.SPOTIFY, "artistid", "Jamala", List.of()))
+        when(identityResolver.resolveAny(Provider.SPOTIFY, "artistid", "Jamala", "1944", "1944", List.of()))
                 .thenReturn(new IdentityResolution(artist, "EXACT_PROVIDER_ID", ResolutionStatus.CONFIRMED, "HIGH"));
 
         NowPlayingResult result = resolver().resolveNowPlaying(USER_ID);
@@ -97,7 +97,7 @@ class NowPlayingResolverTest {
         connected(Provider.SPOTIFY, Provider.SOUNDCLOUD);
         NowPlayingSignal signal = new NowPlayingSignal("Some Random Band", "Some Song", null, "t1", "a1", null, List.of());
         when(spotifyClient.fetchNowPlaying(any())).thenReturn(Optional.of(signal));
-        when(identityResolver.resolveAny(Provider.SPOTIFY, "a1", "Some Random Band", List.of()))
+        when(identityResolver.resolveAny(Provider.SPOTIFY, "a1", "Some Random Band", "Some Song", null, List.of()))
                 .thenReturn(IdentityResolution.unknown());
 
         NowPlayingResult result = resolver().resolveNowPlaying(USER_ID);
@@ -115,7 +115,7 @@ class NowPlayingResolverTest {
 
         EurovisionArtist artist = new EurovisionArtist();
         artist.setCanonicalName("Kalush Orchestra");
-        when(identityResolver.resolveAny(Provider.APPLE_MUSIC, "a2", "Kalush Orchestra", List.of()))
+        when(identityResolver.resolveAny(Provider.APPLE_MUSIC, "a2", "Kalush Orchestra", "Stefania", null, List.of()))
                 .thenReturn(new IdentityResolution(artist, "EXACT_PROVIDER_ID", ResolutionStatus.CONFIRMED, "HIGH"));
 
         NowPlayingResult result = resolver().resolveNowPlaying(USER_ID);

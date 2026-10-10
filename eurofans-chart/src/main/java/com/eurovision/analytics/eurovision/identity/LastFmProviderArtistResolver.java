@@ -1,8 +1,6 @@
 package com.eurovision.analytics.eurovision.identity;
 
 import com.eurovision.analytics.eurovision.ExternalIdProvider;
-import com.eurovision.analytics.oauth.lastfm.LastFmApiClient;
-import com.eurovision.analytics.oauth.lastfm.LastFmDtos;
 import com.eurovision.analytics.util.NameNormalizer;
 import org.springframework.stereotype.Component;
 
@@ -14,22 +12,28 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Last.fm is the one provider with no stable numeric artist id at all (spec
- * 4.5). When {@code artist.getinfo} returns an MBID we anchor on that (as
- * strong as any other provider); otherwise the external id falls back to the
- * normalized artist-page name, which is weaker and can still collide across
- * two different real-world artists sharing a name -- a limitation this
- * application documents rather than hides.
+ * Last.fm has no artist id: an artist IS its page, {@code last.fm/music/{name}}, and every
+ * scrobble carries exactly that page name. So the admin-supplied link is taken as the identity
+ * as-is -- no API lookup, no search -- and a scrobble matches it when its artist name maps to the
+ * same key (see {@link EurovisionIdentityResolver}).
+ *
+ * <p>A generic name's page is shared by unrelated artists, so a link may instead point at one
+ * song ({@code /music/{artist}/_/{track}}) or single ({@code /music/{artist}/{release}}): only
+ * scrobbles of that song/release under that page then count.
  */
 @Component
 public class LastFmProviderArtistResolver implements ProviderArtistResolver {
 
-    private static final Pattern ARTIST_PATH_PATTERN = Pattern.compile("^/music/([^/]+)$");
+    private static final Pattern ARTIST_PATH = Pattern.compile("^/music/([^/]+)$");
+    private static final Pattern TRACK_PATH = Pattern.compile("^/music/([^/]+)/_/([^/]+)$");
+    private static final Pattern RELEASE_PATH = Pattern.compile("^/music/([^/]+)/([^_+/][^/]*)$");
 
-    private final LastFmApiClient apiClient;
+    public static String pageKey(String artistName) {
+        return "name:" + NameNormalizer.normalize(artistName);
+    }
 
-    public LastFmProviderArtistResolver(LastFmApiClient apiClient) {
-        this.apiClient = apiClient;
+    public static String songKey(String artistName, String normalizedTitle) {
+        return "song:" + NameNormalizer.normalize(artistName) + "|" + normalizedTitle;
     }
 
     @Override
@@ -39,19 +43,30 @@ public class LastFmProviderArtistResolver implements ProviderArtistResolver {
 
     @Override
     public Optional<ResolvedProviderArtist> resolve(URI canonicalUri) {
-        Matcher matcher = ARTIST_PATH_PATTERN.matcher(canonicalUri.getPath());
-        if (!matcher.matches()) {
+        String path = canonicalUri.getRawPath();
+        Matcher artist = ARTIST_PATH.matcher(path);
+        if (artist.matches()) {
+            String pageName = decode(artist.group(1));
+            return NameNormalizer.normalize(pageName).isEmpty() ? Optional.empty() : Optional.of(
+                    new ResolvedProviderArtist(ExternalIdProvider.LASTFM, pageKey(pageName), pageName, canonicalUri.toString()));
+        }
+        Matcher song = TRACK_PATH.matcher(path);
+        if (!song.matches()) {
+            song = RELEASE_PATH.matcher(path);
+            if (!song.matches()) {
+                return Optional.empty();
+            }
+        }
+        String pageName = decode(song.group(1));
+        String title = NameNormalizer.normalize(decode(song.group(2)));
+        if (NameNormalizer.normalize(pageName).isEmpty() || title.isEmpty()) {
             return Optional.empty();
         }
-        String decodedName = URLDecoder.decode(matcher.group(1), StandardCharsets.UTF_8).replace('+', ' ');
-        Optional<LastFmDtos.ArtistInfo> info = apiClient.fetchArtistInfo(decodedName);
-        if (info.isEmpty()) {
-            return Optional.empty();
-        }
-        String externalId = (info.get().mbid() != null && !info.get().mbid().isBlank())
-                ? info.get().mbid()
-                : "name:" + NameNormalizer.normalize(info.get().name());
         return Optional.of(new ResolvedProviderArtist(
-                ExternalIdProvider.LASTFM, externalId, info.get().name(), canonicalUri.toString()));
+                ExternalIdProvider.LASTFM, songKey(pageName, title), pageName, canonicalUri.toString()));
+    }
+
+    private static String decode(String rawSegment) {
+        return URLDecoder.decode(rawSegment, StandardCharsets.UTF_8);
     }
 }

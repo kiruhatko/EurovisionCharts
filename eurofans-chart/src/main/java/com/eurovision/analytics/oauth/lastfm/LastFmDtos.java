@@ -86,17 +86,4 @@ public final class LastFmDtos {
             @JsonProperty("user") UserInfo user
     ) {
     }
-
-    @JsonIgnoreProperties(ignoreUnknown = true)
-    public record ArtistInfo(
-            @JsonProperty("name") String name,
-            @JsonProperty("mbid") String mbid
-    ) {
-    }
-
-    @JsonIgnoreProperties(ignoreUnknown = true)
-    public record ArtistInfoResponse(
-            @JsonProperty("artist") ArtistInfo artist
-    ) {
-    }
 }

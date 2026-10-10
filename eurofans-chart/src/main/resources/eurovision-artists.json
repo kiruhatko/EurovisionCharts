@@ -444,7 +444,8 @@
     "countryIso": null,
     "editionYear": 2025,
     "urls": [
-      "https://www.last.fm/music/Yuval+Raphael"
+      "https://www.last.fm/music/Yuval+Raphael",
+      "https://www.last.fm/music/יובל+רפאל"
     ]
   },
   {
@@ -676,7 +677,7 @@
     "countryIso": null,
     "editionYear": 2024,
     "urls": [
-      "https://www.last.fm/music/Saba/SAND ( на ласті саба це інша людина але ця пісня є)"
+      "https://www.last.fm/music/Saba/_/SAND"
     ]
   },
   {
@@ -948,7 +949,8 @@
     "countryIso": null,
     "editionYear": 2023,
     "urls": [
-      "https://www.last.fm/music/Teya    https://www.last.fm/music/SALENA+&+TEYA"
+      "https://www.last.fm/music/Teya",
+      "https://www.last.fm/music/SALENA+&+TEYA"
     ]
   },
   {
@@ -1876,7 +1878,7 @@
     "countryIso": null,
     "editionYear": 2021,
     "urls": [
-      "https://www.last.fm/music/Gjon's Tears"
+      "https://www.last.fm/music/Gjon%27s+Tears"
     ]
   },
   {
@@ -2824,11 +2826,11 @@
     ]
   },
   {
-    "canonicalName": "https:",
+    "canonicalName": "Imri Ziv",
     "countryIso": null,
     "editionYear": 2017,
     "urls": [
-      "https://www.last.fm/search?q=Imri+Ziv"
+      "https://www.last.fm/music/Imri+Ziv"
     ]
   },
   {
@@ -4900,7 +4902,7 @@
     "countryIso": null,
     "editionYear": 2010,
     "urls": [
-      "https://www.last.fm/music/Chanée & N'evergreen"
+      "https://www.last.fm/music/Chan%C3%A9e+%26+N%27evergreen"
     ]
   },
   {
@@ -5796,7 +5798,7 @@
     "countryIso": null,
     "editionYear": 2007,
     "urls": [
-      "https://www.last.fm/music/The KMG's"
+      "https://www.last.fm/music/The+KMG%27s"
     ]
   },
   {
@@ -7324,7 +7326,7 @@
     "countryIso": null,
     "editionYear": 2001,
     "urls": [
-      "https://www.last.fm/music/טל סונדק"
+      "https://www.last.fm/music/טל+סונדק"
     ]
   },
   {
@@ -7592,17 +7594,9 @@
     ]
   },
   {
-    "canonicalName": "ПЕРЕМОЖЦІ 1956-1999",
-    "countryIso": null,
-    "editionYear": 2000,
-    "urls": [
-      "ПЕРЕМОЖЦІ 1956-1999"
-    ]
-  },
-  {
     "canonicalName": "Lys Assia",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1956,
     "urls": [
       "https://www.last.fm/music/Lys+Assia"
     ]
@@ -7610,7 +7604,7 @@
   {
     "canonicalName": "Corry Brokken",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1957,
     "urls": [
       "https://www.last.fm/music/Corry+Brokken"
     ]
@@ -7618,7 +7612,7 @@
   {
     "canonicalName": "André Claveau",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1958,
     "urls": [
       "https://www.last.fm/music/André+Claveau"
     ]
@@ -7626,7 +7620,7 @@
   {
     "canonicalName": "Teddy Scholten",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1959,
     "urls": [
       "https://www.last.fm/music/Teddy+Scholten"
     ]
@@ -7634,7 +7628,7 @@
   {
     "canonicalName": "Jacqueline Boyer",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1960,
     "urls": [
       "https://www.last.fm/music/Jacqueline+Boyer"
     ]
@@ -7642,7 +7636,7 @@
   {
     "canonicalName": "Jean-Claude Pascal",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1961,
     "urls": [
       "https://www.last.fm/music/Jean-Claude+Pascal"
     ]
@@ -7650,7 +7644,7 @@
   {
     "canonicalName": "Isabelle Aubret",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1962,
     "urls": [
       "https://www.last.fm/music/Isabelle+Aubret"
     ]
@@ -7658,7 +7652,7 @@
   {
     "canonicalName": "Grethe & Jørgen Ingmann",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1963,
     "urls": [
       "https://www.last.fm/music/Grethe+&+Jørgen+Ingmann"
     ]
@@ -7666,7 +7660,7 @@
   {
     "canonicalName": "Gigliola Cinquetti",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1964,
     "urls": [
       "https://www.last.fm/music/Gigliola+Cinquetti"
     ]
@@ -7674,7 +7668,7 @@
   {
     "canonicalName": "France Gall",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1965,
     "urls": [
       "https://www.last.fm/music/France+Gall"
     ]
@@ -7682,7 +7676,7 @@
   {
     "canonicalName": "Udo Jürgens",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1966,
     "urls": [
       "https://www.last.fm/music/Udo+Jürgens"
     ]
@@ -7690,7 +7684,7 @@
   {
     "canonicalName": "Sandie Shaw",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1967,
     "urls": [
       "https://www.last.fm/music/Sandie+Shaw"
     ]
@@ -7698,7 +7692,7 @@
   {
     "canonicalName": "Massiel",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1968,
     "urls": [
       "https://www.last.fm/music/Massiel"
     ]
@@ -7706,7 +7700,7 @@
   {
     "canonicalName": "Salomé",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1969,
     "urls": [
       "https://www.last.fm/music/Salomé"
     ]
@@ -7714,7 +7708,7 @@
   {
     "canonicalName": "Lulu",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1969,
     "urls": [
       "https://www.last.fm/music/Lulu"
     ]
@@ -7722,7 +7716,7 @@
   {
     "canonicalName": "Lenny Kuhr",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1969,
     "urls": [
       "https://www.last.fm/music/Lenny+Kuhr"
     ]
@@ -7730,7 +7724,7 @@
   {
     "canonicalName": "Frida Boccara",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1969,
     "urls": [
       "https://www.last.fm/music/Frida+Boccara"
     ]
@@ -7738,7 +7732,7 @@
   {
     "canonicalName": "Dana",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1970,
     "urls": [
       "https://www.last.fm/music/Dana"
     ]
@@ -7746,7 +7740,7 @@
   {
     "canonicalName": "Séverine",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1971,
     "urls": [
       "https://www.last.fm/music/Séverine"
     ]
@@ -7754,7 +7748,7 @@
   {
     "canonicalName": "Vicky Leandros",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1972,
     "urls": [
       "https://www.last.fm/music/Vicky+Leandros"
     ]
@@ -7762,7 +7756,7 @@
   {
     "canonicalName": "Anne-Marie David",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1973,
     "urls": [
       "https://www.last.fm/music/Anne-Marie+David"
     ]
@@ -7770,7 +7764,7 @@
   {
     "canonicalName": "ABBA",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1974,
     "urls": [
       "https://www.last.fm/music/ABBA"
     ]
@@ -7778,7 +7772,7 @@
   {
     "canonicalName": "Teach-In",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1975,
     "urls": [
       "https://www.last.fm/music/Teach-In"
     ]
@@ -7786,7 +7780,7 @@
   {
     "canonicalName": "Brotherhood of Man",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1976,
     "urls": [
       "https://www.last.fm/music/Brotherhood+of+Man"
     ]
@@ -7794,7 +7788,7 @@
   {
     "canonicalName": "Marie Myriam",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1977,
     "urls": [
       "https://www.last.fm/music/Marie+Myriam"
     ]
@@ -7802,7 +7796,7 @@
   {
     "canonicalName": "Izhar Cohen & Alphabeta",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1978,
     "urls": [
       "https://www.last.fm/music/Izhar+Cohen+&+Alphabeta"
     ]
@@ -7810,7 +7804,7 @@
   {
     "canonicalName": "Milk and Honey",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1979,
     "urls": [
       "https://www.last.fm/music/Milk+and+Honey"
     ]
@@ -7818,7 +7812,7 @@
   {
     "canonicalName": "Johnny Logan",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1980,
     "urls": [
       "https://www.last.fm/music/Johnny+Logan"
     ]
@@ -7826,7 +7820,7 @@
   {
     "canonicalName": "Bucks Fizz",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1981,
     "urls": [
       "https://www.last.fm/music/Bucks+Fizz"
     ]
@@ -7834,7 +7828,7 @@
   {
     "canonicalName": "Nicole",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1982,
     "urls": [
       "https://www.last.fm/music/Nicole"
     ]
@@ -7842,7 +7836,7 @@
   {
     "canonicalName": "Corinne Hermès",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1983,
     "urls": [
       "https://www.last.fm/music/Corinne+Hermès"
     ]
@@ -7850,7 +7844,7 @@
   {
     "canonicalName": "Herreys",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1984,
     "urls": [
       "https://www.last.fm/music/Herreys"
     ]
@@ -7858,7 +7852,7 @@
   {
     "canonicalName": "Bobbysocks",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1985,
     "urls": [
       "https://www.last.fm/music/Bobbysocks"
     ]
@@ -7866,7 +7860,7 @@
   {
     "canonicalName": "Sandra Kim",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1986,
     "urls": [
       "https://www.last.fm/music/Sandra+Kim"
     ]
@@ -7874,7 +7868,7 @@
   {
     "canonicalName": "Céline Dion",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1988,
     "urls": [
       "https://www.last.fm/music/Céline+Dion"
     ]
@@ -7882,7 +7876,7 @@
   {
     "canonicalName": "Riva",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1989,
     "urls": [
       "https://www.last.fm/music/Riva"
     ]
@@ -7890,7 +7884,7 @@
   {
     "canonicalName": "Toto Cutugno",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1990,
     "urls": [
       "https://www.last.fm/music/Toto+Cutugno"
     ]
@@ -7898,7 +7892,7 @@
   {
     "canonicalName": "Linda Martin",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1992,
     "urls": [
       "https://www.last.fm/music/Linda+Martin"
     ]
@@ -7906,7 +7900,7 @@
   {
     "canonicalName": "Paul Harrington & Charlie McGettigan",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1994,
     "urls": [
       "https://www.last.fm/music/Paul+Harrington+&+Charlie+McGettigan"
     ]
@@ -7914,7 +7908,7 @@
   {
     "canonicalName": "Secret Garden",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1995,
     "urls": [
       "https://www.last.fm/music/Secret+Garden"
     ]
@@ -7922,7 +7916,7 @@
   {
     "canonicalName": "Eimear Quinn",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1996,
     "urls": [
       "https://www.last.fm/music/Eimear+Quinn"
     ]
@@ -7930,7 +7924,7 @@
   {
     "canonicalName": "Katrina and the Waves",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1997,
     "urls": [
       "https://www.last.fm/music/Katrina+and+the+Waves"
     ]
@@ -7938,49 +7932,9 @@
   {
     "canonicalName": "Charlotte Nilsson",
     "countryIso": null,
-    "editionYear": 2000,
+    "editionYear": 1999,
     "urls": [
       "https://www.last.fm/music/Charlotte+Nilsson"
-    ]
-  },
-  {
-    "canonicalName": "JJ",
-    "countryIso": null,
-    "editionYear": 2025,
-    "urls": [
-      "https://www.last.fm/music/JJ"
-    ]
-  },
-  {
-    "canonicalName": "יובל רפאל",
-    "countryIso": null,
-    "editionYear": 2025,
-    "urls": [
-      "https://www.last.fm/music/Yuval+Raphael \\ https://www.last.fm/music/יובל רפאל"
-    ]
-  },
-  {
-    "canonicalName": "Zoë Më",
-    "countryIso": null,
-    "editionYear": 2025,
-    "urls": [
-      "https://www.last.fm/music/Zoë+Më"
-    ]
-  },
-  {
-    "canonicalName": "Marko Bošnjak",
-    "countryIso": null,
-    "editionYear": 2025,
-    "urls": [
-      "https://www.last.fm/music/Marko+Bošnjak"
-    ]
-  },
-  {
-    "canonicalName": "VÆB",
-    "countryIso": null,
-    "editionYear": 2025,
-    "urls": [
-      "https://www.last.fm/music/VÆB"
     ]
   }
 ]

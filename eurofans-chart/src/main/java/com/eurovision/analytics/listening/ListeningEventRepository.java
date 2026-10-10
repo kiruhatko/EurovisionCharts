@@ -22,11 +22,8 @@ public interface ListeningEventRepository extends JpaRepository<ListeningEvent, 
             long artistId, List<ResolutionStatus> resolutionStatuses);
 
     // Chart-studio 7-day trend bars: one bar per calendar day in the selected window.
-    // PROBABLE counts alongside CONFIRMED here (and in every aggregate query below) because
-    // Last.fm's recent-tracks API routinely omits the artist MBID, which means a Last.fm-sourced
-    // play can almost never reach CONFIRMED (exact provider-id match) even when the name-based
-    // match is unambiguous -- excluding PROBABLE would make Last.fm-only users' listens nearly
-    // invisible to the chart. CONFLICT and UNKNOWN are still never counted.
+    // PROBABLE (an admin-curated alias match) counts alongside CONFIRMED here and in every
+    // aggregate query below. CONFLICT and UNKNOWN are never counted.
     @Query(value = """
             select cast(date_trunc('day', played_at_utc) as date) as day, count(*) as cnt
             from listening_events

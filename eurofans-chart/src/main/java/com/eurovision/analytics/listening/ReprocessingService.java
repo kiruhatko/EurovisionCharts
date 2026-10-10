@@ -40,13 +40,17 @@ public class ReprocessingService {
         while (true) {
             var page = listeningEventRepository.findAll(PageRequest.of(pageNumber, PAGE_SIZE));
             for (ListeningEvent event : page) {
-                if (event.getResolutionStatus() != ResolutionStatus.UNKNOWN
+                // NORMALIZED_NAME_MATCH events were resolved by a name guess that no longer exists;
+                // re-resolve them so they either match a real link now or drop out of the chart.
+                boolean nameGuess = "NORMALIZED_NAME_MATCH".equals(event.getResolutionMethod());
+                if (!nameGuess
+                        && event.getResolutionStatus() != ResolutionStatus.UNKNOWN
                         && event.getResolutionStatus() != ResolutionStatus.CONFLICT) {
                     continue;
                 }
-                IdentityResolution resolution = identityResolver.resolve(
-                        event.getProvider(), event.getProviderArtistId(), event.getRawArtistName());
-                if (resolution.status() != event.getResolutionStatus()) {
+                IdentityResolution resolution = identityResolver.resolve(event.getProvider(), event.getProviderArtistId(),
+                        event.getRawArtistName(), event.getRawTrackName(), event.getRawAlbumName());
+                if (nameGuess || resolution.status() != event.getResolutionStatus()) {
                     event.setCanonicalArtist(resolution.canonicalArtist());
                     event.setResolutionMethod(resolution.method());
                     event.setResolutionStatus(resolution.status());

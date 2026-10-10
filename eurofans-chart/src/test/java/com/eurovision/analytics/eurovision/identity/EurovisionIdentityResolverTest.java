@@ -6,7 +6,6 @@ import com.eurovision.analytics.eurovision.EurovisionArtist;
 import com.eurovision.analytics.eurovision.EurovisionArtistAliasRepository;
 import com.eurovision.analytics.eurovision.EurovisionArtistExternalId;
 import com.eurovision.analytics.eurovision.EurovisionArtistExternalIdRepository;
-import com.eurovision.analytics.eurovision.EurovisionArtistRepository;
 import com.eurovision.analytics.eurovision.ExternalIdProvider;
 import com.eurovision.analytics.listening.ResolutionStatus;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,7 +24,6 @@ class EurovisionIdentityResolverTest {
 
     private EurovisionArtistExternalIdRepository externalIdRepository;
     private EurovisionArtistAliasRepository aliasRepository;
-    private EurovisionArtistRepository artistRepository;
     private UnresolvedArtistQueueService unresolvedArtistQueueService;
     private EurovisionIdentityResolver resolver;
 
@@ -33,10 +31,8 @@ class EurovisionIdentityResolverTest {
     void setUp() {
         externalIdRepository = mock(EurovisionArtistExternalIdRepository.class);
         aliasRepository = mock(EurovisionArtistAliasRepository.class);
-        artistRepository = mock(EurovisionArtistRepository.class);
         unresolvedArtistQueueService = mock(UnresolvedArtistQueueService.class);
-        resolver = new EurovisionIdentityResolver(externalIdRepository, aliasRepository, artistRepository,
-                unresolvedArtistQueueService);
+        resolver = new EurovisionIdentityResolver(externalIdRepository, aliasRepository, unresolvedArtistQueueService);
     }
 
     private EurovisionArtist verifiedArtist(long id, String name) {
@@ -99,8 +95,6 @@ class EurovisionIdentityResolverTest {
         when(externalIdRepository.findByProviderAndExternalId(ExternalIdProvider.SPOTIFY, "pid"))
                 .thenReturn(Optional.of(link));
         when(aliasRepository.findByNormalizedAliasAndActiveTrue(org.mockito.ArgumentMatchers.anyString()))
-                .thenReturn(List.of());
-        when(artistRepository.findByNormalizedName(org.mockito.ArgumentMatchers.anyString()))
                 .thenReturn(List.of());
 
         IdentityResolution result = resolver.resolve(Provider.SPOTIFY, "pid", "Some Artist");

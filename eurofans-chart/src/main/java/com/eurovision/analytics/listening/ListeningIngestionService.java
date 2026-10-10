@@ -39,8 +39,8 @@ public class ListeningIngestionService {
             return false;
         }
 
-        IdentityResolution resolution = identityResolver.resolveAny(
-                account.getProvider(), play.providerArtistId(), play.rawArtistName(), play.additionalArtists());
+        IdentityResolution resolution = identityResolver.resolveAny(account.getProvider(), play.providerArtistId(),
+                play.rawArtistName(), play.rawTrackName(), play.rawAlbumName(), play.additionalArtists());
 
         ListeningEvent event = new ListeningEvent();
         event.setUser(account.getUser());

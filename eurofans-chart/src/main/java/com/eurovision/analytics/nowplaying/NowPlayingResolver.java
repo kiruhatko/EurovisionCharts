@@ -70,11 +70,10 @@ public class NowPlayingResolver {
 
             // A signal was found: this IS the final answer, whether or not it turns out
             // to be Eurovision-relevant. We never look further down the chain from here.
-            IdentityResolution resolution = identityResolver.resolveAny(
-                    provider, signal.get().providerArtistId(), signal.get().rawArtistName(), signal.get().additionalArtists());
-            // PROBABLE counts as a live Eurovision hit too: Last.fm's now-playing endpoint
-            // routinely omits the artist MBID, so an exact-id CONFIRMED match is rarely reachable
-            // there even for an unambiguous name match (see ListeningEventRepository).
+            NowPlayingSignal s = signal.get();
+            IdentityResolution resolution = identityResolver.resolveAny(provider, s.providerArtistId(), s.rawArtistName(),
+                    s.rawTrackName(), s.rawAlbumName(), s.additionalArtists());
+            // PROBABLE (an admin-curated alias match) counts as a live Eurovision hit too.
             if (resolution.status() == ResolutionStatus.CONFIRMED || resolution.status() == ResolutionStatus.PROBABLE) {
                 return new NowPlayingResult.EurovisionTrack(provider, signal.get(), resolution.canonicalArtist());
             }
