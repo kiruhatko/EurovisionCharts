@@ -41,4 +41,14 @@ public class SpotifyProviderArtistResolver implements ProviderArtistResolver {
         return detail.map(d -> new ResolvedProviderArtist(
                 ExternalIdProvider.SPOTIFY, d.id(), d.name(), canonicalUri.toString()));
     }
+
+    @Override
+    public Optional<ResolvedProviderArtist> resolveLinkOnly(URI canonicalUri) {
+        Matcher matcher = ARTIST_ID_PATTERN.matcher(canonicalUri.getPath());
+        if (!matcher.matches()) {
+            return Optional.empty();
+        }
+        return Optional.of(new ResolvedProviderArtist(
+                ExternalIdProvider.SPOTIFY, matcher.group(1), null, canonicalUri.toString()));
+    }
 }

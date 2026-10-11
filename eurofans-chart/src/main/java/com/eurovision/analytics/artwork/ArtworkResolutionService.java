@@ -25,8 +25,10 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.HexFormat;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -60,6 +62,9 @@ public class ArtworkResolutionService {
     private final WebClient artworkWebClient;
     private final SpotifyOAuthService spotifyOAuthService;
     private final SpotifyApiClient spotifyApiClient;
+    // Tracks with no usable cover anywhere: without this, chart-studio's 20s refresh would search
+    // Spotify and MusicBrainz again for each of them on every poll and burn the Spotify API quota.
+    private final Map<String, Instant> recentMisses = new ConcurrentHashMap<>();
 
     public ArtworkResolutionService(MusicBrainzClient musicBrainzClient,
                                      CoverArtArchiveClient coverArtArchiveClient,
@@ -91,12 +96,23 @@ public class ArtworkResolutionService {
                                            String nativeArtworkUrl, Long canonicalArtistId) {
         String lookupKey = provider.name() + ":" + rawArtistName + ":" + rawTrackName;
         Optional<ArtworkCache> cached = artworkCacheRepository.findByLookupKey(lookupKey);
+        Instant missedAt = recentMisses.get(lookupKey);
+        if (cached.isEmpty() && missedAt != null && missedAt.isAfter(Instant.now().minus(RECHECK_AFTER))) {
+            return Optional.empty();
+        }
         if (cached.isPresent() && (width(cached.get()) >= GOOD_WIDTH
                 || cached.get().getCachedAt().isAfter(Instant.now().minus(RECHECK_AFTER)))) {
             return cached;
         }
 
         Optional<Downloaded> best = findBest(provider, rawArtistName, rawTrackName, nativeArtworkUrl, canonicalArtistId);
+        if (best.isEmpty() && cached.isEmpty()) {
+            if (recentMisses.size() > 50_000) {
+                recentMisses.clear();
+            }
+            recentMisses.put(lookupKey, Instant.now());
+            return Optional.empty();
+        }
         if (best.isEmpty() || (cached.isPresent() && best.get().width() <= width(cached.get()))) {
             cached.ifPresent(c -> {
                 c.setCachedAt(Instant.now());

@@ -12,8 +12,12 @@ bot itself never searches Spotify. Safe to re-run: entries already decided in an
 are skipped, so an interrupted run (rate limit, network) resumes where it stopped.
 
 A profile is only accepted when its name matches exactly (same normalization as the bot) AND it
-is the only such profile, or the only one with releases around the entry's Eurovision year.
-Everything else is reported as "ambiguous" or "not_found" with candidates, never guessed.
+is the only such profile, or the only one with releases around the entry's Eurovision year. A
+one-word name (Saba, Andrea, Princ...) is shared by many artists, so it is only accepted when it is
+the ONLY same-named profile with releases around that year. Everything else is reported as
+"ambiguous" or "not_found" with candidates, never guessed. Spotify's Development Mode quota is
+small and shared with the running bot; when it runs out, progress is saved and the script says how
+long to wait before re-running.
 """
 
 import base64
@@ -154,15 +158,16 @@ def resolve_name(sp, name, year):
         return "not_found", [], []
     results = sp.search_artists(name)
     exact = {a["id"]: a for a in results if norm(a.get("name")) == target}
-    near = ids_with_releases_near(sp, name, year) if year else {}
+    one_word = " " not in target
+    if len(exact) == 1 and not one_word:
+        return "exact", list(exact.values()), []
 
+    near = ids_with_releases_near(sp, name, year) if year else {}
     if len(exact) == 1:
         only = next(iter(exact))
-        if near and only not in near:
-            # the releases around the Eurovision year belong to a different same-named profile
-            merged = {**near, **exact}
-            return "ambiguous", [], [brief(a) for a in merged.values()]
-        return "exact", [exact[only]], []
+        if set(near) == {only}:
+            return "year", [exact[only]], []
+        return "ambiguous", [], [brief(a) for a in {**near, **exact}.values()]
     if exact:
         both = [exact[i] for i in exact if i in near]
         if len(both) == 1:
@@ -218,7 +223,9 @@ def main():
     try:
         for index, entry in enumerate(entries, 1):
             key = entry["canonicalName"] + "|" + str(entry.get("editionYear"))
-            if key in report and report[key]["status"] in DECIDED:
+            done = report.get(key)
+            # one-word "exact" picks from before the stricter rule get re-checked
+            if done and done["status"] in DECIDED and not (done["status"] == "exact" and " " not in norm(entry["canonicalName"])):
                 continue
             existing = [u for u in entry.get("urls") or [] if "open.spotify.com/artist/" in u]
             if existing:

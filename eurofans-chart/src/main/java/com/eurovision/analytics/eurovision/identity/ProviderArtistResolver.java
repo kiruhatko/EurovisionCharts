@@ -11,4 +11,12 @@ public interface ProviderArtistResolver {
     ExternalIdProvider provider();
 
     Optional<ResolvedProviderArtist> resolve(URI canonicalUri);
+
+    /**
+     * For admin-curated bulk links: resolve without calling the provider when the URL itself
+     * already carries the id, so a /reloadartists of ~1000 links doesn't spend the API quota.
+     */
+    default Optional<ResolvedProviderArtist> resolveLinkOnly(URI canonicalUri) {
+        return resolve(canonicalUri);
+    }
 }

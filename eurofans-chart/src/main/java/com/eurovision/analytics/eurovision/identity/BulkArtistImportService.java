@@ -129,7 +129,7 @@ public class BulkArtistImportService {
         if (resolver == null) {
             return false;
         }
-        Optional<ResolvedProviderArtist> resolved = resolver.resolve(canonicalized.canonicalUri());
+        Optional<ResolvedProviderArtist> resolved = resolver.resolveLinkOnly(canonicalized.canonicalUri());
         if (resolved.isEmpty()) {
             return false;
         }
