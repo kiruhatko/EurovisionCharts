@@ -50,14 +50,26 @@ public class ReloadArtistsCommand implements Command {
             StringBuilder sb = new StringBuilder("Імпорт завершено.\n")
                     .append("Створено артистів: ").append(summary.artistsCreated()).append('\n')
                     .append("Оновлено артистів: ").append(summary.artistsUpdated()).append('\n')
-                    .append("Прив'язано URL: ").append(summary.urlsLinked()).append('\n');
+                    .append("Прив'язано URL: ").append(summary.urlsLinked()).append('\n')
+                    .append("Без Spotify-посилання: ").append(summary.withoutSpotify().size()).append('\n');
+            if (!summary.withoutSpotify().isEmpty()) {
+                sb.append(escape(String.join(", ", summary.withoutSpotify().stream().limit(40).toList())));
+                if (summary.withoutSpotify().size() > 40) {
+                    sb.append(" … ще ").append(summary.withoutSpotify().size() - 40);
+                }
+                sb.append('\n');
+            }
             if (!summary.errors().isEmpty()) {
                 sb.append("Помилки (").append(summary.errors().size()).append("):\n");
-                summary.errors().stream().limit(10).forEach(e -> sb.append("• ").append(e).append('\n'));
+                summary.errors().stream().limit(10).forEach(e -> sb.append("• ").append(escape(e)).append('\n'));
             }
             messageSender.send(ctx.chatId(), sb.toString());
         } catch (Exception e) {
             messageSender.send(ctx.chatId(), "Помилка імпорту: " + e.getMessage());
         }
+    }
+
+    private static String escape(String text) {
+        return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
     }
 }

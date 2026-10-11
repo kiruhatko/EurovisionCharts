@@ -61,7 +61,9 @@ public class BulkArtistImportService {
         this.adminAuditService = adminAuditService;
     }
 
-    public record BulkImportSummary(int artistsCreated, int artistsUpdated, int urlsLinked, List<String> errors) {
+    /** {@code withoutSpotify}: entries whose JSON row carries no Spotify artist link at all. */
+    public record BulkImportSummary(int artistsCreated, int artistsUpdated, int urlsLinked, List<String> errors,
+                                     List<String> withoutSpotify) {
     }
 
     @Transactional
@@ -73,8 +75,12 @@ public class BulkArtistImportService {
         int updated = 0;
         int urlsLinked = 0;
         List<String> errors = new java.util.ArrayList<>();
+        List<String> withoutSpotify = new java.util.ArrayList<>();
 
         for (BulkArtistEntry entry : entries) {
+            if (entry.urls() == null || entry.urls().stream().noneMatch(u -> u.contains("open.spotify.com/artist/"))) {
+                withoutSpotify.add(entry.canonicalName());
+            }
             try {
                 String normalized = NameNormalizer.normalize(entry.canonicalName());
                 List<EurovisionArtist> existing = artistRepository.findByNormalizedName(normalized);
@@ -114,7 +120,7 @@ public class BulkArtistImportService {
         adminAuditService.log(adminTelegramId, "RELOADARTISTS", "bulk_import", null,
                 "created=" + created + " updated=" + updated + " urlsLinked=" + urlsLinked + " errors=" + errors.size());
 
-        return new BulkImportSummary(created, updated, urlsLinked, errors);
+        return new BulkImportSummary(created, updated, urlsLinked, errors, withoutSpotify);
     }
 
     private boolean linkUrl(EurovisionArtist artist, String rawUrl, long adminTelegramId) {

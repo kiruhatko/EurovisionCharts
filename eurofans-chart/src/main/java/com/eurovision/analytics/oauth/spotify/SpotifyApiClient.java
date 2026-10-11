@@ -61,10 +61,13 @@ public class SpotifyApiClient implements NowPlayingProviderClient, RecentPlayPro
         }
     }
 
-    /** Raw Spotify track-search candidates for an artist+track query; callers decide what counts as a match. */
+    /**
+     * Raw Spotify track-search candidates for a track (+ optional artist) query; callers decide
+     * what counts as a match.
+     */
     public List<SpotifyDtos.Track> searchTracks(String accessToken, String artistName, String trackName, int limit) {
         try {
-            String query = "track:" + trackName + " artist:" + artistName;
+            String query = artistName == null ? "track:" + trackName : "track:" + trackName + " artist:" + artistName;
             SpotifyDtos.TrackSearchResponse response = spotifyApiWebClient.get()
                     .uri(uriBuilder -> uriBuilder.path("/v1/search")
                             .queryParam("q", query)

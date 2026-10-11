@@ -1,7 +1,7 @@
 package com.eurovision.analytics.chartstudio;
 
 import com.eurovision.analytics.artwork.ArtworkCache;
-import com.eurovision.analytics.artwork.ArtworkCacheRepository;
+import com.eurovision.analytics.artwork.ArtworkResolutionService;
 import com.eurovision.analytics.chart.ChartEntry;
 import com.eurovision.analytics.chart.ChartPeriod;
 import com.eurovision.analytics.chart.ChartService;
@@ -40,16 +40,16 @@ public class ChartStudioService {
 
     private final ChartService chartService;
     private final ListeningEventRepository listeningEventRepository;
-    private final ArtworkCacheRepository artworkCacheRepository;
+    private final ArtworkResolutionService artworkResolutionService;
     private final FlagCatalog flagCatalog;
 
     public ChartStudioService(ChartService chartService,
                                ListeningEventRepository listeningEventRepository,
-                               ArtworkCacheRepository artworkCacheRepository,
+                               ArtworkResolutionService artworkResolutionService,
                                FlagCatalog flagCatalog) {
         this.chartService = chartService;
         this.listeningEventRepository = listeningEventRepository;
-        this.artworkCacheRepository = artworkCacheRepository;
+        this.artworkResolutionService = artworkResolutionService;
         this.flagCatalog = flagCatalog;
     }
 
@@ -108,8 +108,9 @@ public class ChartStudioService {
     }
 
     private java.util.Optional<String> coverFromListeningEvent(ListeningEvent event) {
-        String lookupKey = event.getProvider().name() + ":" + event.getRawArtistName() + ":" + event.getRawTrackName();
-        return artworkCacheRepository.findByLookupKey(lookupKey).map(ArtworkCache::getOriginalUrl);
+        return artworkResolutionService.resolve(event.getProvider(), event.getRawArtistName(), event.getRawTrackName(),
+                        null, event.getCanonicalArtist() == null ? null : event.getCanonicalArtist().getId())
+                .map(ArtworkCache::getOriginalUrl);
     }
 
     /** Consecutive weeks (including the requested one) this artist has had at least one confirmed play. */

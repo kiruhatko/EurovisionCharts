@@ -51,7 +51,7 @@ public class TrackCommand implements Command {
 
                 Optional<ArtworkCache> artwork = artworkResolutionService.resolve(
                         track.provider(), track.signal().rawArtistName(), track.signal().rawTrackName(),
-                        track.signal().nativeArtworkUrl());
+                        track.signal().nativeArtworkUrl(), track.artist().getId());
 
                 if (artwork.isPresent()) {
                     messageSender.sendPhoto(ctx.chatId(), artwork.get().getOriginalUrl(), caption);
