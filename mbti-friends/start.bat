@@ -35,6 +35,7 @@ echo.
 taskkill /f /t /fi "WINDOWTITLE eq Dzerkalo server*" >nul 2>nul
 echo.
 echo Sharing stopped.
+echo If you saw "failed to request quick Tunnel", run start-ssh.bat instead.
 pause
 exit /b 0
 
