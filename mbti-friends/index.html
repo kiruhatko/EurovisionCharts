@@ -647,7 +647,9 @@ const STACK_ROLES = [
 ];
 
 /* ═════════════ СТАН ТА ЗБЕРЕЖЕННЯ ═════════════ */
-const KEY = 'dzerkalo-mbti.v1';
+const KEY = 'dzerkalo-mbti.v2';        // + '.' + id вкладки
+const LIVE_KEY = 'dzerkalo-mbti.live.';
+const LAST_KEY = 'dzerkalo-mbti.last';
 const RELAY = String(window.MBTI_RELAY || 'https://ntfy.sh').replace(/\/+$/, '');
 const TOPIC = code => 'dzerkalo-mbti-' + code.toLowerCase();
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -665,6 +667,26 @@ const dec = s => {
   return out;
 };
 
+/* Кожна вкладка — окремий учасник: стан зберігається під ключем вкладки, а не одним на весь браузер.
+   Інакше дві вкладки одного браузера мали б однаковий «ідентифікатор учасника» і не бачили б одна одну. */
+const lsGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* приватний режим */ } };
+const lsDel = k => { try { localStorage.removeItem(k); } catch (e) { /* приватний режим */ } };
+const tabLive = id => { const t = +lsGet(LIVE_KEY + id); return !!t && Date.now() - t < 75000; };
+const TAB = (() => {
+  let id = null;
+  try { id = sessionStorage.getItem('dzerkalo-mbti.tab'); } catch (e) { /* без sessionStorage */ }
+  if (id && tabLive(id)) id = null;                                           // «Дублювати вкладку»: id зайнятий живою вкладкою
+  if (!id) { const last = lsGet(LAST_KEY); if (last && !tabLive(last) && lsGet(KEY + '.' + last)) id = last; }   // повернулись пізніше — підхоплюємо вільну сесію
+  if (!id) id = rid(8);
+  try { sessionStorage.setItem('dzerkalo-mbti.tab', id); } catch (e) { /* без sessionStorage */ }
+  const beat = () => lsSet(LIVE_KEY + id, String(Date.now()));
+  beat(); setInterval(beat, 2000);
+  addEventListener('pagehide', () => lsDel(LIVE_KEY + id));
+  addEventListener('pageshow', beat);
+  return id;
+})();
+
 const blank = () => ({
   cid: rid(14), name: '', mode: null, code: null, role: null, pron: null, turn: 'self',
   ans: { self: Array(NQ).fill(null), friend: Array(NQ).fill(null) },
@@ -674,7 +696,7 @@ const blank = () => ({
 
 function loadState() {
   try {
-    const s = JSON.parse(localStorage.getItem(KEY));
+    const s = JSON.parse(lsGet(KEY + '.' + TAB));
     if (!s || typeof s.cid !== 'string') return null;
     const b = blank();
     for (const r of ['self', 'friend']) {
@@ -692,7 +714,7 @@ function loadState() {
     return b;
   } catch (e) { return null; }
 }
-function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* приватний режим — працюємо без збереження */ } }
+function save() { lsSet(KEY + '.' + TAB, JSON.stringify(S)); lsSet(LAST_KEY, TAB); }
 
 let S = loadState() || blank();
 let P = null;          // стан співрозмовника в кімнаті
@@ -1351,7 +1373,7 @@ const ACT = {
   local() { newSession('local'); go('local'); },
   lpron(el) { S.pron = el.dataset.v; save(); el.parentNode.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === el)); },
   home() { netClose(); homeErr = ''; go('home'); },
-  discard() { netClose(); P = null; try { localStorage.removeItem(KEY); } catch (e) {} S = blank(); homeErr = ''; go('home'); },
+  discard() { netClose(); P = null; lsDel(KEY + '.' + TAB); S = blank(); homeErr = ''; go('home'); },
   resume() {
     homeErr = '';
     if (S.mode === 'room') netConnect(S.code, 'resume');
