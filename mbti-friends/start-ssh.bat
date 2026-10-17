@@ -3,54 +3,80 @@ rem Dzerkalo MBTI: temporary public link via localhost.run (uses the SSH client 
 rem Reconnects automatically if the tunnel drops; every reconnect prints a NEW link.
 setlocal
 title Dzerkalo MBTI (localhost.run)
-cd /d "%~dp0"
+pushd "%~dp0"
 if not exist "index.html" goto badfolder
 
+rem --- find a working Python 3.7+ (checked by really running it) ---
 where py >nul 2>nul
-if errorlevel 1 goto nopy
+if errorlevel 1 goto trypython
+set "PY=py"
+py -c "import sys;sys.exit(0 if sys.version_info>=(3,7) else 1)"
+if not errorlevel 1 goto havepy
+:trypython
+set "PY=python"
+python -c "import sys;sys.exit(0 if sys.version_info>=(3,7) else 1)"
+if not errorlevel 1 goto havepy
+goto nopy
+:havepy
 where ssh >nul 2>nul
 if errorlevel 1 goto nossh
 
 rem --- serve ONLY a copy of index.html, on this computer only (127.0.0.1) ---
 set "WWW=%TEMP%\dzerkalo-www"
 call :killsrv
+ping -n 2 127.0.0.1 >nul
+curl.exe -s -o nul --max-time 2 http://127.0.0.1:8765/
+if not errorlevel 1 goto portbusy
 if exist "%WWW%" rd /s /q "%WWW%"
 mkdir "%WWW%"
 copy /y "index.html" "%WWW%\index.html" >nul
 if errorlevel 1 goto badcopy
-echo Starting the page on http://127.0.0.1:8765 ...
-start "Dzerkalo server" /min py -m http.server 8765 --bind 127.0.0.1 --directory "%WWW%"
+echo Starting the local page...
+start "Dzerkalo server" /min /d "%TEMP%" %PY% -m http.server 8765 --bind 127.0.0.1 --directory "%WWW%"
 set /a TRIES=0
 :waitsrv
 curl.exe -s -f -o nul --max-time 2 http://127.0.0.1:8765/index.html
 if not errorlevel 1 goto srvup
 set /a TRIES+=1
-if %TRIES% geq 10 goto srvfail
+if %TRIES% geq 30 goto srvfail
 ping -n 2 127.0.0.1 >nul
 goto waitsrv
 :srvup
-echo The page is up.
+echo The page is ready. Waiting for the public link...
 
 echo.
 echo ================================================================
 echo  1. Wait for a line with  https://....lhr.life  below.
 echo  2. OPEN THAT https LINK YOURSELF and create the room THERE,
 echo     so the invite link you copy is the public one.
-echo  3. Send the invite link (or just the room code) to your friends.
-echo  If you see TUNNEL DROPPED, the old link is dead: use the NEW one.
-echo  Keep this window open and the computer awake. Close it to stop.
+echo  3. Send friends the invite link (or the link + the room code).
+echo  If you see TUNNEL DROPPED: friends who have NOT joined yet need
+echo     the NEW link and the SAME room code. Do NOT refresh your own
+echo     page - it keeps working.
+echo  A small window "Dzerkalo server" also runs: do not close it.
+echo  To stop everything, close BOTH windows.
+echo  If the window title starts with "Select", press Esc or Enter:
+echo     clicking in this window pauses it.
 echo ================================================================
 
+set /a FAILS=0
 :again
+curl.exe -s -f -o nul --max-time 2 http://127.0.0.1:8765/index.html
+if errorlevel 1 start "Dzerkalo server" /min /d "%TEMP%" %PY% -m http.server 8765 --bind 127.0.0.1 --directory "%WWW%"
 echo.
 echo [%time%] Connecting...
-ssh -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=15 -o ServerAliveCountMax=3 -o ConnectTimeout=20 -R 80:127.0.0.1:8765 nokey@localhost.run
+ssh -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=20 -o ServerAliveCountMax=6 -o ConnectTimeout=20 -R 80:127.0.0.1:8765 nokey@localhost.run
+set "RC=%errorlevel%"
+set /a FAILS+=1
 echo.
 echo ****************************************************************
-echo  TUNNEL DROPPED (ssh exit code %errorlevel%). The old link no longer works.
-echo  Reconnecting in 5 seconds. A NEW link will appear BELOW.
+echo  TUNNEL DROPPED or NOT CONNECTED (ssh exit code %RC%).
+echo  Any old link no longer works. Reconnecting in 5 seconds:
+echo  a NEW link will appear BELOW (the room code stays the same).
 echo  Rooms keep working for people who already opened the page.
 echo ****************************************************************
+if %FAILS% geq 3 echo  If you NEVER saw an https link, this method may be blocked on your network:
+if %FAILS% geq 3 echo  close this window and run start-pinggy.bat instead.
 ping -n 6 127.0.0.1 >nul
 goto again
 
@@ -65,21 +91,28 @@ pause
 exit /b 1
 
 :badcopy
-echo Could not copy index.html to %WWW%
+echo Could not copy index.html to the temporary folder.
+pause
+exit /b 1
+
+:portbusy
+echo Port 8765 is still used by another program (maybe an old copy of this page).
+echo Restart the computer and run this file again.
 pause
 exit /b 1
 
 :srvfail
-echo The local web server did not start (Python missing, or something else uses port 8765).
-echo Close all black windows and run this file again. If it repeats, restart the computer.
+call :killsrv
+echo The local web server did not start in 30 seconds.
+echo Run this file again. If it repeats, restart the computer.
 pause
 exit /b 1
 
 :nopy
-echo Python launcher "py" was not found.
-echo Install Python from https://www.python.org/downloads/ (keep the "py launcher" option ticked)
-echo or run:  winget install Python.Python.3.12
-echo Then close ALL windows and double-click this file again.
+echo Python 3.7 or newer was not found (or the "py" launcher cannot start it).
+echo Install it with:  winget install Python.Python.3.12
+echo or from https://www.python.org/downloads/  - then close ALL windows
+echo and double-click this file again. If Python asks a question, answer it.
 pause
 exit /b 1
 
